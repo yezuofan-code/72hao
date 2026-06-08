@@ -215,14 +215,14 @@ img { max-width: 100%; height: auto; }
 }
 .prod-strip-wrap::-webkit-scrollbar { display: none; }
 .prod-mini {
-  flex-shrink: 0; width: 130px; background: #fff;
+  flex-shrink: 0; width: 80px; background: #fff;
   cursor: pointer; transition: transform .2s; border: 1px solid #e8e6e1;
 }
 .prod-mini:hover { transform: translateY(-2px); }
-.prod-mini img { width: 130px; height: 80px; object-fit: cover; background: #e8e6e1; display: block; max-width: 100%; }
-.prod-mini-body { padding: 8px 10px 10px; }
-.prod-mini-name { font-size: .72rem; font-weight: 600; color: #1a365d; line-height: 1.3; }
-.prod-mini-meta { font-size: .65rem; color: #a1a1aa; margin-top: 2px; }
+.prod-mini img { width: 80px; height: 60px; object-fit: cover; background: #e8e6e1; display: block; }
+.prod-mini-body { padding: 6px 8px 8px; }
+.prod-mini-name { font-size: .68rem; font-weight: 500; color: #1a365d; line-height: 1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.prod-mini-meta { font-size: .6rem; color: #a1a1aa; margin-top: 1px; }
 
 /* ===== 按钮 ===== */
 .btn {
