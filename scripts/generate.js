@@ -30,32 +30,41 @@ async function build(forceRefresh = false) {
     const stats = analyzeProducts(products);
     console.log(`   共 ${stats.total} 个商品`);
 
-    // 2. 读取历史数据
+    // 2. 读取历史数据，对比新旧商品
     const outputPath = path.join(DIST_DIR, 'data.json');
     let archive = {
       articles: [],      // 历史文章列表
       rankings: [],      // 历史榜单
       recommendations: [], // 历史推荐
     };
+    let oldProductIds = new Set();
     if (fs.existsSync(outputPath)) {
       try {
         const old = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
         archive.articles = old.articles || (old.dailyArticle ? [old.dailyArticle] : []);
         archive.rankings = old.rankings || (old.hotRanking ? [{ date: old.date, items: old.hotRanking }] : []);
         archive.recommendations = old.recommendations || [];
+        // 记录旧商品 ID 用于对比下架
+        if (old.products) old.products.forEach(p => oldProductIds.add(p.productID));
         console.log(`   历史内容: ${archive.articles.length} 篇文章, ${archive.rankings.length} 天榜单`);
       } catch (e) {
         console.log('   历史数据读取失败，重新开始积累');
       }
     }
 
-    // 3. 生成当日推广内容
+    // 3. 标记下架商品
+    const newProductIds = new Set(products.map(p => p.productID));
+    const removedProducts = [...oldProductIds].filter(id => !newProductIds.has(id));
+    if (removedProducts.length > 0) {
+      console.log(`   ⚠ ${removedProducts.length} 个商品已下架`);
+    }
+
+    // 4. 生成当日推广内容
     console.log('\n✍️ 生成推广内容...');
     const content = await generateAll(products, ai);
 
-    // 4. 合并历史 + 当日新内容
+    // 5. 合并历史 + 当日新内容
     if (content.dailyArticle) {
-      // 避免同一天重复添加
       const exists = archive.articles.find(a => a.date === content.date);
       if (!exists) {
         archive.articles.unshift({ ...content.dailyArticle, date: content.date });
@@ -71,7 +80,7 @@ async function build(forceRefresh = false) {
 
     console.log(`   当前: ${archive.articles.length} 篇文章积累`);
 
-    // 5. 组装输出
+    // 6. 组装输出（标记下架商品）
     const output = {
       buildTime: content.generatedAt,
       date: content.date,
@@ -94,7 +103,13 @@ async function build(forceRefresh = false) {
         age2: p.age2,
         taocan: p.taocan || p.productName,
         netAddr: p.netAddr,
-      })),
+        removed: false,
+      })).concat([...oldProductIds].filter(id => !newProductIds.has(id)).map(id => ({
+        productID: id,
+        productName: '已下架商品',
+        flag: false,
+        removed: true,
+      }))),
       // 今日内容
       dailyArticle: content.dailyArticle ? { ...content.dailyArticle, date: content.date } : null,
       recommendations: content.recommendations,
