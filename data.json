@@ -1,15 +1,63 @@
 {
-  "buildTime": "2026-06-08T08:40:27.294Z",
+  "buildTime": "2026-06-08T09:24:02.012Z",
   "date": "2026-06-08",
   "storeUrl": "https://haokawx.lot-ml.com/ProductEn/Index/530789e16bb06db6",
   "stats": {
-    "totalProducts": 369,
+    "total": 369,
     "byOperator": {
       "电信": 93,
       "移动": 65,
       "广电": 124,
       "联通": 87
-    }
+    },
+    "byArea": {
+      "江西": 8,
+      "青海": 3,
+      "浙江": 29,
+      "收货地": 10,
+      "收货地为归属地": 15,
+      "广东": 56,
+      "随机": 25,
+      "天津": 4,
+      "北京": 1,
+      "重庆": 18,
+      "广州": 3,
+      "潍坊": 6,
+      "深圳,广州,佛山, 中山": 1,
+      "湖南": 16,
+      "成都": 4,
+      "福建": 4,
+      "收货地即归属地": 1,
+      "陕西": 9,
+      "淄博": 2,
+      "湛江": 2,
+      "佛山": 2,
+      "广西": 19,
+      "山东": 31,
+      "上海": 17,
+      "合肥": 4,
+      "深圳": 4,
+      "昌吉": 1,
+      "河北": 9,
+      "海南": 5,
+      "安徽": 3,
+      "湖北": 13,
+      "黑龙江": 3,
+      "四川": 21,
+      "贵州": 4,
+      "宜宾": 1,
+      "收货地归属地": 1,
+      "长沙": 1,
+      "江苏": 1,
+      "吉林": 8,
+      "云南": 4
+    },
+    "byBackMoneyType": {
+      "次月返": 360,
+      "秒返": 9
+    },
+    "onSale": 369,
+    "offSale": 0
   },
   "products": [
     {
@@ -25,8 +73,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "江西电信单宽200M600元/年",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1675",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1675"
     },
     {
       "productID": 1676,
@@ -41,8 +88,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "江西电信单宽100M360元/年",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1676",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1676"
     },
     {
       "productID": 1738,
@@ -57,8 +103,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "青海电信单宽带300M360元包年",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1738",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1738"
     },
     {
       "productID": 1739,
@@ -73,8 +118,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "青海电信单宽带500M720元包年",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1739",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1739"
     },
     {
       "productID": 1740,
@@ -89,8 +133,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "青海电信单宽带1000M1080元包年",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1740",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1740"
     },
     {
       "productID": 1812,
@@ -105,8 +148,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "浙江移动单宽带500M300元包年",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1812",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1812"
     },
     {
       "productID": 1813,
@@ -121,8 +163,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "浙江移动单宽带500M500元包两年",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1813",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1813"
     },
     {
       "productID": 1906,
@@ -137,8 +178,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "月均20元350G+200分钟，注册工号审核通过可批量下单，门店自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1906",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1906"
     },
     {
       "productID": 1911,
@@ -153,8 +193,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "28元350G+200分钟，注册工号审核通过可批量下单，门店代理商引导客户通过掌慧通自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1911",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1911"
     },
     {
       "productID": 1912,
@@ -169,8 +208,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "348元一年每月享180G通用流量+180分钟通话，注册工号审核通过可批量下单，门店代理商引导客户通过掌慧通自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1912",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1912"
     },
     {
       "productID": 1913,
@@ -185,8 +223,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元150G流量+150分钟通话，注册工号审核通过可批量下单，门店代理商引导客户通过掌慧通自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1913",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1913"
     },
     {
       "productID": 1940,
@@ -201,8 +238,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "江西电信300M800元/年单宽",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1940",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1940"
     },
     {
       "productID": 1941,
@@ -217,8 +253,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "江西电信500M1000元/年单宽",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1941",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1941"
     },
     {
       "productID": 1944,
@@ -233,8 +268,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "实际到手佣金为：收取卡板自带120元+平台标记的佣金，注册工号审核通过可批量下单，门店代理商引导客户通过掌慧通自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1944",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1944"
     },
     {
       "productID": 1945,
@@ -249,8 +283,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "实际到手佣金为：收取卡板自带120元+平台标记的佣金，注册工号审核通过可批量下单，门店代理商引导客户通过掌慧通自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1945",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1945"
     },
     {
       "productID": 1966,
@@ -265,8 +298,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "月均20元350G+200分钟，注册工号审核通过可批量下单，门店自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1966",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1966"
     },
     {
       "productID": 1967,
@@ -281,8 +313,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "28元350G+200分钟，注册工号审核通过可批量下单，门店代理商引导客户通过掌慧通自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1967",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1967"
     },
     {
       "productID": 1968,
@@ -297,8 +328,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "348元一年每月享180G通用流量+180分钟通话，注册工号审核通过可批量下单，门店代理商引导客户通过掌慧通自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1968",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1968"
     },
     {
       "productID": 1969,
@@ -313,8 +343,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元150G流量+150分钟通话，注册工号审核通过可批量下单，门店代理商引导客户通过掌慧通自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1969",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1969"
     },
     {
       "productID": 2075,
@@ -329,8 +358,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "浙江联通1000M1200元/年单宽",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2075",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2075"
     },
     {
       "productID": 2078,
@@ -345,8 +373,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "浙江联通300M540元包两年单宽",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2078",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2078"
     },
     {
       "productID": 2079,
@@ -361,8 +388,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "浙江联通500M360元包年",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2079",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2079"
     },
     {
       "productID": 2080,
@@ -377,8 +403,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "浙江联通500M600元包两年",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2080",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2080"
     },
     {
       "productID": 2175,
@@ -393,8 +418,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元60G+30G（套餐内60G参加活动免费领取30G）收货地为归属地",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2175",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2175"
     },
     {
       "productID": 2183,
@@ -409,8 +433,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "此款产品当地自有人员交付，提醒用户注意接听电话，发货时效预计72小时，移动审核失败，若用户同意开通电信则会更改电信卡，佣金按照原产品标记的佣金结算。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2183",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2183"
     },
     {
       "productID": 2189,
@@ -425,8 +448,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "两年29元145G+100分钟，仅发浙江，前端禁止出现浙江字眼。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2189",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2189"
     },
     {
       "productID": 2191,
@@ -441,8 +463,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发天津 ，上门开卡，强充100元/菜鸟物流开卡需专属渠道充值",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2191",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2191"
     },
     {
       "productID": 2192,
@@ -457,8 +478,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发天津 ，上门开卡，强充100元/菜鸟物流开卡需专属渠道充值",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2192",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2192"
     },
     {
       "productID": 2196,
@@ -473,8 +493,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "下单需收取200元开卡费，介意勿下。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2196",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2196"
     },
     {
       "productID": 2206,
@@ -489,8 +508,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "29元192G，仅发浙江",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2206",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2206"
     },
     {
       "productID": 2210,
@@ -505,8 +523,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元190G+200分钟仅发重庆，大流量产品，长期套餐",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2210",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2210"
     },
     {
       "productID": 2211,
@@ -521,8 +538,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "长期38元180G,2月28号开始下单的用户套餐升级为38元220G，仅发广州",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2211",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2211"
     },
     {
       "productID": 2214,
@@ -537,8 +553,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "28元350G+200分钟，仅发潍坊，注意接听电话，下单后自有人员会外呼约定时间上门开卡，更新周期72-96小时",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2214",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2214"
     },
     {
       "productID": 2215,
@@ -553,8 +568,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发潍坊 ，强充100元，注意接听电话，下单后自有人员会外呼约定时间上门开卡，更新周期72-96小时",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2215",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2215"
     },
     {
       "productID": 2216,
@@ -569,8 +583,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元180G+100分钟,可发深圳,广州,佛山, 中山,    4月7日开始,佛山地区下单的用户无100分钟通话",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2216",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2216"
     },
     {
       "productID": 2229,
@@ -585,8 +598,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁下单，仅发湖南，江西。仅限私域推广，禁止店铺，直播等公域平台推广",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2229",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2229"
     },
     {
       "productID": 2233,
@@ -601,8 +613,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "55.3元/月全家福5G套餐400分钟国内主叫语音+40G全国流量+1000M宽带",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2233",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2233"
     },
     {
       "productID": 2234,
@@ -617,8 +628,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "69.3元/月全家福5G套餐内含:600分钟国内主叫语音+60G全国流量+1000M宽带",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2234",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2234"
     },
     {
       "productID": 2235,
@@ -633,8 +643,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "90.3元/月全家福5G套餐内含:700分钟国内主叫语音+120G全国流量+1000M宽带",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2235",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2235"
     },
     {
       "productID": 2236,
@@ -649,8 +658,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "福建电信单宽100M480元包年",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2236",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2236"
     },
     {
       "productID": 2237,
@@ -665,8 +673,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "福建电信单宽200M540元包年",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2237",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2237"
     },
     {
       "productID": 2239,
@@ -681,8 +688,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "28元350G+200分钟，注册工号审核通过可批量下单，门店代理商引导客户通过掌慧通自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2239",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2239"
     },
     {
       "productID": 2243,
@@ -697,8 +703,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发潍坊 ，强充100元，注意接听电话，下单后自有人员会外呼约定时间上门开卡，更新周期72-96小时",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2243",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2243"
     },
     {
       "productID": 2244,
@@ -713,8 +718,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "28元350G+200分钟，仅发潍坊，注意接听电话，下单后自有人员会外呼约定时间上门开卡，更新周期72-96小时",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2244",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2244"
     },
     {
       "productID": 2246,
@@ -729,8 +733,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元50G+领取100分钟，全国可发",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2246",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2246"
     },
     {
       "productID": 2247,
@@ -745,8 +748,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "首月50G次月生效180G,2月28号开始下单的用户套餐升级为220G,仅发广东，有疑问请勿引导用户拨打10010，有疑问请联系售后客服",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2247",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2247"
     },
     {
       "productID": 2249,
@@ -761,8 +763,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁下单，仅发江西 仅限私域推广，禁止店铺，直播等公域平台推广",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2249",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2249"
     },
     {
       "productID": 2254,
@@ -777,8 +778,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元190G+200分钟仅发重庆，大流量产品，长期套餐",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2254",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2254"
     },
     {
       "productID": 2260,
@@ -793,8 +793,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发陕西，大流量，18～65可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2260",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2260"
     },
     {
       "productID": 2262,
@@ -809,8 +808,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "28元350G+200分钟，仅发淄博，注意接听电话，下单后自有人员会外呼约定时间上门开卡，更新周期72-96小时",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2262",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2262"
     },
     {
       "productID": 2263,
@@ -825,8 +823,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发淄博 ，强充100元，注意接听电话，下单后自有人员会外呼约定时间上门开卡，更新周期72-96小时",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2263",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2263"
     },
     {
       "productID": 2268,
@@ -841,8 +838,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发陕西，大流量，18～65可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2268",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2268"
     },
     {
       "productID": 2275,
@@ -857,8 +853,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元60G+30G（套餐内60G参加活动免费领取30G）收货地为归属地",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2275",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2275"
     },
     {
       "productID": 2284,
@@ -873,8 +868,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元150G流量+150分钟通话，注册工号审核通过可批量下单，门店代理商引导客户通过掌慧通自助激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2284",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2284"
     },
     {
       "productID": 2286,
@@ -889,8 +883,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元60G+30G（套餐内60G参加活动免费领取30G）收货地为归属地",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2286",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2286"
     },
     {
       "productID": 2301,
@@ -905,8 +898,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元包105G通用+110G定向+100分钟，仅发湛江",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2301",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2301"
     },
     {
       "productID": 2302,
@@ -921,8 +913,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "30元包125G全国通用+60G全国定向+100分钟，仅发佛山",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2302",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2302"
     },
     {
       "productID": 2303,
@@ -937,8 +928,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "40元包290G全国通用+60G全国定向+200分钟，仅发佛山",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2303",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2303"
     },
     {
       "productID": 2308,
@@ -953,8 +943,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元180G+250分钟仅发江西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2308",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2308"
     },
     {
       "productID": 2314,
@@ -969,8 +958,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，仅发浙江",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2314",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2314"
     },
     {
       "productID": 2315,
@@ -985,8 +973,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，仅发浙江，需提供用户按照充值档位参加优惠",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2315",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2315"
     },
     {
       "productID": 2316,
@@ -1001,8 +988,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单， 仅发浙江，推广前请提醒用户强充后 选择档位再进行充值",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2316",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2316"
     },
     {
       "productID": 2318,
@@ -1017,8 +1003,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元60G+30G（套餐内60G参加活动免费领取30G）收货地为归属地",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2318",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2318"
     },
     {
       "productID": 2320,
@@ -1033,8 +1018,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁下单，仅发江西，浙江，陕西。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2320",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2320"
     },
     {
       "productID": 2324,
@@ -1049,8 +1033,7 @@
       "age1": 19,
       "age2": 59,
       "taocan": "当月执行219G按天折算，仅发广西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2324",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2324"
     },
     {
       "productID": 2327,
@@ -1065,8 +1048,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单， 仅发江西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2327",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2327"
     },
     {
       "productID": 2328,
@@ -1081,8 +1063,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，仅发重庆.2-11个月19元",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2328",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2328"
     },
     {
       "productID": 2329,
@@ -1097,8 +1078,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，仅发重庆，29元192G",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2329",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2329"
     },
     {
       "productID": 2330,
@@ -1113,8 +1093,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "18-35可下单，仅发重庆",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2330",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2330"
     },
     {
       "productID": 2331,
@@ -1129,8 +1108,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁 仅发重庆",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2331",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2331"
     },
     {
       "productID": 2334,
@@ -1145,8 +1123,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "日照市,临沂市,菏泽市,滨州，德州市,聊城市，泰安除外均可配送，强充100元，注意接听电活，下单后自有人员会外呼约定时间上门开卡，更新发货周期72-80小时",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2334",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2334"
     },
     {
       "productID": 2335,
@@ -1161,8 +1138,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "全省均可配送，目前济南,济宁,潍坊,淄博,日照,泰安，德州，滨州，实时外呼配送，临沂，菏泽，青岛，烟台，枣庄，东营，威海预计2月9号起陆续外呼配送，强充100元，注意接听电活，下单后自有人员会外呼约定时间上门开卡，更新发货周期72-80小时",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2335",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2335"
     },
     {
       "productID": 2343,
@@ -1177,8 +1153,7 @@
       "age1": 18,
       "age2": 25,
       "taocan": "29元150G+300分钟，仅发重庆",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2343",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2343"
     },
     {
       "productID": 2350,
@@ -1193,8 +1168,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元200G+200分钟，请让用户充值200元，2月26日下午2点起更改为激活当月一次性首充100元，5月25日更改为激活当月一次性首充200元",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2350",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2350"
     },
     {
       "productID": 2353,
@@ -1209,8 +1183,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发成都 ，上门开卡，强充100元",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2353",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2353"
     },
     {
       "productID": 2362,
@@ -1225,8 +1198,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，当地自有人员上门，注意提醒用户接听开卡人员电话。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2362",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2362"
     },
     {
       "productID": 2364,
@@ -1241,8 +1213,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "39元175G通用+30G定向+100分钟，仅发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2364",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2364"
     },
     {
       "productID": 2365,
@@ -1257,8 +1228,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元160G+100分钟，2月27号开始30岁以上人员下单少30G流量，默认130G，介意勿下!仅限私域销售",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2365",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2365"
     },
     {
       "productID": 2366,
@@ -1273,8 +1243,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "29元175G通用+30G定向+100分钟，仅发广东，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2366",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2366"
     },
     {
       "productID": 2370,
@@ -1289,8 +1258,7 @@
       "age1": 19,
       "age2": 59,
       "taocan": "当月执行219G按天折算，仅发广西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2370",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2370"
     },
     {
       "productID": 2371,
@@ -1305,8 +1273,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元60G+30G（套餐内60G参加活动免费领取30G）收货地为归属地",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2371",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2371"
     },
     {
       "productID": 2374,
@@ -1321,8 +1288,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，仅发重庆，29元192G",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2374",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2374"
     },
     {
       "productID": 2375,
@@ -1337,8 +1303,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "18-35可下单，仅发重庆   次月不销户结算",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2375",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2375"
     },
     {
       "productID": 2376,
@@ -1353,8 +1318,7 @@
       "age1": 18,
       "age2": 30,
       "taocan": "19元150G通用+100分钟。只发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2376",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2376"
     },
     {
       "productID": 2379,
@@ -1369,8 +1333,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "39元175G通用+30G定向+100分钟，仅发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2379",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2379"
     },
     {
       "productID": 2381,
@@ -1385,8 +1348,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "29元175G通用+30G定向+100分钟，仅发广东，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2381",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2381"
     },
     {
       "productID": 2384,
@@ -1401,8 +1363,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元200G流量+100分钟，仅发广州，当地人员交付激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2384",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2384"
     },
     {
       "productID": 2385,
@@ -1417,8 +1378,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元180G通用流量+30G定向流量+100分钟，仅发深圳",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2385",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2385"
     },
     {
       "productID": 2389,
@@ -1433,8 +1393,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "29元30GB定向+170GB通用+200分钟，仅发浙江",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2389",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2389"
     },
     {
       "productID": 2390,
@@ -1449,8 +1408,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元60G+30G（套餐内60G参加活动免费领取30G）收货地为归属地，秒返产品，出现订单结算后无故注销，恶竟套取佣金情况我司有权拉黑并且追回佣金终止合作",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2390",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2390"
     },
     {
       "productID": 2399,
@@ -1465,8 +1423,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "19元175G通用+30G定向+100分钟，仅发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2399",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2399"
     },
     {
       "productID": 2400,
@@ -1481,8 +1438,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "29元140G+200分钟，仅发浙江两年29元",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2400",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2400"
     },
     {
       "productID": 2402,
@@ -1497,8 +1453,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "20-60可下单， 39元205G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2402",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2402"
     },
     {
       "productID": 2407,
@@ -1513,8 +1468,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁可下单，29元192G。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2407",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2407"
     },
     {
       "productID": 2411,
@@ -1529,8 +1483,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "仅发广东， 20-60可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2411",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2411"
     },
     {
       "productID": 2412,
@@ -1545,8 +1498,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元60G+30G（套餐内60G参加活动免费领取30G）收货地为归属地",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2412",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2412"
     },
     {
       "productID": 2413,
@@ -1561,8 +1513,7 @@
       "age1": 18,
       "age2": 64,
       "taocan": "29元165G+100分钟，仅发浙江，宁波 绍兴收货地址套餐为165通用，其它地市为115通用+100定向，当地人员交付激活，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2413",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2413"
     },
     {
       "productID": 2415,
@@ -1577,8 +1528,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元170G通用流量+30G定向，仅发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2415",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2415"
     },
     {
       "productID": 2416,
@@ -1593,8 +1543,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "首充50享1年，首充100享两年，考核100元，请提醒用户充值100元，18-60可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2416",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2416"
     },
     {
       "productID": 2417,
@@ -1609,8 +1558,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "18-60可下单， 只发广东，考核首冲50元版本。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2417",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2417"
     },
     {
       "productID": 2418,
@@ -1625,8 +1573,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "18-60可下单，仅发陕西，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2418",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2418"
     },
     {
       "productID": 2421,
@@ -1641,8 +1588,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "现役军人本人激活时需上有效身份证件和本人军官证或士兵证，军属激活时上传有效关系证件(户口薄结婚证)+居民身份证、退役军人激活时上传本人退役军人优待证+居民身份证。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2421",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2421"
     },
     {
       "productID": 2422,
@@ -1657,8 +1603,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "现役军人本人激活时需上有效身份证件和本人军官证或士兵证，军属激活时上传有效关系证件(户口薄结婚证)+居民身份证、退役军人激活时上传本人退役军人优待证+居民身份证。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2422",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2422"
     },
     {
       "productID": 2424,
@@ -1673,8 +1618,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "18-60可下单， 只发广东，考核首冲50元版本。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2424",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2424"
     },
     {
       "productID": 2436,
@@ -1689,8 +1633,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发陕西，18-60周岁可下单，次月升级套餐。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2436",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2436"
     },
     {
       "productID": 2447,
@@ -1705,8 +1648,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "79元1000M送IPTV+路由器+摄像头+1100分钟通话+100G通用",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2447",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2447"
     },
     {
       "productID": 2454,
@@ -1721,8 +1663,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元192G，仅发广西，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2454",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2454"
     },
     {
       "productID": 2460,
@@ -1737,8 +1678,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元170G重庆通用+20G全国通用+30G定向，仅发重庆,大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2460",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2460"
     },
     {
       "productID": 2461,
@@ -1753,8 +1693,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "29元175G通用+30G定向+100分钟，仅发广东，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2461",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2461"
     },
     {
       "productID": 2464,
@@ -1769,8 +1708,7 @@
       "age1": 19,
       "age2": 59,
       "taocan": "当月执行219G按天折算，仅发广西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2464",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2464"
     },
     {
       "productID": 2472,
@@ -1785,8 +1723,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "店铺补贴11个月，首年29元205G+100分钟，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2472",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2472"
     },
     {
       "productID": 2473,
@@ -1801,8 +1738,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "临沂市,菏泽市,德州市,聊城市除外全省均可配送，强充100元，注意接听电活，下单后自有人员会外呼约定时间上门开卡，更新发货周期72-80小时",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2473",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2473"
     },
     {
       "productID": 2474,
@@ -1817,8 +1753,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "日照市,临沂市,菏泽市,滨州，德州市,聊城市，泰安除外全省均可配送，强充100元，注意接听电活，下单后自有人员会外呼约定时间上门开卡，更新发货周期72-80小时",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2474",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2474"
     },
     {
       "productID": 2480,
@@ -1833,8 +1768,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发浙江，激活成功后关注浙江联通公众号可参与抽奖活动领取80G流量， 4.27号晚7点起杭州地址为29元200G通用+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2480",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2480"
     },
     {
       "productID": 2481,
@@ -1849,8 +1783,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元200G+200分钟，激活当月一次性首充100元，5月26日更改为激活当月一次性首充200元，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2481",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2481"
     },
     {
       "productID": 2482,
@@ -1865,8 +1798,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "店铺补贴5个月，19元205G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2482",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2482"
     },
     {
       "productID": 2483,
@@ -1881,8 +1813,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "20-60可下单  39元205G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2483",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2483"
     },
     {
       "productID": 2490,
@@ -1897,8 +1828,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "当月生效220G  18-60可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2490",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2490"
     },
     {
       "productID": 2491,
@@ -1913,8 +1843,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁下单，广东，陕西，江西，浙江均可发货",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2491",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2491"
     },
     {
       "productID": 2492,
@@ -1929,8 +1858,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "28元350G+200分钟，仅发山东,陕西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2492",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2492"
     },
     {
       "productID": 2493,
@@ -1945,8 +1873,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "20-60周岁下单， 39元205G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2493",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2493"
     },
     {
       "productID": 2494,
@@ -1961,8 +1888,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "店铺补贴5个月，多地市切换审核，提高发货率，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2494",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2494"
     },
     {
       "productID": 2502,
@@ -1977,8 +1903,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "30元120G+100分钟，仅发河北，用户自主激活，需安卓NFC开卡，只能收件地激活，不能转寄",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2502",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2502"
     },
     {
       "productID": 2503,
@@ -1993,8 +1918,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "店铺补贴11个月，多地市切换审核，提高发货率，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2503",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2503"
     },
     {
       "productID": 2504,
@@ -2009,8 +1933,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "高佣版，多地市切换审核，提高发货率",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2504",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2504"
     },
     {
       "productID": 2516,
@@ -2025,8 +1948,7 @@
       "age1": 18,
       "age2": 40,
       "taocan": "39元/月=160G+100分钟仅发合肥，上门开卡",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2516",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2516"
     },
     {
       "productID": 2517,
@@ -2041,8 +1963,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "38元220G仅发广东,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2517",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2517"
     },
     {
       "productID": 2518,
@@ -2057,8 +1978,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "49元80G+200分钟，仅发上海，极速发货",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2518",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2518"
     },
     {
       "productID": 2521,
@@ -2073,8 +1993,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "18-60可下单 当月生效220G通用流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2521",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2521"
     },
     {
       "productID": 2524,
@@ -2089,8 +2008,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "38元220G仅发广东,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2524",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2524"
     },
     {
       "productID": 2525,
@@ -2105,8 +2023,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元210G+100分钟，仅发深圳，上门开卡",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2525",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2525"
     },
     {
       "productID": 2547,
@@ -2121,8 +2038,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "两年29仅发浙江，激活成功后关注浙江联通公众号可参与抽奖活动领取80G流量， 4.27号晚7点起杭州地址为29元200G通用+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2547",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2547"
     },
     {
       "productID": 2560,
@@ -2137,8 +2053,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元160G+100分钟，30岁以上人员下单少30G流量，默认130G，介意勿下!仅限私域销售",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2560",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2560"
     },
     {
       "productID": 2569,
@@ -2153,8 +2068,7 @@
       "age1": 19,
       "age2": 59,
       "taocan": "当月执行219G按天折算，仅发广西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2569",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2569"
     },
     {
       "productID": 2570,
@@ -2169,8 +2083,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发陕西，18-60周岁可下单，次月升级套餐。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2570",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2570"
     },
     {
       "productID": 2571,
@@ -2185,8 +2098,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发陕西，18-60周岁可下单，次月升级套餐。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2571",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2571"
     },
     {
       "productID": 2572,
@@ -2201,8 +2113,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "店铺补贴11个月，首年29元205G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2572",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2572"
     },
     {
       "productID": 2576,
@@ -2217,8 +2128,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发上海,当地人员配送激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2576",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2576"
     },
     {
       "productID": 2578,
@@ -2233,8 +2143,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发上海,当地人员配送激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2578",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2578"
     },
     {
       "productID": 2581,
@@ -2249,8 +2158,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁，仅发山东，聊城、菏泽、德州和临沂不发",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2581",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2581"
     },
     {
       "productID": 2582,
@@ -2265,8 +2173,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发上海,当地人员配送激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2582",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2582"
     },
     {
       "productID": 2586,
@@ -2281,8 +2188,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "月均20元350G+200分钟， 18-35周岁下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2586",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2586"
     },
     {
       "productID": 2605,
@@ -2297,8 +2203,7 @@
       "age1": 19,
       "age2": 60,
       "taocan": "39元125G通用流量+30G定向流量，在网31后赠送100G",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2605",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2605"
     },
     {
       "productID": 2607,
@@ -2313,8 +2218,7 @@
       "age1": 19,
       "age2": 60,
       "taocan": "39元125G通用流量+30G定向流量，在网31后赠送100G",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2607",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2607"
     },
     {
       "productID": 2608,
@@ -2329,8 +2233,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元115G+100分钟，仅发海南",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2608",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2608"
     },
     {
       "productID": 2619,
@@ -2345,8 +2248,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "高佣版  39元205G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2619",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2619"
     },
     {
       "productID": 2620,
@@ -2361,8 +2263,7 @@
       "age1": 18,
       "age2": 28,
       "taocan": "29元100G+100分钟，仅发湖南",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2620",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2620"
     },
     {
       "productID": 2632,
@@ -2377,8 +2278,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "40元160G全国通用流量+300分钟，仅发河北，手机NFC开卡，只能收件地激活，不能转寄",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2632",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2632"
     },
     {
       "productID": 2636,
@@ -2393,8 +2293,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元210G+100分钟，仅发深圳，上门开卡",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2636",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2636"
     },
     {
       "productID": 2644,
@@ -2409,8 +2308,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发湖南,激活30天发送短信升级至185G",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2644",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2644"
     },
     {
       "productID": 2645,
@@ -2425,8 +2323,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元160G+100分钟仅发合肥 ，30岁以上人员下单少30G流量，默认130G，介意勿下!仅限私域销售",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2645",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2645"
     },
     {
       "productID": 2649,
@@ -2441,8 +2338,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发潍坊,自有团队配送",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2649",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2649"
     },
     {
       "productID": 2651,
@@ -2457,8 +2353,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "29元205G+300分钟，仅发浙江，首年29",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2651",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2651"
     },
     {
       "productID": 2654,
@@ -2473,8 +2368,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发湖南,激活30天发送短信升级至185G",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2654",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2654"
     },
     {
       "productID": 2657,
@@ -2489,8 +2383,7 @@
       "age1": 19,
       "age2": 59,
       "taocan": "当月执行219G按天折算，仅发广西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2657",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2657"
     },
     {
       "productID": 2658,
@@ -2505,8 +2398,7 @@
       "age1": 19,
       "age2": 59,
       "taocan": "当月执行219G按天折算，仅发广西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2658",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2658"
     },
     {
       "productID": 2659,
@@ -2521,8 +2413,7 @@
       "age1": 19,
       "age2": 59,
       "taocan": "当月执行219G按天折算，仅发广西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2659",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2659"
     },
     {
       "productID": 2661,
@@ -2537,8 +2428,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发湖南,激活30天发送短信升级至185G",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2661",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2661"
     },
     {
       "productID": 2665,
@@ -2553,8 +2443,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发湖南，次月编辑185发送到10001",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2665",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2665"
     },
     {
       "productID": 2666,
@@ -2569,8 +2458,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发湖南，次月编辑短信185发送到10001升级",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2666",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2666"
     },
     {
       "productID": 2668,
@@ -2585,8 +2473,7 @@
       "age1": 21,
       "age2": 65,
       "taocan": "禁止任何带有湖北字眼的宣传，39元185G，仅发湖北，次月可享185G(需短信发送“185”至10001，点击短信显示原文，按要求回复，确认订购办理成功立即生效)",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2668",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2668"
     },
     {
       "productID": 2670,
@@ -2601,8 +2488,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发湖南",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2670",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2670"
     },
     {
       "productID": 2683,
@@ -2617,8 +2503,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "深圳电信发全省，广州失败订单可尝试此款再次下单！",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2683",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2683"
     },
     {
       "productID": 2684,
@@ -2633,8 +2518,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "深圳、广州电信失败订单可尝试此款再次下单！",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2684",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2684"
     },
     {
       "productID": 2688,
@@ -2649,8 +2533,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，当地自有人员上门，注意提醒用户接听开卡人员电话。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2688",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2688"
     },
     {
       "productID": 2689,
@@ -2665,8 +2548,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "月均20元350G+200分钟， 18-35周岁下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2689",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2689"
     },
     {
       "productID": 2708,
@@ -2681,8 +2563,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁下单，仅发山东  4月8日起调整为强充100元",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2708",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2708"
     },
     {
       "productID": 2716,
@@ -2697,8 +2578,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元150G+300分钟仅发黑龙江，长期套餐，实名认证通过后发货，认证等于激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2716",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2716"
     },
     {
       "productID": 2717,
@@ -2713,8 +2593,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "深圳电信发全省，广州电信205G失败订单可尝试此款再次下单！该款发货率高",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2717",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2717"
     },
     {
       "productID": 2719,
@@ -2729,8 +2608,7 @@
       "age1": 18,
       "age2": 30,
       "taocan": "19元150G通用+100分钟。只发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2719",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2719"
     },
     {
       "productID": 2720,
@@ -2745,8 +2623,7 @@
       "age1": 18,
       "age2": 30,
       "taocan": "9元150G通用+100分钟。只发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2720",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2720"
     },
     {
       "productID": 2721,
@@ -2761,8 +2638,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发湖南",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2721",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2721"
     },
     {
       "productID": 2726,
@@ -2777,8 +2653,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元192G，仅发广西，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2726",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2726"
     },
     {
       "productID": 2736,
@@ -2793,8 +2668,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "用户需打10010变更为220G套餐次月开始生效，仅发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2736",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2736"
     },
     {
       "productID": 2737,
@@ -2809,8 +2683,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁下单，仅发山东，强充50元（4月8日起调整为强充100）",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2737",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2737"
     },
     {
       "productID": 2743,
@@ -2825,8 +2698,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元115G+100分钟，仅发海南",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2743",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2743"
     },
     {
       "productID": 2744,
@@ -2841,8 +2713,7 @@
       "age1": 18,
       "age2": 29,
       "taocan": "29元包含120G全国通用+30G全国定向+100分钟+双会员，仅发深圳",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2744",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2744"
     },
     {
       "productID": 2745,
@@ -2857,8 +2728,7 @@
       "age1": 18,
       "age2": 29,
       "taocan": "29元包含120G全国通用+30G全国定向+100分钟+双会员，仅发广州",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2745",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2745"
     },
     {
       "productID": 2746,
@@ -2873,8 +2743,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元包225G通用+110G定向+100分钟，仅发湛江",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2746",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2746"
     },
     {
       "productID": 2747,
@@ -2889,8 +2758,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元220G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2747",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2747"
     },
     {
       "productID": 2756,
@@ -2905,8 +2773,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元192G参加活动免费领取30G，收货地为归属地",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2756",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2756"
     },
     {
       "productID": 2758,
@@ -2921,8 +2788,7 @@
       "age1": 19,
       "age2": 60,
       "taocan": "39元30G定向+155G通用，仅发湖南",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2758",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2758"
     },
     {
       "productID": 2759,
@@ -2937,8 +2803,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "40元160G全国通用流量+300分钟，仅发河北，手机NFC开卡 ，只能收件地激活，不能转寄",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2759",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2759"
     },
     {
       "productID": 2760,
@@ -2953,8 +2818,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "30元120G+100分钟，仅发河北，用户自主激活，需安卓NFC开卡，只能收件地激活，不能转寄",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2760",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2760"
     },
     {
       "productID": 2763,
@@ -2969,8 +2833,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元192G参加活动免费领取30G，收货地为归属地",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2763",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2763"
     },
     {
       "productID": 2765,
@@ -2985,8 +2848,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "29元185G，仅发四川，赠送的150G流量需要在链接里领取",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2765",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2765"
     },
     {
       "productID": 2779,
@@ -3001,8 +2863,7 @@
       "age1": 19,
       "age2": 60,
       "taocan": "39元30G定向+155G通用，仅发湖南",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2779",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2779"
     },
     {
       "productID": 2785,
@@ -3017,8 +2878,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发上海,当地人员当天配送激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2785",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2785"
     },
     {
       "productID": 2787,
@@ -3033,8 +2893,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "39元185G+200分钟，仅发贵州",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2787",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2787"
     },
     {
       "productID": 2788,
@@ -3049,8 +2908,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "18-35周岁可下单，仅发陕西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2788",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2788"
     },
     {
       "productID": 2794,
@@ -3065,8 +2923,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元550G+300分钟，仅发宜宾",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2794",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2794"
     },
     {
       "productID": 2795,
@@ -3081,8 +2938,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "39元205G+100分钟，仅发广东,大流量，秒返产品，出现订单结算后无故注销，恶竟套取佣金情况我司有权拉黑并且追回佣金终止合作",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2795",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2795"
     },
     {
       "productID": 2797,
@@ -3097,8 +2953,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "预计周一进单发货，39元185G+100分钟，秒返产品，出现订单结算后无故注销，恶竟套取佣金情况我司有权拉黑并且追回佣金终止合作",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2797",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2797"
     },
     {
       "productID": 2802,
@@ -3113,8 +2968,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "59元60G+600分钟+1000M宽带",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2802",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2802"
     },
     {
       "productID": 2803,
@@ -3129,8 +2983,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "39元/月205G流量（50G 本地流量+125G全国流量+30G定向流量，仅发山东）",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2803",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2803"
     },
     {
       "productID": 2806,
@@ -3145,8 +2998,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "仅发山东 激活30天后通过官方短信领取:50G市内流量+105G全国流量，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2806",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2806"
     },
     {
       "productID": 2807,
@@ -3161,8 +3013,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "2-6个月29元，提醒用户激活30天后领取流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2807",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2807"
     },
     {
       "productID": 2810,
@@ -3177,8 +3028,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "仅发山东 激活30天后通过官方短信领取:50G市内流量+105G全国流量，秒返产品，出现订单结算后无故注销，恶竟套取佣金情况我司有权拉黑并且追回佣金终止合作",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2810",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2810"
     },
     {
       "productID": 2811,
@@ -3193,8 +3043,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元192G参加活动免费领取30G，收货地为归属地，秒返产品，出现订单结算后无故注销，恶竟套取佣金情况我司有权拉黑并且追回佣金终止合作",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2811",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2811"
     },
     {
       "productID": 2813,
@@ -3209,8 +3058,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "29元185G+200分钟，仅发贵州",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2813",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2813"
     },
     {
       "productID": 2817,
@@ -3225,8 +3073,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁可下单，29元192G。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2817",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2817"
     },
     {
       "productID": 2819,
@@ -3241,8 +3088,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "18-59周岁可下单，仅发广西，仅限广西激活。29元220G通用+30G定向+300分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2819",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2819"
     },
     {
       "productID": 2822,
@@ -3257,8 +3103,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "18-59周岁可下单，仅发广西，仅限广西激活。29元220G通用+30G定向+300分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2822",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2822"
     },
     {
       "productID": 2823,
@@ -3273,8 +3118,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "仅发山东 激活30天后通过官方短信领取:50G市内流量+105G全国流量，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2823",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2823"
     },
     {
       "productID": 2825,
@@ -3289,8 +3133,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "仅发山东 激活30天后通过官方短信领取:50G市内流量+105G全国流量，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2825",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2825"
     },
     {
       "productID": 2829,
@@ -3305,8 +3148,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "次月生效260G，仅发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2829",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2829"
     },
     {
       "productID": 2830,
@@ -3321,8 +3163,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "次月生效260G，仅发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2830",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2830"
     },
     {
       "productID": 2833,
@@ -3337,8 +3178,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元200G，仅发湖北，长期套餐",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2833",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2833"
     },
     {
       "productID": 2836,
@@ -3353,8 +3193,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元200G，仅发湖北，长期套餐",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2836",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2836"
     },
     {
       "productID": 2837,
@@ -3369,8 +3208,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元200G，仅发湖北",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2837",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2837"
     },
     {
       "productID": 2840,
@@ -3385,8 +3223,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "18-59周岁可下单，仅发广西，仅限广西激活。29元220G通用+30G定向+300分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2840",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2840"
     },
     {
       "productID": 2842,
@@ -3401,8 +3238,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "41元220G，全国可发，专属渠领取2元130G。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2842",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2842"
     },
     {
       "productID": 2851,
@@ -3417,8 +3253,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "18-59周岁可下单，仅发广西，仅限广西激活。19元220G通用+30G定向+300分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2851",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2851"
     },
     {
       "productID": 2853,
@@ -3433,8 +3268,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "30元120G+100分钟，仅发河北，用户自主激活，需安卓NFC开卡，只能收件地激活，不能转寄",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2853",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2853"
     },
     {
       "productID": 2854,
@@ -3449,8 +3283,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "40元160G全国通用流量+300分钟，仅发河北，手机NFC开卡，只能收件地激活，不能转寄",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2854",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2854"
     },
     {
       "productID": 2857,
@@ -3465,8 +3298,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "无需三照发湖南，18-35可下单，私域销售",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2857",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2857"
     },
     {
       "productID": 2858,
@@ -3481,8 +3313,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元165GB国内通用流量+50GB定向流量+100GB咪咕系APP定向流量+100分钟，仅发浙江",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2858",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2858"
     },
     {
       "productID": 2861,
@@ -3497,8 +3328,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "19元130G+200分钟，菏泽 德州  泰安 聊城 临沂预计下周开通，山东省内均可发货",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2861",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2861"
     },
     {
       "productID": 2863,
@@ -3513,8 +3343,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发上海，实时配送  交付人员处参加充送活动  18-65周岁可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2863",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2863"
     },
     {
       "productID": 2865,
@@ -3529,8 +3358,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "秒返产品，仅发贵州  39元185G+200分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2865",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2865"
     },
     {
       "productID": 2866,
@@ -3545,8 +3373,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "秒返产品，仅发广西  18-59周岁可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2866",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2866"
     },
     {
       "productID": 2867,
@@ -3561,8 +3388,7 @@
       "age1": 21,
       "age2": 65,
       "taocan": "秒返产品,仅发湖北 21-65周岁可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2867",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2867"
     },
     {
       "productID": 2868,
@@ -3577,8 +3403,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "秒返产品，收货地及归属地  18-65周岁",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2868",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2868"
     },
     {
       "productID": 2873,
@@ -3593,8 +3418,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发浙江，18-60可下单， 自有人员交付，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2873",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2873"
     },
     {
       "productID": 2878,
@@ -3609,8 +3433,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发上海,当地人员当天配送激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2878",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2878"
     },
     {
       "productID": 2879,
@@ -3625,8 +3448,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "月均20元350G+200分钟， 18-35周岁下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2879",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2879"
     },
     {
       "productID": 2880,
@@ -3641,8 +3463,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发天津 ，上门开卡，强充100元/菜鸟物流开卡需专属渠道充值",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2880",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2880"
     },
     {
       "productID": 2881,
@@ -3657,8 +3478,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发天津 ，上门开卡，强充100元/菜鸟物流开卡需专属渠道充值",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2881",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2881"
     },
     {
       "productID": 2886,
@@ -3673,8 +3493,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "19元130G+200分钟，济宁 菏泽 聊城 临沂 泰安 德州 预计下周开通，山东省内均可发货",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2886",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2886"
     },
     {
       "productID": 2887,
@@ -3689,8 +3508,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元280G+200分钟，仅发河北，大流量产品，三证自主激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2887",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2887"
     },
     {
       "productID": 2891,
@@ -3705,8 +3523,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "29元185G，仅发四川，赠送的150G流量需要在链接里领取",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2891",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2891"
     },
     {
       "productID": 2892,
@@ -3721,8 +3538,7 @@
       "age1": 18,
       "age2": 55,
       "taocan": "29元192G，全国发货，归属地为收货地省份归属，此产品仅限私域推广",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2892",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2892"
     },
     {
       "productID": 2893,
@@ -3737,8 +3553,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元185G+200分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2893",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2893"
     },
     {
       "productID": 2897,
@@ -3753,8 +3568,7 @@
       "age1": 18,
       "age2": 40,
       "taocan": "39元/月=160G+100分钟仅发合肥，上门开卡",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2897",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2897"
     },
     {
       "productID": 2898,
@@ -3769,8 +3583,7 @@
       "age1": 19,
       "age2": 60,
       "taocan": "39元235G+100分钟，仅发广东，自主激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2898",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2898"
     },
     {
       "productID": 2899,
@@ -3785,8 +3598,7 @@
       "age1": 19,
       "age2": 60,
       "taocan": "补贴首年  29元235G+100分钟，仅发广东，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2899",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2899"
     },
     {
       "productID": 2901,
@@ -3801,8 +3613,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，务必配送员处充值200元，实时配送，提醒用户注意接听配送员电话",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2901",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2901"
     },
     {
       "productID": 2902,
@@ -3817,8 +3628,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "仅发广东全省，快递配送，自主激活。39元235G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2902",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2902"
     },
     {
       "productID": 2903,
@@ -3833,8 +3643,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "补贴2-12个月每月10,18-60可下单  29元205G+30G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2903",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2903"
     },
     {
       "productID": 2904,
@@ -3849,8 +3658,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "线下自有交付，提醒用户注意接听电话，18-60可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2904",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2904"
     },
     {
       "productID": 2906,
@@ -3865,8 +3673,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "全国发货，禁区少  18-65周岁，29元192G+30G参加多用多送=222G通用流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2906",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2906"
     },
     {
       "productID": 2909,
@@ -3881,8 +3688,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "49元80G，只发苏州、南京，南京地区月租为50元",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2909",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2909"
     },
     {
       "productID": 2911,
@@ -3897,8 +3703,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "18-35可下单，仅发重庆   次月不销户结算",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2911",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2911"
     },
     {
       "productID": 2912,
@@ -3913,8 +3718,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，仅发重庆，29元192G",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2912",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2912"
     },
     {
       "productID": 2913,
@@ -3929,8 +3733,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，仅发重庆.2-11个月19元",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2913",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2913"
     },
     {
       "productID": 2917,
@@ -3945,8 +3748,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，仅发重庆，29元192G",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2917",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2917"
     },
     {
       "productID": 2918,
@@ -3961,8 +3763,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "18-35可下单，仅发重庆   次月不销户结算",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2918",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2918"
     },
     {
       "productID": 2919,
@@ -3977,8 +3778,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，务必配送员处充值200元，实时配送，提醒用户注意接听配送员电话",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2919",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2919"
     },
     {
       "productID": 2920,
@@ -3993,8 +3793,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "月均20元350G+200分钟， 18-35周岁下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2920",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2920"
     },
     {
       "productID": 2923,
@@ -4009,8 +3808,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元192G仅发四川，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2923",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2923"
     },
     {
       "productID": 2924,
@@ -4025,8 +3823,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元130G+200分钟，仅发四川，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2924",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2924"
     },
     {
       "productID": 2925,
@@ -4041,8 +3838,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元180G+250分钟仅发四川，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2925",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2925"
     },
     {
       "productID": 2934,
@@ -4057,8 +3853,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元180G+250分钟仅发四川，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2934",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2934"
     },
     {
       "productID": 2935,
@@ -4073,8 +3868,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元130G+200分钟，仅发四川，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2935",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2935"
     },
     {
       "productID": 2936,
@@ -4089,8 +3883,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元192G仅发四川，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2936",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2936"
     },
     {
       "productID": 2939,
@@ -4105,8 +3898,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "18-35周岁可下单，仅发广西，大流量，28元350G+200分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2939",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2939"
     },
     {
       "productID": 2949,
@@ -4121,8 +3913,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "次月生效260G，仅发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2949",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2949"
     },
     {
       "productID": 2951,
@@ -4137,8 +3928,7 @@
       "age1": 18,
       "age2": 30,
       "taocan": "29元160G+500分钟+视频会员，三照发浙江，省外使用时间不能大于省内使用时间",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2951",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2951"
     },
     {
       "productID": 2953,
@@ -4153,8 +3943,7 @@
       "age1": 18,
       "age2": 28,
       "taocan": "28元300G+300分钟，仅限潍坊地区",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2953",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2953"
     },
     {
       "productID": 2954,
@@ -4169,8 +3958,7 @@
       "age1": 18,
       "age2": 30,
       "taocan": "18-30可下单，三照发货，仅发浙江 首年19  禁止转寄且浙江省外使用时间不得大于省内时间。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2954",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2954"
     },
     {
       "productID": 2957,
@@ -4185,8 +3973,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "全国发货，禁区少  18-65周岁，29元192G+30G参加多用多送=222G通用流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2957",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2957"
     },
     {
       "productID": 2958,
@@ -4201,8 +3988,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁，仅发山东，聊城、菏泽、德州和临沂不发",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2958",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2958"
     },
     {
       "productID": 2959,
@@ -4217,8 +4003,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁下单，仅发山东，强充100元",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2959",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2959"
     },
     {
       "productID": 2960,
@@ -4233,8 +4018,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "日照市,临沂市,菏泽市,滨州，德州市,聊城市，泰安除外全省均可配送，强充100元，注意接听电活，下单后自有人员会外呼约定时间上门开卡，更新发货周期72-80小时",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2960",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2960"
     },
     {
       "productID": 2961,
@@ -4249,8 +4033,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "19元130G+200分钟，济宁 菏泽 聊城 临沂  泰安  德州 预计下周开通，山东省内均可发货",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2961",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2961"
     },
     {
       "productID": 2962,
@@ -4265,8 +4048,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元160G+100分钟仅发安徽,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2962",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2962"
     },
     {
       "productID": 2964,
@@ -4281,8 +4063,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元260G+100分钟仅发广东,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2964",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2964"
     },
     {
       "productID": 2968,
@@ -4297,8 +4078,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元260G+100分钟仅发广东,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2968",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2968"
     },
     {
       "productID": 2976,
@@ -4313,8 +4093,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发广西 广东 山东 四川 重庆 陕西 浙江 江西 湖北 吉林 18-65可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2976",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2976"
     },
     {
       "productID": 2977,
@@ -4329,8 +4108,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "仅发广西 陕西 湖南 山东（日照市,临沂市,菏泽市,滨州，德州市,聊城市，泰安除外）  重庆 18-35周岁可下单，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2977",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2977"
     },
     {
       "productID": 2978,
@@ -4345,8 +4123,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "59元80G+100分钟，仅发福州/厦门/泉州",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2978",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2978"
     },
     {
       "productID": 2979,
@@ -4361,8 +4138,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "59元80G+100分钟，仅发厦门",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2979",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2979"
     },
     {
       "productID": 2981,
@@ -4377,8 +4153,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元160G+100分钟仅发安徽,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2981",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2981"
     },
     {
       "productID": 2982,
@@ -4393,8 +4168,7 @@
       "age1": 19,
       "age2": 59,
       "taocan": "当月执行219G按天折算，仅发广西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2982",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2982"
     },
     {
       "productID": 2984,
@@ -4409,8 +4183,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元200G参加活动免费领取30G，收货地为归属地",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2984",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2984"
     },
     {
       "productID": 2987,
@@ -4425,8 +4198,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单， 仅发江西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2987",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2987"
     },
     {
       "productID": 2988,
@@ -4441,8 +4213,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元180G+250分钟仅发江西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2988",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2988"
     },
     {
       "productID": 2993,
@@ -4457,8 +4228,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁下单，仅发湖北",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2993",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2993"
     },
     {
       "productID": 2994,
@@ -4473,8 +4243,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元170G重庆通用+20G全国通用+30G定向，仅发重庆,大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2994",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2994"
     },
     {
       "productID": 2999,
@@ -4489,8 +4258,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "需激活过程中选择校园28月卡方可行形成此套餐 18-35周岁可下单， 仅发吉林 28元350G+200分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2999",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2999"
     },
     {
       "productID": 3000,
@@ -4505,8 +4273,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "需激活过程中选择广电升卿卡升级版方可形成此套餐，18-65周岁可下单，仅发吉林  29元192G",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3000",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3000"
     },
     {
       "productID": 3003,
@@ -4521,8 +4288,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元192G参加活动免费领取30G，收货地为归属地",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3003",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3003"
     },
     {
       "productID": 3004,
@@ -4537,8 +4303,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "41元220G，全国可发，专属渠领取2元130G。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3004",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3004"
     },
     {
       "productID": 3005,
@@ -4553,8 +4318,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65周岁下单，仅发湖北",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3005",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3005"
     },
     {
       "productID": 3006,
@@ -4569,8 +4333,7 @@
       "age1": 19,
       "age2": 60,
       "taocan": "39元30G定向+155G通用，仅发湖南",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3006",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3006"
     },
     {
       "productID": 3017,
@@ -4585,8 +4348,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元150G+150分钟，仅发黑龙江",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3017",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3017"
     },
     {
       "productID": 3019,
@@ -4601,8 +4363,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "仅发山东 激活30天后通过官方短信领取:50G市内流量+105G全国流量，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3019",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3019"
     },
     {
       "productID": 3026,
@@ -4617,8 +4378,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "考核拉新,全省可发,自有团队交付,实时闪送 下单最快30分钟上门激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3026",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3026"
     },
     {
       "productID": 3028,
@@ -4633,8 +4393,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39.9元255G+200分钟无需三照 ，只发成都",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3028",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3028"
     },
     {
       "productID": 3032,
@@ -4649,8 +4408,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "不考核拉新，全省可发,自有团队交付,实时闪送 下单最快30分钟上门激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3032",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3032"
     },
     {
       "productID": 3033,
@@ -4665,8 +4423,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "注册工号审核通过可批量下单，门店代理商协助客户网格通激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3033",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3033"
     },
     {
       "productID": 3034,
@@ -4681,8 +4438,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "注册工号审核通过可批量下单，门店代理商协助客户网格通激活。，临沂、青岛、威海、东营、菏泽，德州套餐内无100分钟，其余地市均可添加!",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3034",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3034"
     },
     {
       "productID": 3039,
@@ -4697,8 +4453,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "考核拉新,全省可发,自有团队交付,实时闪送 下单最快30分钟上门激活",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3039",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3039"
     },
     {
       "productID": 3043,
@@ -4713,8 +4468,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元200G，仅发湖北",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3043",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3043"
     },
     {
       "productID": 3044,
@@ -4729,8 +4483,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元200G，仅发湖北，长期套餐",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3044",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3044"
     },
     {
       "productID": 3045,
@@ -4745,8 +4498,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "29元120G+100分钟，仅发河北，用户自主激活，需安卓NFC开卡，只能收件地激活，不能转寄",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3045",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3045"
     },
     {
       "productID": 3046,
@@ -4761,8 +4513,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元160G全国通用流量+300分钟，仅发河北，手机NFC开卡",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3046",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3046"
     },
     {
       "productID": 3050,
@@ -4777,8 +4528,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "19元235G，仅发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3050",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3050"
     },
     {
       "productID": 3051,
@@ -4793,8 +4543,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元235G，仅发广东",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3051",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3051"
     },
     {
       "productID": 3056,
@@ -4809,8 +4558,7 @@
       "age1": 21,
       "age2": 65,
       "taocan": "禁止包装低于29元。仅发湖北，次月可享185G(需短信发送“185”至10001，办理成功立即生效)",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3056",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3056"
     },
     {
       "productID": 3058,
@@ -4825,8 +4573,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元150G+100分钟，激活充值后发货，三照发全国，长期套餐",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3058",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3058"
     },
     {
       "productID": 3059,
@@ -4841,8 +4588,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "42元170G，三照发全国,禁区少",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3059",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3059"
     },
     {
       "productID": 3060,
@@ -4857,8 +4603,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "32元170G，三照发全国,禁区少",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3060",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3060"
     },
     {
       "productID": 3061,
@@ -4873,8 +4618,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元200G参加活动免费领取30G，收货地为归属地",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3061",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3061"
     },
     {
       "productID": 3062,
@@ -4889,8 +4633,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "18-65可下单，务必配送员处充值200元，实时配送，提醒用户注意接听配送员电话",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3062",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3062"
     },
     {
       "productID": 3064,
@@ -4905,8 +4648,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "订单信息提交完成后需要跳转二次下单，注意提醒用户接听外呼电话 叠加优惠及流量包  29.9元180G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3064",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3064"
     },
     {
       "productID": 3065,
@@ -4921,8 +4663,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "订单信息提交完成后需要跳转二次下单。注意提醒用户接听外呼电话 叠加优惠及流量包 39.9元255G+200分钟，仅发四川",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3065",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3065"
     },
     {
       "productID": 3067,
@@ -4937,8 +4678,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "注册工号审核通过可批量下单，门店代理商协助客户网格通激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3067",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3067"
     },
     {
       "productID": 3068,
@@ -4953,8 +4693,7 @@
       "age1": 18,
       "age2": 30,
       "taocan": "仅发广东省内，29元150G+100分钟  实际不需要学生证激活， 可以跟快递员沟通使用身份证或本人学生相关证件即可",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3068",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3068"
     },
     {
       "productID": 3072,
@@ -4969,8 +4708,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "29元245G+200分钟，仅发四川,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3072",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3072"
     },
     {
       "productID": 3073,
@@ -4985,8 +4723,7 @@
       "age1": 20,
       "age2": 50,
       "taocan": "39元200G+200分钟，三照发全国,禁区少,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3073",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3073"
     },
     {
       "productID": 3074,
@@ -5001,8 +4738,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元27G，贵阳闪送",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3074",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3074"
     },
     {
       "productID": 3075,
@@ -5017,8 +4753,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "首充100后，可拨打10010人工客服咨询办理流量王骐骥卡专属存费送费活动。选择参加充120元送120元/充240元送240元活动未参加充送活动月租为39元。，仅发四川",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3075",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3075"
     },
     {
       "productID": 3076,
@@ -5033,8 +4768,7 @@
       "age1": 18,
       "age2": 30,
       "taocan": "先充值后发货，10086会发短信链接至用户联系号码上，用户上传身份证和充值50元之后再发货，到货之后用户自主激活，仅发浙江",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3076",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3076"
     },
     {
       "productID": 3083,
@@ -5049,8 +4783,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元170G，三照发全国,禁区少",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3083",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3083"
     },
     {
       "productID": 3084,
@@ -5065,8 +4798,7 @@
       "age1": 19,
       "age2": 60,
       "taocan": "49元215G+100分钟，仅发海南",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3084",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3084"
     },
     {
       "productID": 3085,
@@ -5081,8 +4813,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元280G+100分钟仅发广东,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3085",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3085"
     },
     {
       "productID": 3086,
@@ -5097,8 +4828,7 @@
       "age1": 19,
       "age2": 60,
       "taocan": "49元215G+100分钟，仅发海南",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3086",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3086"
     },
     {
       "productID": 3087,
@@ -5113,8 +4843,7 @@
       "age1": 19,
       "age2": 60,
       "taocan": "39元215G+100分钟，仅发海南，补贴5个月10元",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3087",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3087"
     },
     {
       "productID": 3088,
@@ -5129,8 +4858,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "两年29仅发浙江，激活成功后关注浙江联通公众号可参与抽奖活动领取80G流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3088",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3088"
     },
     {
       "productID": 3090,
@@ -5145,8 +4873,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "靓号版 仅发广东全省，快递配送，自主激活。39元235G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3090",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3090"
     },
     {
       "productID": 3091,
@@ -5161,8 +4888,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元250G+2000分钟，三照发广西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3091",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3091"
     },
     {
       "productID": 3093,
@@ -5177,8 +4903,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "29元185G，仅发四川",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3093",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3093"
     },
     {
       "productID": 3095,
@@ -5193,8 +4918,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "补贴2-12个月每月10,18-60可下单  29元205G+30G+100分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3095",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3095"
     },
     {
       "productID": 3096,
@@ -5209,8 +4933,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元235G+100分钟，该款发货率高",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3096",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3096"
     },
     {
       "productID": 3099,
@@ -5225,8 +4948,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元150G+150分钟，仅发黑龙江",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3099",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3099"
     },
     {
       "productID": 3100,
@@ -5241,8 +4963,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元180G+250分钟，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3100",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3100"
     },
     {
       "productID": 3101,
@@ -5257,8 +4978,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "19元130G+200分钟，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3101",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3101"
     },
     {
       "productID": 3102,
@@ -5273,8 +4993,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元150G，仅发武汉,上门交付",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3102",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3102"
     },
     {
       "productID": 3103,
@@ -5289,8 +5008,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元180G+250分钟，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3103",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3103"
     },
     {
       "productID": 3104,
@@ -5305,8 +5023,7 @@
       "age1": 18,
       "age2": 59,
       "taocan": "仅发山东 激活30天后通过官方短信领取:50G市内流量+105G全国流量，",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3104",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3104"
     },
     {
       "productID": 3105,
@@ -5321,8 +5038,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "首充100后，可拨打10010人工客服咨询办理流量王骐骥卡专属存费送费活动。选择参加充120元送120元/充240元送240元活动未参加充送活动月租为39元。，仅发四川",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3105",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3105"
     },
     {
       "productID": 3106,
@@ -5337,8 +5053,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "29元130G+200分钟，仅发四川，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3106",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3106"
     },
     {
       "productID": 3107,
@@ -5353,8 +5068,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "39元180G+250分钟仅发四川，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3107",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3107"
     },
     {
       "productID": 3108,
@@ -5369,8 +5083,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "首充100后，可拨打10010人工客服咨询办理流量王骐骥卡专属存费送费活动。选择参加充120元送120元/充240元送240元活动未参加充送活动月租为39元。，仅发四川",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3108",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3108"
     },
     {
       "productID": 3109,
@@ -5385,8 +5098,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "29元185G，仅发四川，实时发货",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3109",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3109"
     },
     {
       "productID": 3111,
@@ -5401,8 +5113,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "19元130G+200分钟，大流量产品",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3111",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3111"
     },
     {
       "productID": 3112,
@@ -5417,8 +5128,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "49元185G+100分钟，仅发云南，长期套餐",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3112",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3112"
     },
     {
       "productID": 3113,
@@ -5433,8 +5143,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元185G+100分钟，仅发云南，长期套餐",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3113",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3113"
     },
     {
       "productID": 3114,
@@ -5449,8 +5158,7 @@
       "age1": 20,
       "age2": 60,
       "taocan": "39元185G+200分钟，仅发贵州",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3114",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3114"
     },
     {
       "productID": 3115,
@@ -5465,8 +5173,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "注册工号审核通过可批量下单，门店代理商协助客户网格通激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3115",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3115"
     },
     {
       "productID": 3116,
@@ -5481,8 +5188,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "注册工号审核通过可批量下单，门店代理商协助客户网格通激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3116",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3116"
     },
     {
       "productID": 3122,
@@ -5497,8 +5203,7 @@
       "age1": 18,
       "age2": 25,
       "taocan": "需提醒用户二次跳转预存界面完成下单方可发货，20元190G+200分钟+会员权益，仅发四川，不可转寄外省激活使用。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3122",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3122"
     },
     {
       "productID": 3124,
@@ -5513,8 +5218,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元185G+100分钟，仅发云南，长期套餐",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3124",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3124"
     },
     {
       "productID": 3125,
@@ -5529,8 +5233,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "49元185G+100分钟，仅发云南，长期套餐",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3125",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3125"
     },
     {
       "productID": 3126,
@@ -5545,8 +5248,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "仅发陕西，大流量，18～65可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3126",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3126"
     },
     {
       "productID": 3127,
@@ -5561,8 +5263,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "18-35周岁可下单，仅发陕西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3127",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3127"
     },
     {
       "productID": 3128,
@@ -5577,8 +5278,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "需激活过程中选择广电升卿卡升级版方可形成此套餐，18-65周岁可下单，仅发吉林  29元192G",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3128",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3128"
     },
     {
       "productID": 3129,
@@ -5593,8 +5293,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "需激活过程中选择校园28月卡方可行形成此套餐 18-35周岁可下单， 仅发吉林 28元350G+200分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3129",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3129"
     },
     {
       "productID": 3132,
@@ -5609,8 +5308,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元250G+2000分钟，三照发广西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3132",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3132"
     },
     {
       "productID": 3134,
@@ -5625,8 +5323,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "28元350G+200分钟",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3134",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3134"
     },
     {
       "productID": 3135,
@@ -5641,8 +5338,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "38元390G+300分钟，仅发浙江，大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3135",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3135"
     },
     {
       "productID": 3136,
@@ -5657,8 +5353,7 @@
       "age1": 18,
       "age2": 35,
       "taocan": "月均20元350G+200分钟， 18-35周岁下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3136",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3136"
     },
     {
       "productID": 3137,
@@ -5673,8 +5368,7 @@
       "age1": 21,
       "age2": 65,
       "taocan": "禁止包装低于半年29元。禁止任何带有湖北字眼的宣传，仅发湖北，次月可享185G(需短信发送“185”至10001，办理成功立即生效)",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3137",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3137"
     },
     {
       "productID": 3138,
@@ -5689,8 +5383,7 @@
       "age1": 18,
       "age2": 26,
       "taocan": "39元219G+100分钟，三照发全国,禁区少",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3138",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3138"
     },
     {
       "productID": 3139,
@@ -5705,8 +5398,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "29元150G+100分钟，18-60可下单",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3139",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3139"
     },
     {
       "productID": 3140,
@@ -5721,8 +5413,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元150G+300分钟三照发全国，长期套餐，先激活后发货",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3140",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3140"
     },
     {
       "productID": 3141,
@@ -5737,8 +5428,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "19元250G+2000分钟，三照发广西",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3141",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3141"
     },
     {
       "productID": 3142,
@@ -5753,8 +5443,7 @@
       "age1": 18,
       "age2": 60,
       "taocan": "39元235G+100分钟，该款发货率高",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3142",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3142"
     },
     {
       "productID": 3145,
@@ -5769,8 +5458,7 @@
       "age1": 18,
       "age2": 25,
       "taocan": "下单预存100元,仅发四川，三照发货，不可转寄。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3145",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3145"
     },
     {
       "productID": 3146,
@@ -5785,8 +5473,7 @@
       "age1": 18,
       "age2": 26,
       "taocan": "29元215G+100分钟，三照发全国,禁区少",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3146",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3146"
     },
     {
       "productID": 3147,
@@ -5801,8 +5488,7 @@
       "age1": 18,
       "age2": 30,
       "taocan": "39元200G+200分钟，三照发货，仅发河北,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3147",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3147"
     },
     {
       "productID": 3149,
@@ -5817,8 +5503,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "注册工号审核通过可批量下单，门店代理商协助客户网格通激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3149",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3149"
     },
     {
       "productID": 3150,
@@ -5833,8 +5518,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "注册工号审核通过可批量下单，门店代理商协助客户网格通激活。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3150",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3150"
     },
     {
       "productID": 3152,
@@ -5849,8 +5533,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "31元220G，全国可发，专属渠领取2元130G。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3152",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3152"
     },
     {
       "productID": 3153,
@@ -5865,8 +5548,7 @@
       "age1": 18,
       "age2": 30,
       "taocan": "仅发广东省内，29元150G+100分钟  实际不需要学生证激活， 可以跟快递员沟通使用身份证或本人学生相关证件即可",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3153",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3153"
     },
     {
       "productID": 3155,
@@ -5881,8 +5563,7 @@
       "age1": 18,
       "age2": 65,
       "taocan": "19元200G，仅发湖北",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3155",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3155"
     },
     {
       "productID": 3156,
@@ -5897,8 +5578,7 @@
       "age1": 18,
       "age2": 25,
       "taocan": "此产品为二次跳转下单的，二次下单并预存费用成功即进单成功",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3156",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3156"
     },
     {
       "productID": 3157,
@@ -5913,15 +5593,14 @@
       "age1": 18,
       "age2": 25,
       "taocan": "20元190G+200分钟+会员权益，自有团队交付，仅发成都。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3157",
-      "removed": false
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3157"
     }
   ],
   "dailyArticle": {
-    "title": "湖南联通39元185G+100分钟，用了3天我直接真香了🔥",
+    "title": "📱39块185G+100分钟？湖南联通这张“省内神卡”我替你试过了！",
     "productID": 2758,
     "productName": "湖南联通省内专属卡【39元185G+100分钟】",
-    "article": "# 湖南联通39元185G+100分钟，用了3天我直接真香了🔥\n\n前两天刷手机看到这个卡，本来没当回事——毕竟“省内专属”四个字听起来就有点鸡肋。但一看只要39一个月，185G流量加100分钟通话，我湖南人天天在省内跑，果断就下单了。\n\n收到卡那天下雨，快递小哥直接塞信箱里。包装就是普通卡板，没花里胡哨的东西，好评。激活步骤挺简单，按背面提示扫码拍身份证，人脸识别大概两分钟搞定。信号格瞬间满格。\n\n重点说说测速。我拿两台手机对比：一台老移动卡，一台这个联通卡。在长沙市中心写字楼里，联通下载速度能到380Mbps，上传45Mbps，刷4K视频进度条拖拽基本不转圈。跑到老家县城，信号还是稳，网速降了点但刷抖音完全没卡顿。最惊喜的是之前联通在我家地下室没信号，这次居然有两格！\n\n算账环节：39元=155G通用+30G定向。定向流量覆盖了抖音、腾讯视频、微信这些主流App，我平时刷视频多，30G定向够用。通用155G更离谱，像我这种重度用户，上班摸鱼看直播、下班打游戏，一个月撑死用60G，剩下的还能开热点给平板。100分钟通话对我来说也够了，打给爸妈和外卖小哥绰绰有余。\n\n唯一要吐槽的是：这张卡只限湖南发货，外省朋友别想了。不过省内用户真香。而且激活年龄19-60岁，覆盖范围广。联通信号在湖南覆盖不错，尤其乡镇地区比电信强点。\n\n最后真心建议：如果你在湖南，受够了高价低配的套餐，或者流量总不够用，别犹豫了。这张卡没有套路，没有返费坑，就是实打实的一口价。趁现在货源还充足，手慢无👇\n\n【点这里直达店铺下单】",
+    "article": "# 📱39块185G+100分钟？湖南联通这张“省内神卡”我替你试过了！\n\n上周刷手机看到湖南联通出了张省内专属卡，39块给185G流量还带100分钟通话，心里直犯嘀咕：真有这么香？正好要换卡，索性下单一张实测，今天就跟兄弟们唠唠真实体验。\n\n## 📦 开箱：到货挺快\n\n顺丰隔天到，包装就是普通联通卡套，里面一张SIM卡+激活说明书。没有花里胡哨的赠品，但胜在干净利落。我湖南长沙的，归属地就是湖南，没毛病。\n\n## 🔧 激活：全程自助，3分钟搞定\n\n扫说明书上的二维码，上传身份证正反面+自拍人脸识别，全程自己操作。注意要选“省内专属卡”入口，别选错了。审核大概10分钟就收到短信，插卡开机直接有信号——这里提醒一下：必须要在湖南省内激活，出了省会失败的。我就在家里弄的，稳。\n\n## ⚡ 测速：爽到飞起\n\n激活后马上测个速，用Speedtest连联通长沙节点，下载跑到487Mbps，上传56Mbps，延迟20ms。刷抖音、看B站4K视频秒开，打王者荣耀延迟稳定在30ms左右，团战不卡。30G定向流量范围很广，腾讯系、阿里系、头条系基本全覆盖，具体看联通官方说明。再加上155G通用，185G够我一个月刷剧打游戏+偶尔开热点给笔记本用了。\n\n## 💰 算账：真的划算\n\n以前我用的是59块100G的套餐，每个月还经常不够用。这张卡39块，185G+100分钟，换算下来每G成本才2毛多？我查了剩余流量，用了三天刷了大概15G，按这个节奏一个月最多用100G出头，完全不会超。100分钟通话虽然不多，但我平时就打电话给外卖快递，完全够了。\n\n## 🎯 我的建议\n\n如果你是湖南本地人、或者长期在湖南工作生活，平时流量消耗大、通话需求少，那这张卡真的是“闭眼入”。唯一的缺点是归属地固定湖南，你如果去外省出差，流量只算在通用里，定向流量可能不识别外省的APP，但155G通用也够你浪了。\n\n**最后说一句**：我是自费买的号测试的，不是恰饭。觉得合适的朋友直接去湖南联通官方店铺下单就行，记得认准“省内专属卡”入口，别选成全国版了。",
     "price": 230,
     "operator": "联通",
     "date": "2026-06-08"
@@ -6034,7 +5713,7 @@
       "price": 90,
       "area": "吉林",
       "backMoneyType": "次月返",
-      "desc": "📺吉林广电卡29元180G+250分钟，超值通话与流量双赢！🔥"
+      "desc": "吉林专属29元180G+250分钟，超值通话流量双享🎉📞"
     },
     {
       "rank": 2,
@@ -6044,7 +5723,7 @@
       "price": 475,
       "area": "成都",
       "backMoneyType": "次月返",
-      "desc": "🚀成都联通千兆宽带包月仅91元，全家畅享极速网络！💪"
+      "desc": "成都联通千兆宽带+月租91元，极速上网不卡顿🌐⚡"
     },
     {
       "rank": 3,
@@ -6054,7 +5733,7 @@
       "price": 210,
       "area": "广西",
       "backMoneyType": "次月返",
-      "desc": "📍广西专属联通飞傲卡39元219G+100分钟，流量自由无止境！🌟"
+      "desc": "广西联通39元219G超大流量，刷剧游戏自由飞🔥📱"
     },
     {
       "rank": 4,
@@ -6064,7 +5743,7 @@
       "price": 170,
       "area": "重庆",
       "backMoneyType": "次月返",
-      "desc": "🎯重庆联通专享卡39元190G+200分钟，通话流量两不误！👏"
+      "desc": "重庆联通39元190G+200分钟，本地通话流量双满足🏙️📲"
     },
     {
       "rank": 5,
@@ -6074,7 +5753,7 @@
       "price": 100,
       "area": "上海",
       "backMoneyType": "次月返",
-      "desc": "🏙上海移动49元80G+300分钟，商务必备大语音套餐！📞"
+      "desc": "上海移动49元80G+300分钟，商务办公首选💼📞"
     },
     {
       "rank": 6,
@@ -6084,7 +5763,7 @@
       "price": 230,
       "area": "深圳",
       "backMoneyType": "次月返",
-      "desc": "🔥深圳移动卡39元210G+100分钟，本地流量性价比之王！🚀"
+      "desc": "深圳移动39元210G+100分钟，流量多到用不完🚀📶"
     },
     {
       "rank": 7,
@@ -6094,7 +5773,7 @@
       "price": 160,
       "area": "广东",
       "backMoneyType": "次月返",
-      "desc": "📶广东电信专享卡39元260G+100分钟，超大流量畅刷无忧！💥"
+      "desc": "广东电信39元260G超大流量，省内畅享无压力🌟📡"
     },
     {
       "rank": 8,
@@ -6104,7 +5783,7 @@
       "price": 200,
       "area": "重庆",
       "backMoneyType": "次月返",
-      "desc": "📍重庆联通新卡39元200G+200分钟，高性价比通话方案！🎉"
+      "desc": "重庆联通39元200G+200分钟，均衡配置性价比王🏆📱"
     },
     {
       "rank": 9,
@@ -6114,7 +5793,7 @@
       "price": 200,
       "area": "山东",
       "backMoneyType": "次月返",
-      "desc": "🌾山东专属电信飞德卡39元205G，纯流量党的不二之选！🌟"
+      "desc": "山东电信39元205G纯流量，追剧达人必备🎬💥"
     },
     {
       "rank": 10,
@@ -6124,7 +5803,7 @@
       "price": 130,
       "area": "浙江",
       "backMoneyType": "次月返",
-      "desc": "🎉浙江电信专属卡29元200G+200分钟，极致性价比套餐来袭！🔥"
+      "desc": "浙江电信29元200G+200分钟，低月租高流量通话双赢👍📲"
     }
   ],
   "byOperator": {
@@ -6396,128 +6075,13 @@
   ],
   "articles": [
     {
-      "title": "湖南联通39元185G+100分钟，用了3天我直接真香了🔥",
+      "title": "39元185G+100分钟！湖南联通这张“省内神卡”真香警告！🔥",
       "productID": 2758,
       "productName": "湖南联通省内专属卡【39元185G+100分钟】",
-      "article": "# 湖南联通39元185G+100分钟，用了3天我直接真香了🔥\n\n前两天刷手机看到这个卡，本来没当回事——毕竟“省内专属”四个字听起来就有点鸡肋。但一看只要39一个月，185G流量加100分钟通话，我湖南人天天在省内跑，果断就下单了。\n\n收到卡那天下雨，快递小哥直接塞信箱里。包装就是普通卡板，没花里胡哨的东西，好评。激活步骤挺简单，按背面提示扫码拍身份证，人脸识别大概两分钟搞定。信号格瞬间满格。\n\n重点说说测速。我拿两台手机对比：一台老移动卡，一台这个联通卡。在长沙市中心写字楼里，联通下载速度能到380Mbps，上传45Mbps，刷4K视频进度条拖拽基本不转圈。跑到老家县城，信号还是稳，网速降了点但刷抖音完全没卡顿。最惊喜的是之前联通在我家地下室没信号，这次居然有两格！\n\n算账环节：39元=155G通用+30G定向。定向流量覆盖了抖音、腾讯视频、微信这些主流App，我平时刷视频多，30G定向够用。通用155G更离谱，像我这种重度用户，上班摸鱼看直播、下班打游戏，一个月撑死用60G，剩下的还能开热点给平板。100分钟通话对我来说也够了，打给爸妈和外卖小哥绰绰有余。\n\n唯一要吐槽的是：这张卡只限湖南发货，外省朋友别想了。不过省内用户真香。而且激活年龄19-60岁，覆盖范围广。联通信号在湖南覆盖不错，尤其乡镇地区比电信强点。\n\n最后真心建议：如果你在湖南，受够了高价低配的套餐，或者流量总不够用，别犹豫了。这张卡没有套路，没有返费坑，就是实打实的一口价。趁现在货源还充足，手慢无👇\n\n【点这里直达店铺下单】",
+      "article": "# 39元185G+100分钟！湖南联通这张“省内神卡”真香警告！🔥\n\n兄弟们，作为一个在长沙搬砖的通信产品博主，我天天被各种流量卡轰炸。说实话，以前看到“省内专属”四个字我是嫌弃的，直到上周帮老表办了一张湖南联通39元的卡，我自己试用了三天，直接破防了——这玩意儿，对湖南老乡来说简直是降维打击！\n\n## 📦 收到卡：朴实无华，但安全感拉满\n\n快递是顺丰，隔天到。拆开就一张SIM卡、一张激活指南，没有花里胡哨的赠品。但我注意到包装上印着“湖南联通官方直发”，心里踏实不少。实名认证要扫身份证，人脸识别一次过，全程没让我交什么押金，这点好评。\n\n## ⚡ 激活：5分钟搞定，不用等\n\n按照公众号提示操作，插卡开机，信号直接跳出来。我特意在岳麓山脚下试了一下，满格！然后系统发来短信：“已激活，本月流量185G到账”。注意，是直接到账，不是分月送。我查了下联通APP，确实显示“国内通用155G+定向30G”，外加100分钟通话。这个定向流量覆盖了腾讯系、阿里系、抖音——日常够用。\n\n## 🚀 测速：这网速，比我宽带还猛？\n\n下班回出租屋，用Speedtest测了几次：下载平均428Mbps，上传56Mbps。刷B站4K视频秒开，打王者荣耀延迟稳定在22ms。最夸张的是在长沙地铁2号线里，途经芙蓉广场站到迎宾路口站这段，全程没掉过网，视频通话也不卡。要知道我以前用某运营商的卡，地铁里刷个朋友圈都转圈圈。\n\n## 💰 算账：185G到底够不够用？\n\n我平时刷短视频、看剧、听歌，偶尔开热点给平板用。之前每个月至少150G，有时候超了还得买流量包，一个月通信支出要80多块。换了这张卡后，我故意重度使用了5天：抖音刷了20G、腾讯视频追了15G、偶尔开个热点共用，到月底一看，还剩60多G通用流量。100分钟通话对我来说够用，打给家里、点外卖足够了。关键是，这个39元的价格，比之前省了一半不止！\n\n## 👍 最后说几句真心话\n\n注意：这张卡只发湖南，只限湖南本地用，归属地也是湖南。如果你是外地朋友长期在湖南，或者湖南本地人经常省内跑，那这卡就是你的“天菜”。年龄19-60岁都能办，没有套路。\n\n唯一的缺点：通用流量虽然155G，但定向只有30G。不过现在抖音、微信、淘宝都算定向，实际上能覆盖日常90%的场景。如果你非要拿它给电脑下几百G的3A大作，那确实不够，但正常刷手机，爽到飞起！\n\n如果你也在湖南，受够了流量不够用、月租贵、网速慢的苦，直接去店铺下单吧。反正我就一句话：用了这张卡，你会后悔为什么没早点换。\n\n**👇 戳下方店铺，湖南老乡冲就完事了！**",
       "price": 230,
       "operator": "联通",
       "date": "2026-06-08"
-    },
-    {
-      "title": "📱湖南联通39元185G+100分钟，我替你们试过了，真香还是踩雷？",
-      "productID": 2758,
-      "productName": "湖南联通省内专属卡【39元185G+100分钟】",
-      "article": "# 📱湖南联通39元185G+100分钟，我替你们试过了，真香还是踩雷？\n\n先说结论：如果你是湖南老表，平时刷视频、打游戏、偶尔打电话，这张卡基本就是“毕业卡”了。\n\n前几天在朋友那儿看到一张超便宜的大流量卡，39块钱185G流量+100分钟通话，归属地湖南，我一看就心动了。毕竟我现在的卡月租58才20G，经常月底就开始省着用。果断搞了一张试试水。\n\n## 📦 收到卡：朴素的快递，但别急着扔\n收到的时候就是普通顺丰信封，里面一张SIM卡、一张激活流程单。没啥花里胡哨的包装，说明运营商把成本省下来给优惠了，我反而更喜欢这种务实风格。\n\n## ⚡ 激活：5分钟搞定\n按照单子上的指引，扫码上传身份证正反面，拍个露脸视频验证，人脸识别秒过。等了大概2分钟就显示激活成功，重启手机插卡，信号直接跳出来——满格！\n\n## 📶 测速：别嫌我吹，真不是虚标\n我用Speedtest测了三轮（下午4点、晚上9点、凌晨1点），直接上数据：\n- 下午：下载178Mbps，上传35Mbps\n- 晚上：下载160Mbps，上传28Mbps（高峰能保住这个速度，属实可以）\n- 凌晨：下载190Mbps\n刷抖音完全秒加载，4K视频拖进度条都不转圈。王者荣耀打了一把，稳定延迟38ms，没有跳ping。这速度比很多99块钱的套餐还猛。\n\n## 💰 算账：这才是重点\n我算了个细账：\n原套餐基础费是39元，包含了30G定向（抖音、腾讯视频、爱奇艺等主流App）+155G通用流量，等于185G全部是真正能用的大流量。还有100分钟全国通话。\n对比我之前58块20G，现在39块185G相当于流量翻了9倍，月租还省了19块。一年下来省228块，够吃好几顿火锅了。有人说“定向流量没用”，但仔细一看这30G定向覆盖了我90%的娱乐场景，实际上通用流量我一个月也就用七八十G，剩下的通用流量都浪费不掉，反而很稳。\n\n重点是，这个套餐长期有效，不是那种前半年优惠后面涨价的套路。归属地湖南，接电话全是本地号码，不存在外省号被标记骚扰的风险。\n\n## 👍 适合谁？\n- 湖南打工族/学生党（尤其是走读或住宿舍没校园宽带）\n- 晚上躺在床上刷剧刷到凌晨的夜猫子\n- 需要副卡专门跑流量的用户\n- 爸***老人机（185G根本用不完，还能给小孩开热点）\n\n不推荐：如果你特别需要外省流量常出差，那这卡只有省内流量，出省用会贵一些。但日常活动范围在湖南的话，这就是神仙卡。\n\n## 🛒 怎么搞？\n我是在某宝的一家店买的，店铺评分很高，发货快，售后也靠谱。链接放在评论区了，想上车的兄弟直接点进去拍就行。记得备注“老铁推荐”，还能多送一个月的体验流量（反正我拿到手没套路）。\n\n最后提醒一句：这种大流量卡一般库存有限，我看今天还剩300多张，卖完可能就下架了。别犹豫，先锁单再说。",
-      "price": 230,
-      "operator": "联通"
-    }
-  ],
-  "rankings": [
-    {
-      "date": "2026-06-08",
-      "items": [
-        {
-          "rank": 1,
-          "productID": 3100,
-          "productName": "吉林广电专享卡【29元180G+250分钟】",
-          "operator": "广电",
-          "price": 90,
-          "area": "吉林",
-          "backMoneyType": "次月返",
-          "desc": "🚀 29元180G+250分钟，广电巨划算，月月省心用！"
-        },
-        {
-          "rank": 2,
-          "productID": 2235,
-          "productName": "成都联通融合1000M91元包月",
-          "operator": "联通",
-          "price": 475,
-          "area": "成都",
-          "backMoneyType": "次月返",
-          "desc": "🏠 91元包月千兆宽带+话费，成都联通全家畅享！"
-        },
-        {
-          "rank": 3,
-          "productID": 2569,
-          "productName": "联通飞傲卡2.0【39元219G+100分钟】【仅发广西】",
-          "operator": "联通",
-          "price": 210,
-          "area": "广西",
-          "backMoneyType": "次月返",
-          "desc": "📶 39元219G广西专属，流量超多通话够用！"
-        },
-        {
-          "rank": 4,
-          "productID": 2254,
-          "productName": "重庆联通专享卡新【39元190G+200分钟】",
-          "operator": "联通",
-          "price": 170,
-          "area": "重庆",
-          "backMoneyType": "次月返",
-          "desc": "🌟 39元190G+200分钟，重庆联通性价比之王！"
-        },
-        {
-          "rank": 5,
-          "productID": 2576,
-          "productName": "上海移动专属卡【49元80G+300分钟】",
-          "operator": "移动",
-          "price": 100,
-          "area": "上海",
-          "backMoneyType": "次月返",
-          "desc": "📱 49元80G+300分钟，上海移动稳如磐石！"
-        },
-        {
-          "rank": 6,
-          "productID": 2636,
-          "productName": "深圳移动专属卡3.0【39元210G+100分钟】",
-          "operator": "移动",
-          "price": 230,
-          "area": "深圳",
-          "backMoneyType": "次月返",
-          "desc": "🚀 39元210G+100分钟，深圳移动流量炸裂！"
-        },
-        {
-          "rank": 7,
-          "productID": 2968,
-          "productName": "电信广东省内专享卡2.0【39元260G+100分钟】",
-          "operator": "电信",
-          "price": 160,
-          "area": "广东",
-          "backMoneyType": "次月返",
-          "desc": "📶 39元260G+100分钟，广东电信省内嗨翻天！"
-        },
-        {
-          "rank": 8,
-          "productID": 2481,
-          "productName": "重庆联通新【39元200G+200分钟】",
-          "operator": "联通",
-          "price": 200,
-          "area": "重庆",
-          "backMoneyType": "次月返",
-          "desc": "💥 39元200G+200分钟，重庆联通双百套餐真香！"
-        },
-        {
-          "rank": 9,
-          "productID": 2803,
-          "productName": "电信飞德卡【39元205G】【仅发山东】",
-          "operator": "电信",
-          "price": 200,
-          "area": "山东",
-          "backMoneyType": "次月返",
-          "desc": "🌾 39元205G仅发山东，电信飞德卡流量自由！"
-        },
-        {
-          "rank": 10,
-          "productID": 2389,
-          "productName": "浙江电信专属卡【29元200G+200分钟】",
-          "operator": "电信",
-          "price": 130,
-          "area": "浙江",
-          "backMoneyType": "次月返",
-          "desc": "💰 29元200G+200分钟，浙江电信白菜价神卡！"
-        }
-      ]
     }
   ]
 }
