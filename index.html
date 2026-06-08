@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <title>海洋号卡 - 正规流量卡·电话卡·宽带免费办理</title>
+  <meta name="description" content="海洋号卡提供正规运营商流量卡、电话卡、宽带免费办理服务，低月租大流量，全国包邮，官方授权值得信赖。">
+  <meta name="keywords" content="流量卡推荐,正规流量卡,大流量套餐,宽带办理,电话卡套餐">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📶</text></svg>">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>海洋号卡</h1>
+      <p>正规运营商授权 · 流量卡 · 电话卡 · 宽带办理</p>
+      <span class="header-tag">✅ 官方授权 · 全国包邮 · 售后无忧</span>
+      <div class="header-date" id="headerDate"></div>
+      <div class="nav-tabs" id="navTabs">
+        <button class="nav-tab active" data-tab="recommend">🔥 今日推荐</button>
+        <button class="nav-tab" data-tab="article">📰 每日评测</button>
+        <button class="nav-tab" data-tab="all">📱 全部商品</button>
+        <button class="nav-tab" data-tab="ranking">🏆 热销榜</button>
+        <button class="nav-tab" data-tab="broadband">🌐 宽带专区</button>
+      </div>
+      <a href="https://haokawx.lot-ml.com/ProductEn/Index/530789e16bb06db6" target="_blank" rel="noopener" class="order-btn small" style="display:block;text-align:center;margin-top:8px;">📦 进店选购下单</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 提示条 -->
+    <div class="tip-bar section">
+      <strong>💡 推广提示：</strong>所有商品均为正规运营商套餐，用户下单后由官方发货包邮到家，你赚取推广佣金。
+    </div>
+
+    <!-- Tab: 今日推荐 -->
+    <section id="tab-recommend" class="section tab-content" style="display:block;">
+      <div class="card">
+        <div class="card-header">🔥 今日精选推荐</div>
+        <div class="card-body">
+          <p style="font-size:.85rem;color:#888;margin-bottom:12px;">每日精选不同运营商爆款商品，点击查看详情</p>
+          <div class="product-grid" id="recommendGrid"></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">📊 按运营商浏览</div>
+        <div class="card-body" id="operatorSection"></div>
+      </div>
+    </section>
+
+    <!-- Tab: 每日评测 -->
+    <section id="tab-article" class="section tab-content" style="display:none;">
+      <div class="article-card" id="dailyArticle"></div>
+    </section>
+
+    <!-- Tab: 全部商品 -->
+    <section id="tab-all" class="section tab-content" style="display:none;">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="搜索商品名称...">
+        <button onclick="searchProducts()">搜索</button>
+      </div>
+      <div class="filter-bar" id="filterBar"></div>
+      <div class="product-grid" id="allProductGrid"></div>
+      <div id="allLoading" class="loading">加载中...</div>
+    </section>
+
+    <!-- Tab: 热销榜 -->
+    <section id="tab-ranking" class="section tab-content" style="display:none;">
+      <div class="card">
+        <div class="card-header">🏆 今日热销榜单 Top 10</div>
+        <div class="card-body">
+          <p style="font-size:.85rem;color:#888;margin-bottom:8px;">基于大数据分析，推荐当前最受欢迎的爆款商品</p>
+          <ul class="ranking-list" id="rankingList"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tab: 宽带 -->
+    <section id="tab-broadband" class="section tab-content" style="display:none;">
+      <div class="card">
+        <div class="card-header">🌐 宽带专区</div>
+        <div class="card-body">
+          <p style="font-size:.85rem;color:#888;margin-bottom:12px;">各省宽带套餐，上门安装，比官网更优惠</p>
+          <div class="product-grid" id="broadbandGrid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO关键词 -->
+    <section class="section">
+      <div class="card">
+        <div class="card-header">🔍 热门搜索</div>
+        <div class="card-body">
+          <div class="seo-tags" id="seoTags"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 商品详情弹窗 -->
+    <div class="modal-overlay" id="productModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 id="modalTitle"></h3>
+          <button class="modal-close" onclick="closeModal()">✕</button>
+        </div>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="modal-footer">
+          <a class="order-btn" id="modalOrderBtn" target="_blank" rel="noopener">立即下单购买</a>
+          <button class="order-btn small" style="background:#6b7280;" onclick="closeModal()">关闭</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 底部下单引导 -->
+  <div class="order-cta">
+    <div class="order-cta-text">
+      <strong>海洋号卡</strong> · 正规运营商套餐 · 全国包邮
+    </div>
+    <a class="order-btn" href="https://haokawx.lot-ml.com/ProductEn/Index/530789e16bb06db6" target="_blank" rel="noopener">
+      进店选购
+    </a>
+  </div>
+
+  <footer class="footer">
+    <p>海洋号卡 - 正规运营商授权推广平台</p>
+  </footer>
+
+  <script src="./assets/js/app.js"></script>
+  <script>
+    // 初始化
+    document.addEventListener('DOMContentLoaded', () => {
+      initSite();
+    });
+  </script>
+</body>
+</html>
