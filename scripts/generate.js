@@ -242,8 +242,8 @@ function generateArticlePage(a) {
     <div class="content">${content}</div>
     ${shareHtml(articleUrl, title)}
     <div class="store-cta">
-      <p>感兴趣的话，可以到店里看看有没有适合你的套餐</p>
-      <a href="${STORE_URL}" target="_blank" class="btn">进店选购 →</a>
+      <p>感兴趣的话，可以看看这个套餐的详情</p>
+      <a href="${a.netAddr || STORE_URL}" target="_blank" class="btn">查看套餐详情 →</a>
     </div>
   </article>
   <script type="application/ld+json">${schema}</script>`;
