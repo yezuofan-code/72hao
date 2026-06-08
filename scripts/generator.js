@@ -142,7 +142,7 @@ function generateDailyArticle(products, seed) {
     `> 👉 [点击前往下单](${product.netAddr})`,
   ].join('\n');
 
-  return { title, productID: product.productID, productName: product.productName, article, price: product.price, operator: product.operator };
+  return { title, productID: product.productID, productName: product.productName, article, price: product.price, operator: product.operator, netAddr: product.netAddr, mainPic: product.mainPic, area: product.area };
 }
 
 function generateSEOKeywords(products, seed) {

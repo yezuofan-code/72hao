@@ -183,6 +183,7 @@ function generateIndex(products, content, archiveArticles) {
     <div class="prod-strip-wrap">`;
     recProducts.forEach(p => {
       prodHtml += `<div class="prod-mini" onclick="openModal(${attrJson(p)})">
+        <img src="${p.mainPic || ''}" alt="" width="80" height="60" loading="lazy" onerror="this.style.display='none'" style="width:80px;height:60px;object-fit:cover;flex-shrink:0">
         <div class="prod-mini-body">
           <div class="prod-mini-name">${escapeHtml(p.productName)}</div>
           <div class="prod-mini-meta">${escapeHtml(p.operator)} · ${escapeHtml(p.area || '全国')}</div>
@@ -367,6 +368,11 @@ async function build(forceRefresh = false) {
             const base = a.date || 'unknown';
             slugCounts[base] = (slugCounts[base] || 0) + 1;
             a.slug = slugCounts[base] > 1 ? `${base}-${slugCounts[base]}` : base;
+          }
+          // 旧文章补 netAddr
+          if (!a.netAddr && a.productID) {
+            const prod = products.find(p => p.productID === a.productID);
+            if (prod) a.netAddr = prod.netAddr;
           }
         });
       } catch (e) { /* ignore */ }

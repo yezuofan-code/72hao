@@ -79,6 +79,9 @@ async function generateDailyArticle(product, dateStr) {
     article: raw,
     price: product.price,
     operator: product.operator,
+    netAddr: product.netAddr,
+    mainPic: product.mainPic,
+    area: product.area,
   };
 }
 
