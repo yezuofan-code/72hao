@@ -8,6 +8,7 @@ const fs = require('fs');
 const path = require('path');
 const { getProducts, analyzeProducts } = require('./api');
 const { generateAll } = require('./generator');
+const ai = require('./ai');
 
 const DIST_DIR = path.join(__dirname, '..', 'dist');
 const DATA_DIR = path.join(__dirname, '..', 'data');
@@ -30,9 +31,9 @@ async function build(forceRefresh = false) {
     console.log(`   共 ${stats.total} 个商品`);
     console.log(`   运营商: ${Object.entries(stats.byOperator).map(([k, v]) => `${k}${v}`).join(', ')}`);
 
-    // 2. 生成推广内容
+    // 2. 生成推广内容（AI 增强，API 不可用时自动回退模板）
     console.log('\n✍️ 生成推广内容...');
-    const content = generateAll(products);
+    const content = await generateAll(products, ai);
 
     // 3. 组装前端所需数据
     const output = {

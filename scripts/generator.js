@@ -2,13 +2,13 @@
  * 推广内容自动生成器
  * 基于商品数据，生成真实评测风格的推广文章
  * 每天内容不同（基于日期种子随机）
+ * 支持 AI 增强：DeepSeek 写文章，gpt-image-2 配图
+ * API 不可用时自动回退到模板
  */
 const crypto = require('crypto');
-const fs = require('fs');
 const path = require('path');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
-const TEMPLATES_DIR = path.join(__dirname, 'templates');
+let ai = null;
 
 /**
  * 基于日期的确定性随机（确保同一天生成相同内容）
@@ -293,22 +293,89 @@ function generateSEOKeywords(products, dateStr) {
 }
 
 /**
- * 生成所有推广内容
+ * 生成所有推广内容（支持 AI 增强）
+ * @param {Array} products - 商品列表
+ * @param {Object} [aiModule] - AI 模块（可选），需有 generateDailyArticle, generateHotDescs, generateImage
+ * @returns {Promise<Object>}
  */
-function generateAll(products) {
-  const dateStr = new Date().toISOString().slice(0, 10); // YYYY-MM-DD
+async function generateAll(products, aiModule) {
+  const dateStr = new Date().toISOString().slice(0, 10);
+  ai = aiModule || null;
+
+  console.log(`\n[Generator] 开始生成推广内容...`);
+
+  // 先跑确定性随机的内容（不依赖 AI）
+  const recommendations = generateDailyRecommendations(products, dateStr);
+  const operatorRecs = generateOperatorRecommendations(products, dateStr);
+  const seoKeywords = generateSEOKeywords(products, dateStr);
+
+  // 热销榜 - 尝试 AI 生成推荐语，失败回退模板
+  let hotRanking = generateHotRanking(products, dateStr);
+  if (ai && ai.generateHotDescs) {
+    console.log('[Generator] AI 生成热销榜推荐语...');
+    const aiDescs = await ai.generateHotDescs(hotRanking, dateStr);
+    if (aiDescs) {
+      hotRanking = hotRanking.map((item, i) => ({
+        ...item,
+        desc: aiDescs[i] || item.desc,
+      }));
+      console.log('[Generator] AI 热销榜推荐语 ✅');
+    } else {
+      console.log('[Generator] AI 热销榜不可用，使用模板');
+    }
+  }
+
+  // 每日评测文章 - 尝试 AI，失败回退模板
+  const baseProduct = (() => {
+    const onSale = products.filter(p => p.flag);
+    const rand = seededRandom('article-' + dateStr);
+    const index = parseInt(seededRandom('article-index-' + dateStr)().toString().slice(2, 5)) % onSale.length;
+    return onSale[index];
+  })();
+
+  let dailyArticle;
+  if (ai && ai.generateDailyArticle) {
+    console.log(`[Generator] AI 生成今日评测文章 ${baseProduct.productName}...`);
+    dailyArticle = await ai.generateDailyArticle(baseProduct, dateStr);
+    if (dailyArticle) {
+      console.log('[Generator] AI 文章 ✅');
+    } else {
+      console.log('[Generator] AI 文章不可用，使用模板');
+    }
+  }
+  if (!dailyArticle) {
+    dailyArticle = generateDailyArticle(products, dateStr);
+  }
+
+  // 宽带推荐
+  const broadband = generateBroadbandRecommendations(products, dateStr);
+
+  // 尝试为每日推荐配图（第一张）
+  if (ai && ai.generateImage && recommendations.length > 0) {
+    const first = recommendations[0];
+    console.log(`[Generator] AI 生成推广配图 ${first.productName}...`);
+    const imgPath = await ai.generateImage(
+      `中国${first.operator}流量卡产品展示图，${first.productName}，简约风格，商务蓝白配色，干净清爽，无文字`,
+      `promo-${dateStr}`
+    );
+    if (imgPath) {
+      recommendations[0].promoImage = imgPath;
+      console.log('[Generator] 推广配图 ✅');
+    }
+  }
 
   const content = {
     generatedAt: new Date().toISOString(),
     date: dateStr,
-    dailyArticle: generateDailyArticle(products, dateStr),
-    recommendations: generateDailyRecommendations(products, dateStr),
-    hotRanking: generateHotRanking(products, dateStr),
-    byOperator: generateOperatorRecommendations(products, dateStr),
-    broadband: generateBroadbandRecommendations(products, dateStr),
-    seoKeywords: generateSEOKeywords(products, dateStr),
+    dailyArticle,
+    recommendations,
+    hotRanking,
+    byOperator: operatorRecs,
+    broadband,
+    seoKeywords,
   };
 
+  console.log('[Generator] 生成完成\n');
   return content;
 }
 

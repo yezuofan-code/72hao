@@ -38,16 +38,8 @@ jobs:
       - name: 安装依赖
         run: npm ci --omit=dev
 
-      - name: 检查环境变量
-        run: |
-          echo "DEEPSEEK_KEY长度: ${#DEEPSEEK_API_KEY}"
-          echo "IMAGE_KEY长度: ${#IMAGE_API_KEY}"
-          echo "测试 DeepSeek API..."
-          curl -s --connect-timeout 10 --max-time 15 https://api.deepseek.com/v1/models \
-            -H "Authorization: Bearer ${DEEPSEEK_API_KEY}" | head -c 200
-
       - name: 生成推广数据
-        run: node scripts/generate.js 2>&1
+        run: node scripts/generate.js
         env:
           SECRET: ${{ secrets.SECRET }}
           USER_ID: ${{ secrets.USER_ID }}
