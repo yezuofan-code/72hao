@@ -38,11 +38,23 @@ jobs:
       - name: 安装依赖
         run: npm ci --omit=dev
 
+      - name: 检查环境变量
+        run: |
+          echo "DEEPSEEK_KEY长度: ${#DEEPSEEK_API_KEY}"
+          echo "IMAGE_KEY长度: ${#IMAGE_API_KEY}"
+          echo "测试 DeepSeek API..."
+          curl -s --connect-timeout 10 --max-time 15 https://api.deepseek.com/v1/models \
+            -H "Authorization: Bearer ${DEEPSEEK_API_KEY}" | head -c 200
+
       - name: 生成推广数据
-        run: node scripts/generate.js
+        run: node scripts/generate.js 2>&1
         env:
           SECRET: ${{ secrets.SECRET }}
           USER_ID: ${{ secrets.USER_ID }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          DEEPSEEK_MODEL: deepseek-v4-flash
+          IMAGE_API_KEY: ${{ secrets.IMAGE_API_KEY }}
+          IMAGE_MODEL: gpt-image-2
 
       - name: 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
