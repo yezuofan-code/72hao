@@ -310,24 +310,51 @@ function renderSEOTags(kw) {
 }
 
 // ===== 文章归档 =====
+let archiveArticles = [];
+
 function renderArticleArchive(articles) {
   const c = document.getElementById('articleArchive');
   if (!c) return;
-  if (!articles || !articles.length) {
+  archiveArticles = articles || [];
+  if (!archiveArticles.length) {
     c.innerHTML = '<div class="empty-state"><div class="icon">📝</div><p>暂无历史文章</p></div>';
     return;
   }
-  c.innerHTML = articles.map((a, i) => {
+  renderArchiveList();
+}
+
+function renderArchiveList() {
+  const c = document.getElementById('articleArchive');
+  if (!c) return;
+  c.innerHTML = archiveArticles.map((a, i) => {
     const date = a.date || '';
     const title = a.title || a.productName || '文章';
     const preview = (a.article || '').slice(0, 120).replace(/[#*\[\]]/g, '') + '...';
     return `
-      <div class="archive-item fade-in" style="padding:14px 0;border-bottom:1px solid #f0f0f0;${i === 0 ? '' : ''}">
+      <div class="archive-item fade-in" onclick="showArchiveArticle(${i})" style="padding:14px 0;border-bottom:1px solid #f0f0f0;cursor:pointer;">
         <div style="font-size:.75rem;color:#999;margin-bottom:4px;">${date}</div>
         <div style="font-size:.9rem;font-weight:600;color:#1e3a5f;margin-bottom:4px;">${title}</div>
         <div style="font-size:.82rem;color:#666;line-height:1.6;">${preview}</div>
       </div>`;
   }).join('');
+}
+
+function showArchiveArticle(index) {
+  const a = archiveArticles[index];
+  if (!a) return;
+  const c = document.getElementById('articleArchive');
+  const articleHtml = (a.article || '').replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  c.innerHTML = `
+    <div style="margin-bottom:12px;">
+      <a href="javascript:void(0)" onclick="renderArchiveList()" style="font-size:.85rem;color:#2563eb;">← 返回文章列表</a>
+    </div>
+    <div class="article-card">
+      <div class="article-title">${a.title || ''}</div>
+      <div class="article-body">${articleHtml}</div>
+      <div class="card-footer">
+        <a class="order-btn small" href="${promoData?.storeUrl || STORE_URL}" target="_blank" rel="noopener">进店选购</a>
+      </div>
+    </div>`;
 }
 
 // ===== Tab切换 =====
