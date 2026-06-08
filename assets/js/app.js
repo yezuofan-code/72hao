@@ -2,6 +2,7 @@
  * 推广站前端应用
  * 加载生成的 JSON 数据，渲染所有页面模块
  */
+const STORE_URL = 'https://haokawx.lot-ml.com/ProductEn/Index/530789e16bb06db6';
 let allProducts = [];
 let cardProducts = [];
 let bbProducts = [];
@@ -65,8 +66,7 @@ function openModal(product) {
   const modal = document.getElementById('productModal');
   if (!modal || !product) return;
   document.getElementById('modalTitle').textContent = product.productName || '商品详情';
-  const netAddr = product.netAddr || `https://haokawx.lot-ml.com/ProductEn/Detail/${product.productID}`;
-  document.getElementById('modalOrderBtn').href = netAddr;
+  document.getElementById('modalOrderBtn').href = promoData?.storeUrl || STORE_URL;
   const body = document.getElementById('modalBody');
   const age1 = product.age1 || 18;
   const age2 = product.age2 || 60;
@@ -287,7 +287,7 @@ function renderDailyArticle(article) {
   container.innerHTML = `
     <div class="article-title">${article.title}</div>
     <div class="article-body">${article.article.replace(/\n/g, '<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')}</div>
-    <div class="card-footer"><a class="order-btn small" href="${promoData?.recommendations?.[0]?.netAddr || 'https://haokawx.lot-ml.com/ProductEn/Index/530789e16bb06db6'}" target="_blank" rel="noopener">立即下单</a></div>`;
+    <div class="card-footer"><a class="order-btn small" href="${promoData?.storeUrl || STORE_URL}" target="_blank" rel="noopener">进店选购</a></div>`;
 }
 
 function renderRanking(ranking) {
@@ -307,6 +307,27 @@ function renderRanking(ranking) {
 function renderSEOTags(kw) {
   const c = document.getElementById('seoTags');
   if (c && kw) c.innerHTML = kw.map(k => `<span class="seo-tag">${k}</span>`).join('');
+}
+
+// ===== 文章归档 =====
+function renderArticleArchive(articles) {
+  const c = document.getElementById('articleArchive');
+  if (!c) return;
+  if (!articles || !articles.length) {
+    c.innerHTML = '<div class="empty-state"><div class="icon">📝</div><p>暂无历史文章</p></div>';
+    return;
+  }
+  c.innerHTML = articles.map((a, i) => {
+    const date = a.date || '';
+    const title = a.title || a.productName || '文章';
+    const preview = (a.article || '').slice(0, 120).replace(/[#*\[\]]/g, '') + '...';
+    return `
+      <div class="archive-item fade-in" style="padding:14px 0;border-bottom:1px solid #f0f0f0;${i === 0 ? '' : ''}">
+        <div style="font-size:.75rem;color:#999;margin-bottom:4px;">${date}</div>
+        <div style="font-size:.9rem;font-weight:600;color:#1e3a5f;margin-bottom:4px;">${title}</div>
+        <div style="font-size:.82rem;color:#666;line-height:1.6;">${preview}</div>
+      </div>`;
+  }).join('');
 }
 
 // ===== Tab切换 =====
@@ -336,6 +357,7 @@ function initSite() {
       renderDailyArticle(data.dailyArticle);
       renderRanking(data.hotRanking);
       renderSEOTags(data.seoKeywords);
+      renderArticleArchive(data.articles);
 
       // 号卡专区
       renderCardFilters();
