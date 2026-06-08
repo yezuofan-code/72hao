@@ -88,7 +88,7 @@ async function generateDailyArticle(product, dateStr) {
 /** 用 DeepSeek 生成热销榜推荐语 */
 async function generateHotDescs(products, dateStr) {
   const list = products.slice(0, 10).map((p, i) =>
-    `${i + 1}. ${p.productName}（${p.operator}，${p.price}元佣金）`
+    `${i + 1}. ${p.productName}（${p.operator}）`
   ).join('\n');
   const sys = `你是一个电商文案，为每个商品写一句推荐语（10-25字），突出卖点，带适量emoji。输出格式：序号. 推荐语`;
   const usr = `以下为今日热销商品TOP10：\n${list}`;
