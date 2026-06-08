@@ -58,8 +58,6 @@ async function generateDailyArticle(product, dateStr) {
 运营商：${product.operator}
 归属地：${product.area || '随机'}
 套餐：${product.taocan || product.productName}
-佣金：${product.price}元
-返佣：${product.backMoneyType}
 年龄：${product.age1 || 18}-${product.age2 || 60}岁
 
 要求：
@@ -67,7 +65,7 @@ async function generateDailyArticle(product, dateStr) {
 2. 口吻像真实用户评测，不要像广告
 3. 包含：收到卡→激活→测速→算账→推荐
 4. 结尾引导去店铺下单
-5. 不写"佣金"这个词，用"划算/值"代替`;
+5. 不要提及佣金或价格相关数字`;
 
   const raw = await callDeepSeek(sys, usr);
   if (!raw) return null;

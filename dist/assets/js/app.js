@@ -58,8 +58,6 @@ function openModal(product) {
     <img src="${product.mainPic || ''}" alt="${product.productName}" style="width:100%;border-radius:8px;margin-bottom:12px;" onerror="this.style.display='none'">
     <div class="detail-row"><span class="detail-label">运营商</span><span class="detail-value">${product.operator || '未知'}</span></div>
     <div class="detail-row"><span class="detail-label">归属地</span><span class="detail-value">${product.area || '随机'}</span></div>
-    <div class="detail-row"><span class="detail-label">佣金</span><span class="detail-value price">${product.price || 0}元</span></div>
-    <div class="detail-row"><span class="detail-label">返佣类型</span><span class="detail-value">${product.backMoneyType || '-'}</span></div>
     <div class="detail-row"><span class="detail-label">适用年龄</span><span class="detail-value">${age1}-${age2}岁</span></div>
     <div class="detail-row"><span class="detail-label">套餐说明</span><span class="detail-value" style="text-align:right;max-width:60%;">${taocan}</span></div>
     ${product.disableArea ? `<div class="detail-row"><span class="detail-label">禁发区域</span><span class="detail-value" style="text-align:right;max-width:60%;font-size:.78rem;color:#888;">${truncate(product.disableArea, 80)}</span></div>` : ''}
@@ -72,7 +70,6 @@ function closeModal() {
   document.getElementById('productModal').classList.remove('show');
 }
 
-// 点击遮罩关闭
 document.addEventListener('click', (e) => {
   if (e.target.classList.contains('modal-overlay')) closeModal();
 });
@@ -95,7 +92,6 @@ function renderRecommendations(products) {
           ${getOperatorTag(p.operator)}
           ${p.backMoneyType === '秒返' ? '<span class="prod-tag" style="background:#fef3c7;color:#92400e;">秒返</span>' : ''}
         </div>
-        <div class="prod-price">${p.price}<span>元佣金</span></div>
         <div class="prod-area">📌 ${p.area || '随机'}</div>
       </div>
     </div>
@@ -129,7 +125,6 @@ function renderOperatorSection(byOperator) {
                   ${getOperatorTag(op)}
                   ${p.backMoneyType === '秒返' ? '<span class="prod-tag" style="background:#fef3c7;color:#92400e;">秒返</span>' : ''}
                 </div>
-                <div class="prod-price">${p.price}<span>元佣金</span></div>
               </div>
             </div>
           `).join('')}
@@ -174,7 +169,6 @@ function renderRanking(ranking) {
           <div class="ranking-desc">${item.desc || ''}</div>
         </div>
         ${getOperatorBadge(item.operator)}
-        <div class="ranking-price">${item.price}元</div>
       </li>
     `;
   }).join('');
@@ -195,9 +189,7 @@ function renderBroadband(products) {
           <span class="prod-tag tag-宽带">宽带</span>
           ${getOperatorTag(p.operator)}
         </div>
-        <div class="prod-price">${p.price}<span>元佣金</span></div>
         <div class="prod-area">📌 ${p.area || '随机'}</div>
-        <div class="prod-backmoney">返佣: ${p.backMoneyType || '-'}</div>
       </div>
     </div>
   `).join('');
@@ -212,12 +204,10 @@ function renderAllProducts(products) {
 
   let filtered = [...products];
 
-  // 运营商筛选
   if (currentFilter !== 'all') {
     filtered = filtered.filter(p => p.operator === currentFilter);
   }
 
-  // 搜索
   if (searchTerm) {
     const term = searchTerm.toLowerCase();
     filtered = filtered.filter(p =>
@@ -241,7 +231,6 @@ function renderAllProducts(products) {
           ${getOperatorTag(p.operator)}
           ${p.backMoneyType === '秒返' ? '<span class="prod-tag" style="background:#fef3c7;color:#92400e;">秒返</span>' : ''}
         </div>
-        <div class="prod-price">${p.price}<span>元佣金</span></div>
         <div class="prod-area">📌 ${p.area || '随机'}</div>
       </div>
     </div>
@@ -279,7 +268,6 @@ function renderSEOTags(keywords) {
 function searchProducts() {
   const input = document.getElementById('searchInput');
   searchTerm = input.value.trim();
-  // 切换到全部tab
   switchTab('all');
   renderAllProducts(allProducts);
 }
@@ -297,11 +285,9 @@ function switchTab(tabId) {
 
 // ===== 初始化 =====
 function initSite() {
-  // 显示日期
   const dateEl = document.getElementById('headerDate');
   if (dateEl) dateEl.textContent = '更新日期：' + formatDate(new Date().toISOString());
 
-  // 加载数据
   fetch('./data.json?' + Date.now())
     .then(res => {
       if (!res.ok) throw new Error('HTTP ' + res.status);
@@ -324,7 +310,6 @@ function initSite() {
         tab.addEventListener('click', () => switchTab(tab.dataset.tab));
       });
 
-      // 更新meta关键词
       if (data.seoKeywords && data.seoKeywords.length) {
         const meta = document.querySelector('meta[name="keywords"]');
         if (meta) meta.content = data.seoKeywords.join(',');
