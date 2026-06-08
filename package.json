@@ -1,12 +1,9 @@
 {
   "name": "72hao-promo",
   "version": "1.0.0",
-  "description": "172号卡自动化推广站 - 商品展示与每日推广内容",
-  "main": "scripts/generate.js",
+  "private": true,
+  "description": "172号卡自动化推广站",
   "scripts": {
     "generate": "node scripts/generate.js"
-  },
-  "dependencies": {
-    "node-fetch": "^2.7.0"
   }
 }

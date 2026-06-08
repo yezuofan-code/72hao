@@ -26,11 +26,8 @@ function getTimestamp() {
   return Math.floor(Date.now() / 1000);
 }
 
-/** 安全的 fetch（兼容 node-fetch） */
+const fetchFn = typeof globalThis.fetch === 'function' ? globalThis.fetch : null;
 async function safeFetch(url, options) {
-  const fetchFn = typeof globalThis.fetch === 'function'
-    ? globalThis.fetch
-    : require('node-fetch');
   return fetchFn(url, options);
 }
 

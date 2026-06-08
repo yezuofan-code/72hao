@@ -15,10 +15,7 @@ const IMAGE_MODEL = process.env.IMAGE_MODEL || 'gpt-image-2';
 
 const IMG_DIR = path.join(__dirname, '..', 'dist', 'assets', 'img');
 
-async function fetch_(url, options) {
-  const fn = typeof globalThis.fetch === 'function' ? globalThis.fetch : require('node-fetch');
-  return fn(url, options);
-}
+const fetch_ = globalThis.fetch;
 
 /** 调用 DeepSeek Chat API */
 async function callDeepSeek(systemPrompt, userPrompt, opts = {}) {
