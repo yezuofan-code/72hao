@@ -240,6 +240,7 @@ function generateArticlePage(a) {
       <span class="meta-date">${date}</span>
       ${tags}
     </div>
+    ${a.mainPic ? `<img src="${a.mainPic}" alt="${escapeHtml(title)}" style="width:100%;max-width:600px;height:auto;display:block;margin:0 auto 20px;border-radius:4px;" onerror="this.style.display='none'">` : ''}
     <div class="content">${content}</div>
     ${shareHtml(articleUrl, title)}
     <div class="store-cta">
@@ -369,10 +370,13 @@ async function build(forceRefresh = false) {
             slugCounts[base] = (slugCounts[base] || 0) + 1;
             a.slug = slugCounts[base] > 1 ? `${base}-${slugCounts[base]}` : base;
           }
-          // 旧文章补 netAddr
-          if (!a.netAddr && a.productID) {
+          // 旧文章补 netAddr 和 mainPic
+          if ((!a.netAddr || !a.mainPic) && a.productID) {
             const prod = products.find(p => p.productID === a.productID);
-            if (prod) a.netAddr = prod.netAddr;
+            if (prod) {
+              if (!a.netAddr) a.netAddr = prod.netAddr;
+              if (!a.mainPic) a.mainPic = prod.mainPic;
+            }
           }
         });
       } catch (e) { /* ignore */ }
