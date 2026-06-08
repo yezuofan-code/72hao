@@ -87,18 +87,20 @@ function closeModal() {
 }
 document.addEventListener('click', e => { if (e.target.classList.contains('modal-overlay')) closeModal(); });
 
-// ===== 商品卡片渲染 =====
+// ===== 商品卡片渲染（大卡片） =====
 function renderCard(p) {
+  const taocan = (p.taocan || '').replace(/佣金[^。]*。?/g, '').replace(/佣金[^，]*。?/g, '').replace(/佣金/g, '').slice(0, 60);
   return `
     <div class="product-card fade-in" onclick='openModal(${JSON.stringify(p).replace(/'/g, "&#39;")})'>
-      <img class="prod-img" src="${p.mainPic || ''}" alt="${p.productName}" loading="lazy" onerror="this.style.background='#f0f0f0';this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22><rect fill=%22%23f0f0f0%22 width=%22200%22 height=%22200%22/><text x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 font-size=%2230%22>📱</text></svg>'">
+      <img class="prod-img" src="${p.mainPic || ''}" alt="${p.productName}" loading="lazy" onerror="this.style.display='none'">
       <div class="prod-info">
         <div class="prod-name">${p.productName}</div>
         <div class="prod-tags">
           ${getOperatorTag(p.operator)}
           ${p.backMoneyType === '秒返' ? '<span class="prod-tag" style="background:#fef3c7;color:#92400e;">秒返</span>' : ''}
         </div>
-        <div class="prod-area">📌 ${p.area || '随机'}</div>
+        ${taocan ? `<div class="prod-taocan">${taocan}</div>` : ''}
+        <div class="prod-area">📌 ${p.area || '随机'} · ${p.operator}</div>
       </div>
     </div>`;
 }
