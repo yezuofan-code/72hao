@@ -137,7 +137,8 @@ function articleTags(operator, area) {
 function generateIndex(products, content, archiveArticles) {
   const dateStr = content.date;
   const today = content.dailyArticle;
-  const recentArticles = archiveArticles.filter(a => a.date !== dateStr).slice(0, 6);
+  // 显示最新文章（包含今天），最多 8 篇
+  const recentArticles = archiveArticles.slice(0, 8);
   const recProducts = content.recommendations || [];
 
   // Hero: 今日评测
