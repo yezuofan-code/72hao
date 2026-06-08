@@ -20,9 +20,9 @@
       <div class="nav-tabs" id="navTabs">
         <button class="nav-tab active" data-tab="recommend">🔥 今日推荐</button>
         <button class="nav-tab" data-tab="article">📰 每日评测</button>
-        <button class="nav-tab" data-tab="all">📱 全部商品</button>
-        <button class="nav-tab" data-tab="ranking">🏆 热销榜</button>
+        <button class="nav-tab" data-tab="card">📱 号卡专区</button>
         <button class="nav-tab" data-tab="broadband">🌐 宽带专区</button>
+        <button class="nav-tab" data-tab="ranking">🏆 热销榜</button>
       </div>
       <a href="https://haokawx.lot-ml.com/ProductEn/Index/530789e16bb06db6" target="_blank" rel="noopener" class="order-btn small" style="display:block;text-align:center;margin-top:8px;">📦 进店选购下单</a>
     </div>
@@ -54,15 +54,28 @@
       <div class="article-card" id="dailyArticle"></div>
     </section>
 
-    <!-- Tab: 全部商品 -->
-    <section id="tab-all" class="section tab-content" style="display:none;">
+    <!-- Tab: 号卡专区 -->
+    <section id="tab-card" class="section tab-content" style="display:none;">
       <div class="search-box">
-        <input type="text" id="searchInput" placeholder="搜索商品名称...">
-        <button onclick="searchProducts()">搜索</button>
+        <input type="text" id="cardSearchInput" placeholder="搜索号卡名称...">
+        <button onclick="searchCardProducts()">搜索</button>
       </div>
-      <div class="filter-bar" id="filterBar"></div>
-      <div class="product-grid" id="allProductGrid"></div>
-      <div id="allLoading" class="loading">加载中...</div>
+      <div class="filter-bar" id="cardOperatorBar"></div>
+      <div class="filter-bar" id="cardAreaBar"></div>
+      <div class="product-grid" id="cardProductGrid"></div>
+      <div id="cardLoading" class="loading">加载中...</div>
+    </section>
+
+    <!-- Tab: 宽带专区 -->
+    <section id="tab-broadband" class="section tab-content" style="display:none;">
+      <div class="search-box">
+        <input type="text" id="bbSearchInput" placeholder="搜索宽带名称...">
+        <button onclick="searchBBProducts()">搜索</button>
+      </div>
+      <div class="filter-bar" id="bbOperatorBar"></div>
+      <div class="filter-bar" id="bbAreaBar"></div>
+      <div class="product-grid" id="bbProductGrid"></div>
+      <div id="bbLoading" class="loading">加载中...</div>
     </section>
 
     <!-- Tab: 热销榜 -->
@@ -76,8 +89,8 @@
       </div>
     </section>
 
-    <!-- Tab: 宽带 -->
-    <section id="tab-broadband" class="section tab-content" style="display:none;">
+    <!-- Tab: 宽带 (已废弃) -->
+    <section id="tab-broadband-old" class="section tab-content" style="display:none;">
       <div class="card">
         <div class="card-header">🌐 宽带专区</div>
         <div class="card-body">
