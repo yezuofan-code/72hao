@@ -1,0 +1,55 @@
+name: 每日自动构建
+
+on:
+  schedule:
+    # 每天北京时间 8:00 = UTC 0:00 运行一次
+    - cron: '0 0 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'dist/**'
+      - 'package.json'
+  workflow_dispatch:
+    # 允许手动触发
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 安装依赖
+        run: npm ci --omit=dev
+
+      - name: 生成推广数据
+        run: node scripts/generate.js
+        env:
+          SECRET: ${{ secrets.SECRET }}
+          USER_ID: ${{ secrets.USER_ID }}
+
+      - name: 部署到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          user_name: 'Auto Builder'
+          user_email: 'bot@example.com'
+          commit_message: '自动构建: ${{ github.event.head_commit.message || ''每日更新'' }}'
