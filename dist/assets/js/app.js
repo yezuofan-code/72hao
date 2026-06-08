@@ -1,5 +1,6 @@
 /**
- * 前端脚本 - 仅处理弹窗和商品筛选
+ * 海洋号卡 - 前端脚本
+ * 弹窗、商品筛选、归档筛选
  */
 const STORE_URL = 'https://haokawx.lot-ml.com/ProductEn/Index/530789e16bb06db6';
 
@@ -23,12 +24,8 @@ function openModal(product) {
   modal.classList.add('show');
 }
 
-function closeModal() {
-  document.getElementById('productModal')?.classList.remove('show');
-}
-document.addEventListener('click', e => {
-  if (e.target.classList.contains('modal-overlay')) closeModal();
-});
+function closeModal() { document.getElementById('productModal')?.classList.remove('show'); }
+document.addEventListener('click', e => { if (e.target.classList.contains('modal-overlay')) closeModal(); });
 
 // 商品页筛选
 function filterProds() {
@@ -44,13 +41,31 @@ function filterProds() {
   });
 }
 
+// 归档页筛选
+function filterArchive() {
+  const active = document.querySelector('#archiveFilter .active')?.dataset?.op || 'all';
+  document.querySelectorAll('.archive-item').forEach(item => {
+    const tags = item.querySelector('.archive-tags')?.textContent || '';
+    item.style.display = active === 'all' || tags.includes(active) ? '' : 'none';
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
-  // 商品页筛选按钮
+  // 商品页
   document.querySelectorAll('#prodFilterBar .filter-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       document.querySelectorAll('#prodFilterBar .filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       filterProds();
+    });
+  });
+
+  // 归档页
+  document.querySelectorAll('#archiveFilter .filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#archiveFilter .filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterArchive();
     });
   });
 });
