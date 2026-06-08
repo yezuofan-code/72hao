@@ -72,7 +72,7 @@ function openModal(product) {
   const age2 = product.age2 || 60;
   const taocan = (product.taocan || product.productName || '暂无').replace(/佣金[^。]*。?/g, '').replace(/佣金[^，]*。?/g, '').replace(/佣金/g, '');
   body.innerHTML = `
-    <img src="${product.mainPic || ''}" alt="${product.productName}" style="width:100%;border-radius:8px;margin-bottom:12px;" onerror="this.style.display='none'">
+    <img src="${product.mainPic || ''}" alt="${product.productName}" style="width:100%;margin-bottom:12px;" onerror="this.style.display='none'">
     <div class="detail-row"><span class="detail-label">运营商</span><span class="detail-value">${product.operator || '未知'}</span></div>
     <div class="detail-row"><span class="detail-label">归属地</span><span class="detail-value">${product.area || '随机'}</span></div>
     <div class="detail-row"><span class="detail-label">适用年龄</span><span class="detail-value">${age1}-${age2}岁</span></div>
@@ -249,15 +249,18 @@ function renderRecommendations(products) {
   const grid = document.getElementById('recommendGrid');
   if (!grid) return;
   grid.innerHTML = (products || []).length
-    ? products.map(p => `
-    <div class="product-card fade-in" onclick='openModal(${JSON.stringify(p).replace(/'/g, "&#39;")})'>
-      <img class="prod-img" src="${p.mainPic || ''}" alt="${p.productName}" loading="lazy" onerror="this.style.background='#f0f0f0'">
-      <div class="prod-info">
-        <div class="prod-name">${p.productName}</div>
-        <div class="prod-tags">${getOperatorTag(p.operator)}${p.backMoneyType === '秒返' ? '<span class="prod-tag" style="background:#fef3c7;color:#92400e;">秒返</span>' : ''}</div>
-        <div class="prod-area">📌 ${p.area || '随机'}</div>
-      </div>
-    </div>`).join('')
+    ? products.map(p => {
+        const img = p.promoImage || p.mainPic || '';
+        return `
+      <div class="feature-card fade-in" onclick='openModal(${JSON.stringify(p).replace(/'/g, "&#39;")})' style="cursor:pointer;">
+        ${img ? `<img class="feature-img" src="${img}" alt="${p.productName}" loading="lazy" onerror="this.style.display='none'">` : ''}
+        <div class="feature-body">
+          <div class="feature-tag">${p.operator} · ${p.area || '全国'}</div>
+          <div class="feature-title">${p.productName}</div>
+          <div class="feature-excerpt">${(p.taocan || p.productName || '').replace(/佣金[^。]*。?/g, '').slice(0, 80)}</div>
+        </div>
+      </div>`;
+      }).join('')
     : '<div class="empty-state"><div class="icon">📱</div><p>暂无推荐</p></div>';
 }
 
