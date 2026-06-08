@@ -183,7 +183,7 @@ function generateIndex(products, content, archiveArticles) {
     <div class="prod-strip-wrap">`;
     recProducts.forEach(p => {
       prodHtml += `<div class="prod-mini" onclick="openModal(${attrJson(p)})">
-        <img src="${p.mainPic || ''}" alt="" width="80" height="60" loading="lazy" onerror="this.style.display='none'" style="width:80px;height:60px;object-fit:cover;flex-shrink:0">
+        <img src="${p.mainPic || ''}" alt="" width="80" height="60" style="width:80px!important;height:60px!important;object-fit:cover;flex-shrink:0;display:block;max-width:none!important;border:none!important;" loading="lazy" onerror="this.style.display='none'">
         <div class="prod-mini-body">
           <div class="prod-mini-name">${escapeHtml(p.productName)}</div>
           <div class="prod-mini-meta">${escapeHtml(p.operator)} · ${escapeHtml(p.area || '全国')}</div>
