@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://72hao.pages.dev/sitemap.xml
