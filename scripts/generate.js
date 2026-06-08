@@ -310,29 +310,29 @@ async function build(forceRefresh = false) {
   console.log('='.repeat(50));
 
   try {
+    const buildId = Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
     const products = await getProducts(forceRefresh);
     console.log(`\n📦 商品: ${products.length} 个`);
 
     // 读取历史
     const outputPath = path.join(DIST_DIR, 'data.json');
     let archiveArticles = [];
+    let seenBuildIds = new Set();
     if (fs.existsSync(outputPath)) {
       try {
         const old = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
         archiveArticles = old.articles || [];
+        archiveArticles.forEach(a => { if (a.buildId) seenBuildIds.add(a.buildId); });
       } catch (e) { /* ignore */ }
     }
 
-    // 生成当日内容
+    // 生成当日内容（传入 buildId 确保每次选不同商品）
     console.log('✍️ 生成内容...');
-    const content = await generateAll(products, ai);
+    const content = await generateAll(products, ai, buildId);
 
-    // 归档去重
-    if (content.dailyArticle) {
-      const exists = archiveArticles.find(a => a.date === content.date);
-      if (!exists) {
-        archiveArticles.unshift({ ...content.dailyArticle, date: content.date });
-      }
+    // 归档：同一构建不重复添加
+    if (content.dailyArticle && !seenBuildIds.has(buildId)) {
+      archiveArticles.unshift({ ...content.dailyArticle, date: content.date, buildId });
     }
 
     // 合并商品数据到 output
