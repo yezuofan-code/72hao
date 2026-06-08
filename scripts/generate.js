@@ -182,11 +182,11 @@ function generateIndex(products, content, archiveArticles) {
     prodHtml = `<section class="section-head" style="margin-top:32px;"><h2>今日推荐套餐</h2><a href="/products.html" class="more-link">全部套餐 →</a></section>
     <div class="prod-strip-wrap">`;
     recProducts.forEach(p => {
-      prodHtml += `<div class="prod-mini" onclick="openModal(${attrJson(p)})">
-        <img src="${p.mainPic || ''}" alt="" width="80" height="60" style="width:80px!important;height:60px!important;object-fit:cover;flex-shrink:0;display:block;max-width:none!important;border:none!important;" loading="lazy" onerror="this.style.display='none'">
-        <div class="prod-mini-body">
-          <div class="prod-mini-name">${escapeHtml(p.productName)}</div>
-          <div class="prod-mini-meta">${escapeHtml(p.operator)} · ${escapeHtml(p.area || '全国')}</div>
+      prodHtml += `<div class="rec-card" onclick="openModal(${attrJson(p)})">
+        <img src="${p.mainPic || ''}" alt="" loading="lazy" onerror="this.style.display='none'">
+        <div class="rec-card-body">
+          <div class="rec-card-name">${escapeHtml(p.productName)}</div>
+          <div class="rec-card-meta">${escapeHtml(p.operator)} · ${escapeHtml(p.area || '全国')}</div>
         </div>
       </div>`;
     });
