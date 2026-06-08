@@ -61,8 +61,6 @@ async function build(forceRefresh = false) {
         archive.articles.unshift({ ...content.dailyArticle, date: content.date });
       }
     }
-    // 保留最近 30 篇文章
-    archive.articles = archive.articles.slice(0, 30);
 
     if (content.hotRanking) {
       const exists = archive.rankings.find(r => r.date === content.date);
@@ -70,7 +68,6 @@ async function build(forceRefresh = false) {
         archive.rankings.unshift({ date: content.date, items: content.hotRanking });
       }
     }
-    archive.rankings = archive.rankings.slice(0, 30);
 
     console.log(`   当前: ${archive.articles.length} 篇文章积累`);
 
