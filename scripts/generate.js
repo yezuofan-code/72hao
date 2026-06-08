@@ -10,7 +10,7 @@ const { generateAll } = require('./generator');
 const ai = require('./ai');
 
 const STORE_URL = 'https://haokawx.lot-ml.com/ProductEn/Index/530789e16bb06db6';
-const SITE_URL = process.env.SITE_URL || 'https://72hao.pages.dev';
+const SITE_URL = process.env.SITE_URL || 'https://72hao.huanghaiwan.com';
 const DIST_DIR = path.join(__dirname, '..', 'dist');
 const ARTICLES_DIR = path.join(DIST_DIR, 'articles');
 
