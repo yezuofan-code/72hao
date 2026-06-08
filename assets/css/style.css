@@ -211,10 +211,7 @@ img { max-width: 100%; height: auto; }
 .prod-strip-wrap {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-@media (max-width: 480px) {
-  .prod-strip-wrap { grid-template-columns: 1fr; gap: 8px; }
+  gap: 10px;
 }
 .rec-card {
   background: #fff;
