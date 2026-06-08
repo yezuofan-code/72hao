@@ -10,7 +10,7 @@ const { generateAll } = require('./generator');
 const ai = require('./ai');
 
 const STORE_URL = 'https://haokawx.lot-ml.com/ProductEn/Index/530789e16bb06db6';
-const SITE_URL = process.env.SITE_URL || 'https://yezuofan-code.github.io/72hao';
+const SITE_URL = process.env.SITE_URL || 'https://72hao.pages.dev';
 const DIST_DIR = path.join(__dirname, '..', 'dist');
 const ARTICLES_DIR = path.join(DIST_DIR, 'articles');
 
@@ -38,15 +38,21 @@ function mdToHtml(md) {
     .replace(/^- (.*$)/gm, '<li>$1</li>');
 }
 
-function head(title, desc, keywords) {
+function head(title, desc, keywords, canonical) {
+  const url = canonical ? `${SITE_URL}${canonical}` : SITE_URL;
   return `<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${escapeHtml(title)}</title>
-  <meta name="description" content="${escapeHtml(desc || '海洋号卡 - 正规运营商流量卡·电话卡·宽带')}">
+  <meta name="description" content="${escapeHtml(desc || '海洋号卡 - 正规运营商流量卡·电话卡·宽带免费办理')}">
   ${keywords ? `<meta name="keywords" content="${escapeHtml(keywords)}">` : ''}
+  <link rel="canonical" href="${url}">
+  <meta property="og:title" content="${escapeHtml(title)}">
+  <meta property="og:description" content="${escapeHtml((desc || '').slice(0, 200))}">
+  <meta property="og:url" content="${url}">
+  <meta property="og:type" content="website">
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📶</text></svg>">
 </head>
@@ -77,8 +83,8 @@ function footJs() {
   return `<script src="/assets/js/app.js"></script></body></html>`;
 }
 
-function wrapPage(body, title, desc, keywords, currentPage) {
-  return head(title, desc, keywords) + header(currentPage) + body + footer() + footJs();
+function wrapPage(body, title, desc, keywords, currentPage, canonical) {
+  return head(title, desc, keywords, canonical) + header(currentPage) + body + footer() + footJs();
 }
 
 // ===== 生成首页 =====
@@ -167,7 +173,17 @@ function generateIndex(products, content, archiveArticles) {
     </div>
   </div>`;
 
-  return wrapPage(body, '海洋号卡 - 正规流量卡·电话卡·宽带', '海洋号卡提供正规运营商流量卡、电话卡、宽带服务，低月租大流量，全国包邮。', '流量卡推荐,正规流量卡,大流量套餐,宽带办理,电话卡套餐', 'index');
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "海洋号卡",
+    "url": SITE_URL,
+    "description": "正规运营商流量卡、电话卡、宽带免费办理"
+  };
+  const schemaHtml = `<script type="application/ld+json">${JSON.stringify(schema)}</script>`;
+
+  const indexBody = body + schemaHtml;
+  return wrapPage(indexBody, '海洋号卡 - 正规流量卡·电话卡·宽带', '海洋号卡提供正规运营商流量卡、电话卡、宽带服务，低月租大流量，全国包邮。', '流量卡推荐,正规流量卡,大流量套餐,宽带办理,电话卡套餐', 'index', '/');
 }
 
 // ===== 生成文章页 =====
@@ -175,6 +191,19 @@ function generateArticlePage(a) {
   const title = a.title || a.productName || '文章';
   const content = mdToHtml(a.article || '');
   const date = a.date || '';
+  const cleanDesc = (a.article || '').replace(/[#*\[\]]/g, '').slice(0, 150).replace(/\n/g, ' ');
+  const canonicalPath = `/articles/article-${date}.html`;
+  const keywords = '流量卡评测,' + (a.operator || '') + '流量卡,' + (a.productName || '');
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "datePublished": date,
+    "author": { "@type": "Organization", "name": "海洋号卡" },
+    "description": cleanDesc
+  };
+  const schemaHtml = `<script type="application/ld+json">${JSON.stringify(articleSchema)}</script>`;
 
   const body = `<article class="article-page">
     <a href="/archive.html" class="back-link">← 返回归档</a>
@@ -185,9 +214,9 @@ function generateArticlePage(a) {
       <p>感兴趣的话，可以到店里看看有没有适合你的套餐</p>
       <a href="${STORE_URL}" target="_blank" class="btn">进店选购 →</a>
     </div>
-  </article>`;
+  </article>${schemaHtml}`;
 
-  return wrapPage(body, title + ' - 海洋号卡', (a.article || '').slice(0, 120).replace(/[#*\[\]]/g, ''), '流量卡评测,' + (a.operator || '') + '流量卡', 'archive');
+  return wrapPage(body, title + ' - 海洋号卡', cleanDesc, keywords, 'archive', canonicalPath);
 }
 
 // ===== 生成商品页 =====
@@ -239,7 +268,7 @@ function generateProductsPage(products) {
     </div>
   </div>`;
 
-  return wrapPage(body, '号卡专区 - 海洋号卡', '正规运营商流量卡、电话卡、宽带套餐列表', '流量卡,号卡,手机卡套餐', 'products');
+  return wrapPage(body, '号卡专区 - 海洋号卡', '正规运营商流量卡、电话卡、宽带套餐列表', '流量卡,号卡,手机卡套餐,宽带套餐', 'products', '/products.html');
 }
 
 // ===== 生成归档页 =====
@@ -255,7 +284,7 @@ function generateArchivePage(articles) {
     <ul class="archive-list">${listHtml}</ul>
   </main>`;
 
-  return wrapPage(body, '文章归档 - 海洋号卡', '所有历史评测文章汇总', '流量卡评测汇总,号卡文章', 'archive');
+  return wrapPage(body, '文章归档 - 海洋号卡', '所有历史评测文章汇总', '流量卡评测汇总,号卡文章', 'archive', '/archive.html');
 }
 
 // ===== 生成 sitemap.xml =====
@@ -359,6 +388,14 @@ async function build(forceRefresh = false) {
     const sitemapPath = path.join(DIST_DIR, 'sitemap.xml');
     fs.writeFileSync(sitemapPath, generateSitemap(archiveArticles), 'utf8');
     console.log(`   ✓ sitemap.xml`);
+
+    // robots.txt
+    const robotsPath = path.join(DIST_DIR, 'robots.txt');
+    fs.writeFileSync(robotsPath, `User-agent: *
+Allow: /
+Sitemap: ${SITE_URL}/sitemap.xml
+`, 'utf8');
+    console.log(`   ✓ robots.txt`);
 
     console.log(`\n✅ 站点生成完成`);
     return true;
