@@ -183,7 +183,6 @@ function generateIndex(products, content, archiveArticles) {
     <div class="prod-strip-wrap">`;
     recProducts.forEach(p => {
       prodHtml += `<div class="prod-mini" onclick="openModal(${attrJson(p)})">
-        <img src="${p.mainPic || ''}" alt="" loading="lazy" onerror="this.style.display='none'">
         <div class="prod-mini-body">
           <div class="prod-mini-name">${escapeHtml(p.productName)}</div>
           <div class="prod-mini-meta">${escapeHtml(p.operator)} · ${escapeHtml(p.area || '全国')}</div>
