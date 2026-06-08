@@ -1,7 +1,7 @@
 /**
  * 主构建脚本
  * 1. 从 API 获取商品数据
- * 2. 生成推广内容
+ * 2. 生成推广内容（增量积累，保留历史）
  * 3. 输出 data.json 供前端使用
  */
 const fs = require('fs');
@@ -10,8 +10,8 @@ const { getProducts, analyzeProducts } = require('./api');
 const { generateAll } = require('./generator');
 const ai = require('./ai');
 
+const STORE_URL = 'https://haokawx.lot-ml.com/ProductEn/Index/530789e16bb06db6';
 const DIST_DIR = path.join(__dirname, '..', 'dist');
-const DATA_DIR = path.join(__dirname, '..', 'data');
 
 function ensureDir(dir) {
   if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
@@ -29,16 +29,56 @@ async function build(forceRefresh = false) {
     const products = await getProducts(forceRefresh);
     const stats = analyzeProducts(products);
     console.log(`   共 ${stats.total} 个商品`);
-    console.log(`   运营商: ${Object.entries(stats.byOperator).map(([k, v]) => `${k}${v}`).join(', ')}`);
 
-    // 2. 生成推广内容（AI 增强，API 不可用时自动回退模板）
+    // 2. 读取历史数据
+    const outputPath = path.join(DIST_DIR, 'data.json');
+    let archive = {
+      articles: [],      // 历史文章列表
+      rankings: [],      // 历史榜单
+      recommendations: [], // 历史推荐
+    };
+    if (fs.existsSync(outputPath)) {
+      try {
+        const old = JSON.parse(fs.readFileSync(outputPath, 'utf8'));
+        archive.articles = old.articles || (old.dailyArticle ? [old.dailyArticle] : []);
+        archive.rankings = old.rankings || (old.hotRanking ? [{ date: old.date, items: old.hotRanking }] : []);
+        archive.recommendations = old.recommendations || [];
+        console.log(`   历史内容: ${archive.articles.length} 篇文章, ${archive.rankings.length} 天榜单`);
+      } catch (e) {
+        console.log('   历史数据读取失败，重新开始积累');
+      }
+    }
+
+    // 3. 生成当日推广内容
     console.log('\n✍️ 生成推广内容...');
     const content = await generateAll(products, ai);
 
-    // 3. 组装前端所需数据
+    // 4. 合并历史 + 当日新内容
+    if (content.dailyArticle) {
+      // 避免同一天重复添加
+      const exists = archive.articles.find(a => a.date === content.date);
+      if (!exists) {
+        archive.articles.unshift({ ...content.dailyArticle, date: content.date });
+      }
+    }
+    // 保留最近 30 篇文章
+    archive.articles = archive.articles.slice(0, 30);
+
+    if (content.hotRanking) {
+      const exists = archive.rankings.find(r => r.date === content.date);
+      if (!exists) {
+        archive.rankings.unshift({ date: content.date, items: content.hotRanking });
+      }
+    }
+    archive.rankings = archive.rankings.slice(0, 30);
+
+    console.log(`   当前: ${archive.articles.length} 篇文章积累`);
+
+    // 5. 组装输出
     const output = {
       buildTime: content.generatedAt,
       date: content.date,
+      storeUrl: STORE_URL,
       stats: {
         totalProducts: stats.total,
         byOperator: stats.byOperator,
@@ -58,20 +98,20 @@ async function build(forceRefresh = false) {
         taocan: p.taocan || p.productName,
         netAddr: p.netAddr,
       })),
-      dailyArticle: content.dailyArticle ? {
-        ...content.dailyArticle,
-        article: content.dailyArticle.article,
-      } : null,
+      // 今日内容
+      dailyArticle: content.dailyArticle ? { ...content.dailyArticle, date: content.date } : null,
       recommendations: content.recommendations,
       hotRanking: content.hotRanking,
       byOperator: content.byOperator,
       broadband: content.broadband,
       seoKeywords: content.seoKeywords,
+      // 历史积累
+      articles: archive.articles,
+      rankings: archive.rankings,
     };
 
-    // 4. 写入 dist/data.json
+    // 6. 写入 dist/data.json
     ensureDir(DIST_DIR);
-    const outputPath = path.join(DIST_DIR, 'data.json');
     fs.writeFileSync(outputPath, JSON.stringify(output, null, 2), 'utf8');
     console.log(`\n✅ 构建完成！`);
     console.log(`   输出: ${outputPath}`);
@@ -85,7 +125,6 @@ async function build(forceRefresh = false) {
   }
 }
 
-// 如果是直接运行
 if (require.main === module) {
   const forceRefresh = process.argv.includes('--force') || process.argv.includes('-f');
   build(forceRefresh).then(success => {
