@@ -23,6 +23,10 @@ function escapeHtml(s) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+function attrJson(obj) {
+  return escapeHtml(JSON.stringify(obj));
+}
+
 function mdToHtml(md) {
   md = md.replace(/^# .*\n?/, '');
   return md
@@ -149,7 +153,7 @@ function generateIndex(products, content, archiveArticles) {
       <div class="section-head"><h2>今日推荐套餐</h2><a href="/products.html">查看全部 →</a></div>
       <div class="product-strip">`;
     recProducts.forEach(p => {
-      prodHtml += `<div class="product-strip-card" onclick="openModal(${JSON.stringify(p).replace(/'/g, "&#39;")})">
+      prodHtml += `<div class="product-strip-card" onclick="openModal(${attrJson(p)})">
         <img src="${p.mainPic || ''}" alt="${escapeHtml(p.productName)}" loading="lazy" onerror="this.style.display='none'">
         <div class="pbody">
           <div class="pname">${escapeHtml(p.productName)}</div>
@@ -234,7 +238,7 @@ function generateProductsPage(products) {
   function prodListHtml(list) {
     return list.map(p => {
       const taocan = (p.taocan || '').replace(/佣金[^。]*。?/g, '').slice(0, 60);
-      return `<div class="prod-card fade-in" onclick='openModal(${JSON.stringify(p).replace(/'/g, "&#39;")})'>
+      return `<div class="prod-card fade-in" onclick='openModal(${attrJson(p)})'>
         <img src="${p.mainPic || ''}" alt="" loading="lazy" onerror="this.style.display='none'">
         <div class="info">
           <div class="name">${escapeHtml(p.productName)}</div>
