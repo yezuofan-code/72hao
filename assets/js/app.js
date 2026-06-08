@@ -70,7 +70,7 @@ function openModal(product) {
   const body = document.getElementById('modalBody');
   const age1 = product.age1 || 18;
   const age2 = product.age2 || 60;
-  const taocan = product.taocan || product.productName || '暂无';
+  const taocan = (product.taocan || product.productName || '暂无').replace(/佣金[^。]*。?/g, '').replace(/佣金[^，]*。?/g, '').replace(/佣金/g, '');
   body.innerHTML = `
     <img src="${product.mainPic || ''}" alt="${product.productName}" style="width:100%;border-radius:8px;margin-bottom:12px;" onerror="this.style.display='none'">
     <div class="detail-row"><span class="detail-label">运营商</span><span class="detail-value">${product.operator || '未知'}</span></div>
