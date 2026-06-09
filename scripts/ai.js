@@ -46,25 +46,36 @@ async function callDeepSeek(systemPrompt, userPrompt, opts = {}) {
   }
 }
 
-/** 用 DeepSeek 写每日评测文章（SEO 关键词优化） */
+/** 用 DeepSeek 写每日评测文章（SEO 关键词优化 + 真实优缺点分析） */
 async function generateDailyArticle(product, dateStr, keyword) {
   const kw = keyword || `${product.area || ''}${product.operator || ''}流量卡`;
-  const sys = `你是一个通信产品评测博主，擅长写搜索引擎友好的真实体验文章。`;
-  const usr = `写一篇评测文章，500-800字。目标是让搜索"${kw}"的用户能看到这篇文章。
+  const sys = `你是一个通信产品评测博主，写过几百张流量卡的真实体验。你的风格诚实、接地气，好的说好，不好的也说不好，读者觉得你靠谱。`;
+  const usr = `写一篇真实的流量卡评测文章，500-800字。目标是让搜索"${kw}"的用户能看到这篇文章。
 
 商品：${product.productName}
 运营商：${product.operator}
 归属地：${product.area || '随机'}
-套餐：${product.taocan || product.productName}
-年龄：${product.age1 || 18}-${product.age2 || 60}岁
+套餐说明：${product.taocan || product.productName}
+适用年龄：${product.age1 || 18}-${product.age2 || 60}岁
 
 要求：
 1. 标题必须包含搜索词"${kw}"，带emoji，自然不刻意
 2. 文章开头60字内自然出现一次搜索词
-3. 口吻像真实用户评测，不要像广告
-4. 包含：收到卡→激活→测速→算账→推荐
-5. 结尾引导去店铺下单
-6. 不要提及佣金或价格数字`;
+3. 口吻像真实用户，不要像广告
+
+4. **必须有优缺点分析，各写2-3点**。比如：
+   - 优点：流量多、月租低、网速快、归属地可选等
+   - 缺点：优惠有时限（两年后恢复原价）、部分套餐有合约期、禁发区域限制、年龄限制窄、不是所有平台都支持5G等
+   注意缺点不要涉及"佣金"
+
+5. 加入实用建议，例如：
+   - "这个卡两年优惠，第三年恢复原价，建议用到第二年换新卡"
+   - "当纯流量卡用就好，别绑银行卡等重要账号"
+   - "激活前确认收货地址在发货范围内"
+
+6. 结构：收到卡→激活→网速→优缺点→建议→总结
+7. 结尾自然引导：如果觉得适合可以了解一下」不要生硬推销
+8. 不要提及佣金或价格数字`;
 
   const raw = await callDeepSeek(sys, usr);
   if (!raw) return null;
