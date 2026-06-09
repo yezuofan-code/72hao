@@ -112,14 +112,20 @@ function wrapPage(body, title, desc, keywords, currentPage, canonical) {
   return head(title, desc, keywords, canonical) + header(currentPage) + body + footer() + footJs();
 }
 
-// ===== 社交分享 JS =====
-function shareHtml(url, title) {
+// ===== 社交分享（各平台生成合规文案） =====
+function shareHtml(url, title, articleText, operator) {
   const encodedUrl = encodeURIComponent(url);
   const encodedTitle = encodeURIComponent(title);
+  // 去除文章中的 markdown 符号，提取纯文本
+  const cleanBody = (articleText || '').replace(/[#*\[\]>]/g, '').replace(/\n+/g, '\n').slice(0, 600);
+  // base64 编码文章内容供前端使用（避免引号冲突）
+  const bodyB64 = Buffer.from(cleanBody).toString('base64');
   return `<div class="share-bar">
-    <span class="share-label">分享：</span>
-    <a href="https://service.weibo.com/share/share.php?url=${encodedUrl}&title=${encodedTitle}" target="_blank" rel="noopener" class="share-btn" title="分享到微博">微博</a>
-    <button class="share-btn" onclick="var i=document.createElement('input');i.value='${escapeHtml(url)}';document.body.appendChild(i);i.select();document.execCommand('copy');document.body.removeChild(i);alert('链接已复制')" title="复制链接">🔗 复制</button>
+    <span class="share-label">📤 分享到</span>
+    <button class="share-btn" onclick="copyForPlatform('zhihu', '${escapeHtml(title)}', '${bodyB64}', '${operator || ''}')" title="复制知乎格式">知乎</button>
+    <button class="share-btn" onclick="copyForPlatform('xiaohongshu', '${escapeHtml(title)}', '${bodyB64}', '${operator || ''}')" title="复制小红书格式">小红书</button>
+    <button class="share-btn" onclick="copyForPlatform('tieba', '${escapeHtml(title)}', '${bodyB64}', '${operator || ''}')" title="复制贴吧格式">贴吧</button>
+    <button class="share-btn" onclick="copyForPlatform('copy', '${escapeHtml(title)}', '${bodyB64}', '${operator || ''}')" title="复制纯文本">📋 复制</button>
   </div>`;
 }
 
@@ -242,7 +248,7 @@ function generateArticlePage(a) {
     </div>
     ${a.mainPic ? `<img src="${a.mainPic}" alt="${escapeHtml(title)}" style="width:100%;max-width:600px;height:auto;display:block;margin:0 auto 20px;border-radius:4px;" onerror="this.style.display='none'">` : ''}
     <div class="content">${content}</div>
-    ${shareHtml(articleUrl, title)}
+    ${shareHtml(articleUrl, title, a.article, a.operator)}
     <div class="store-cta">
       <p>感兴趣的话，可以看看这个套餐的详情</p>
       <a href="${a.netAddr || STORE_URL}" target="_blank" class="btn">查看套餐详情 →</a>
