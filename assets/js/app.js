@@ -135,13 +135,9 @@ function showToast(msg) {
 }
 
 // ===== 多平台分享入口 =====
-function copyForPlatform(platform, title, bodyB64, operator) {
-  let body = '';
-  try {
-    body = atob(bodyB64);
-  } catch (e) {
-    body = bodyB64;
-  }
+function copyForPlatform(platform, titleEncoded, bodyEncoded, operator) {
+  const title = decodeURIComponent(titleEncoded);
+  const body = decodeURIComponent(bodyEncoded);
 
   const cleanBody = cleanText(body);
   const desc = cleanBody.slice(0, 200) + (cleanBody.length > 200 ? '...' : '');
