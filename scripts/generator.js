@@ -30,6 +30,87 @@ function shuffle(arr, randomFn) {
   return a;
 }
 
+// ===== SEO 关键词池（按搜索热度排序） =====
+const SEO_KEYWORDS = [
+  // 省份+流量卡 核心搜索词
+  { kw: '广东流量卡推荐', area: '广东' },
+  { kw: '浙江流量卡哪个划算', area: '浙江' },
+  { kw: '山东流量卡套餐', area: '山东' },
+  { kw: '四川流量卡', area: '四川' },
+  { kw: '湖南流量卡推荐', area: '湖南' },
+  { kw: '湖北流量卡', area: '湖北' },
+  { kw: '广西流量卡', area: '广西' },
+  { kw: '上海流量卡', area: '上海' },
+  { kw: '重庆流量卡', area: '重庆' },
+  { kw: '江苏流量卡', area: '江苏' },
+  { kw: '北京流量卡', area: '北京' },
+  { kw: '河南流量卡', area: '河南' },
+  { kw: '河北流量卡', area: '河北' },
+  { kw: '安徽流量卡', area: '安徽' },
+  { kw: '福建流量卡', area: '福建' },
+  { kw: '江西流量卡', area: '江西' },
+  { kw: '陕西流量卡', area: '陕西' },
+  { kw: '云南流量卡', area: '云南' },
+  { kw: '贵州流量卡', area: '贵州' },
+  { kw: '吉林流量卡', area: '吉林' },
+  { kw: '海南流量卡', area: '海南' },
+  { kw: '天津流量卡', area: '天津' },
+  // 通用搜索词（高流量）
+  { kw: '学生党流量卡推荐', op: null },
+  { kw: '29元大流量卡', op: null },
+  { kw: '19元流量卡', op: null },
+  { kw: '流量卡免费办理', op: null },
+  { kw: '宽带套餐哪个划算', area: null, isBB: true },
+  { kw: '联通流量卡推荐', op: '联通' },
+  { kw: '移动流量卡套餐', op: '移动' },
+  { kw: '电信流量卡哪个好', op: '电信' },
+  { kw: '广电流量卡', op: '广电' },
+  { kw: '大流量卡不限速', op: null },
+  { kw: '正规流量卡', op: null },
+  { kw: '流量卡月租低', op: null },
+  { kw: '宽带办理多少钱一年', isBB: true },
+  { kw: '联通宽带套餐', op: '联通', isBB: true },
+  { kw: '电信宽带包年', op: '电信', isBB: true },
+];
+
+/**
+ * 根据 SEO 关键词选商品
+ */
+function pickProductByKeyword(products, seed) {
+  const rand = seededRandom('seo-pick-' + seed);
+  // 按日期轮换关键词
+  const kwIndex = parseInt(seededRandom('kw-index-' + seed)().toString().slice(2, 5)) % SEO_KEYWORDS.length;
+  const target = SEO_KEYWORDS[kwIndex];
+
+  let candidates = products.filter(p => p.flag);
+
+  // 按关键词筛选
+  if (target.isBB) {
+    candidates = candidates.filter(p => p.productName.includes('宽带') || p.productName.includes('单宽'));
+  } else {
+    candidates = candidates.filter(p => !p.productName.includes('宽带') && !p.productName.includes('单宽'));
+  }
+  if (target.area && target.area !== '随机') {
+    // 先精确匹配
+    let matched = candidates.filter(p => p.area === target.area);
+    if (matched.length === 0) {
+      // 模糊匹配
+      matched = candidates.filter(p => p.area && p.area.includes(target.area));
+    }
+    if (matched.length > 0) candidates = matched;
+  }
+  if (target.op) {
+    let matched = candidates.filter(p => p.operator === target.op);
+    if (matched.length > 0) candidates = matched;
+  }
+
+  // 从候选中随机选一个
+  const shuffled = shuffle(candidates, rand);
+  const product = shuffled[0] || products.filter(p => p.flag)[0];
+
+  return { product, keyword: target.kw };
+}
+
 // ===== 写作素材（只做兜底） =====
 const REVIEW_OPENINGS = [
   `最近好多朋友问我用什么流量卡划算，今天我特意实测了一款，给大家分享一下真实体验。`,
@@ -179,16 +260,22 @@ async function generateAll(products, aiModule, buildId) {
     if (aiDescs) hotRanking = hotRanking.map((item, i) => ({ ...item, desc: aiDescs[i] || item.desc }));
   }
 
-  // 评测文章 - AI 或模板
-  const baseProduct = (() => {
-    const onSale = products.filter(p => p.flag);
-    return onSale[parseInt(seededRandom('article-index-' + seed)().toString().slice(2, 5)) % onSale.length];
-  })();
-  let dailyArticle;
+  // 评测文章 - 按 SEO 关键词选商品
+  const { product: baseProduct, keyword: seoKeyword } = pickProductByKeyword(products, seed);
+  console.log(`[Generator] 选题: "${seoKeyword}" → ${baseProduct?.productName}`);
+  let dailyArticle, usedKeyword;
   if (ai && ai.generateDailyArticle) {
-    dailyArticle = await ai.generateDailyArticle(baseProduct, seed);
+    const result = await ai.generateDailyArticle(baseProduct, seed, seoKeyword);
+    if (result) {
+      dailyArticle = result;
+      usedKeyword = seoKeyword;
+    }
   }
-  if (!dailyArticle) dailyArticle = generateDailyArticle(products, seed);
+  if (!dailyArticle) {
+    dailyArticle = generateDailyArticle(products, seed);
+    usedKeyword = seoKeyword;
+  }
+  if (dailyArticle) dailyArticle.seoKeyword = usedKeyword;
 
   // 宽带
   const broadband = generateBroadbandRecommendations(products, seed);

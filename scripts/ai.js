@@ -46,10 +46,11 @@ async function callDeepSeek(systemPrompt, userPrompt, opts = {}) {
   }
 }
 
-/** 用 DeepSeek 写每日评测文章 */
-async function generateDailyArticle(product, dateStr) {
-  const sys = `你是一个通信产品评测博主，擅长写真实体验风格的推广文章。语气接地气、像朋友推荐。只输出文章正文，不要输出无关内容。`;
-  const usr = `写一篇关于以下通信产品的评测文章，500-800字。
+/** 用 DeepSeek 写每日评测文章（SEO 关键词优化） */
+async function generateDailyArticle(product, dateStr, keyword) {
+  const kw = keyword || `${product.area || ''}${product.operator || ''}流量卡`;
+  const sys = `你是一个通信产品评测博主，擅长写搜索引擎友好的真实体验文章。`;
+  const usr = `写一篇评测文章，500-800字。目标是让搜索"${kw}"的用户能看到这篇文章。
 
 商品：${product.productName}
 运营商：${product.operator}
@@ -58,19 +59,19 @@ async function generateDailyArticle(product, dateStr) {
 年龄：${product.age1 || 18}-${product.age2 || 60}岁
 
 要求：
-1. 标题带emoji，吸引人
-2. 口吻像真实用户评测，不要像广告
-3. 包含：收到卡→激活→测速→算账→推荐
-4. 结尾引导去店铺下单
-5. 不要提及佣金或价格相关数字`;
+1. 标题必须包含搜索词"${kw}"，带emoji，自然不刻意
+2. 文章开头60字内自然出现一次搜索词
+3. 口吻像真实用户评测，不要像广告
+4. 包含：收到卡→激活→测速→算账→推荐
+5. 结尾引导去店铺下单
+6. 不要提及佣金或价格数字`;
 
   const raw = await callDeepSeek(sys, usr);
   if (!raw) return null;
 
-  // 提取标题（第一行或##开头的行）
   const lines = raw.trim().split('\n');
   let title = lines[0].replace(/^#+\s*/, '').trim();
-  if (title.length < 4 || title.length > 80) title = `${product.productName} 真实评测`;
+  if (title.length < 4 || title.length > 80) title = `${kw} 真实评测`;
 
   return {
     title,

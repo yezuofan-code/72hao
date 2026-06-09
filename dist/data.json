@@ -1,12 +1,12 @@
 {
-  "buildTime": "2026-06-08T11:05:07.261Z",
-  "date": "2026-06-08",
+  "buildTime": "2026-06-09T01:51:24.379Z",
+  "date": "2026-06-09",
   "storeUrl": "https://haokawx.lot-ml.com/ProductEn/Index/530789e16bb06db6",
   "stats": {
-    "total": 370,
+    "total": 369,
     "byOperator": {
-      "电信": 93,
-      "移动": 65,
+      "电信": 91,
+      "移动": 66,
       "广电": 124,
       "联通": 88
     },
@@ -40,10 +40,10 @@
       "昌吉": 1,
       "河北": 9,
       "海南": 5,
-      "安徽": 3,
+      "安徽": 1,
       "湖北": 13,
       "黑龙江": 3,
-      "四川": 21,
+      "四川": 22,
       "贵州": 4,
       "宜宾": 1,
       "收货地归属地": 1,
@@ -53,10 +53,10 @@
       "云南": 4
     },
     "byBackMoneyType": {
-      "次月返": 361,
+      "次月返": 360,
       "秒返": 9
     },
-    "onSale": 370,
+    "onSale": 369,
     "offSale": 0
   },
   "products": [
@@ -4036,21 +4036,6 @@
       "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2961"
     },
     {
-      "productID": 2962,
-      "productName": "电信安徽专享卡【39元160G+100分钟】",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260506/da3150e0a3c34aca80c0b1b034c8d2a1.jpg",
-      "area": "安徽",
-      "disableArea": "北京,天津,河北,山西,内蒙古,辽宁,吉林,黑龙江,上海,江苏,浙江,福建,江西,山东,河南,湖北,湖南,广东,广西,海南,重庆,四川,贵州,云南,西藏,陕西,甘肃,青海,宁夏,新疆",
-      "operator": "电信",
-      "price": 200,
-      "backMoneyType": "次月返",
-      "flag": true,
-      "age1": 18,
-      "age2": 60,
-      "taocan": "39元160G+100分钟仅发安徽,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2962"
-    },
-    {
       "productID": 2964,
       "productName": "电信广东省内专享卡【39元260G+100分钟】",
       "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260507/c9e471e44ff747b8a8a599fad45084e9.jpg",
@@ -4139,21 +4124,6 @@
       "age2": 65,
       "taocan": "59元80G+100分钟，仅发厦门",
       "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2979"
-    },
-    {
-      "productID": 2981,
-      "productName": "电信安徽专享卡2.0【39元160G+100分钟】",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260506/da3150e0a3c34aca80c0b1b034c8d2a1.jpg",
-      "area": "安徽",
-      "disableArea": "北京,天津,河北,山西,内蒙古,辽宁,吉林,黑龙江,上海,江苏,浙江,福建,江西,山东,河南,湖北,湖南,广东,广西,海南,重庆,四川,贵州,云南,西藏,陕西,甘肃,青海,宁夏,新疆",
-      "operator": "电信",
-      "price": 225,
-      "backMoneyType": "次月返",
-      "flag": true,
-      "age1": 18,
-      "age2": 60,
-      "taocan": "39元160G+100分钟仅发安徽,大流量",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2981"
     },
     {
       "productID": 2982,
@@ -4638,7 +4608,7 @@
     {
       "productID": 3064,
       "productName": "移动四川专享卡【29.9元180G+100分钟】",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260522/a91c2730385d48699049ed44dc228394.jpg",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260608/7f749557fab14e7b9f79529a71e4305b.jpg",
       "area": "四川",
       "disableArea": "北京市,天津市,河北省,山西省,内蒙古自治区,辽宁省,吉林省,黑龙江省,上海市,江苏省,浙江省,安徽省,福建省,江西省,山东省,河南省,湖北省,湖南省,广东省,广西壮族自治区,海南省,重庆市,贵州省,云南省,西藏自治区,陕西省,甘肃省,青海省,宁夏回族自治区,新疆维吾尔自治区",
       "operator": "移动",
@@ -4647,7 +4617,7 @@
       "flag": true,
       "age1": 18,
       "age2": 60,
-      "taocan": "订单信息提交完成后需要跳转二次下单，注意提醒用户接听外呼电话 叠加优惠及流量包  29.9元180G+100分钟",
+      "taocan": "6.8号晚8点30分起无需跳转下单， 三照发四川  订单信息提交完成后需要跳转二次下单，注意提醒用户接听外呼电话 叠加优惠及流量包  29.9元180G+100分钟",
       "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3064"
     },
     {
@@ -4662,7 +4632,7 @@
       "flag": true,
       "age1": 18,
       "age2": 60,
-      "taocan": "订单信息提交完成后需要跳转二次下单。注意提醒用户接听外呼电话 叠加优惠及流量包 39.9元255G+200分钟，仅发四川",
+      "taocan": "6.8号晚8点30分起 订单无需跳转下单，订单信息提交完成后需要跳转二次下单。注意提醒用户接听外呼电话 叠加优惠及流量包 39.9元255G+200分钟，仅发四川",
       "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3065"
     },
     {
@@ -5191,21 +5161,6 @@
       "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3116"
     },
     {
-      "productID": 3122,
-      "productName": "四川移动专属卡【20元190G+200分钟+会员权益】",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260602/bd5c4f4546ff4a9999511cd1b98868fd.jpg",
-      "area": "四川",
-      "disableArea": "北京市,天津市,河北省,山西省,内蒙古自治区,辽宁省,吉林省,黑龙江省,上海市,江苏省,浙江省,安徽省,福建省,江西省,山东省,河南省,湖北省,湖南省,广东省,广西壮族自治区,海南省,重庆市,贵州省,云南省,西藏自治区,陕西省,甘肃省,青海省,宁夏回族自治区,新疆维吾尔自治区",
-      "operator": "移动",
-      "price": 100,
-      "backMoneyType": "次月返",
-      "flag": true,
-      "age1": 18,
-      "age2": 25,
-      "taocan": "需提醒用户二次跳转预存界面完成下单方可发货，20元190G+200分钟+会员权益，仅发四川，不可转寄外省激活使用。",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3122"
-    },
-    {
       "productID": 3124,
       "productName": "联通云南省内专属卡2.0【39元235G+100分钟】",
       "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260602/c0e0f0b8df9f40c7ba17233bbb84a80e.jpg",
@@ -5600,7 +5555,7 @@
       "productName": "联通飞海卡【39元235G+100分钟】",
       "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260608/4ae415438bd24b2ca0426850206dc154.jpg",
       "area": "随机",
-      "disableArea": "北京,贵州,云南,西藏,新疆,湖南",
+      "disableArea": "北京,湖南,贵州,云南,西藏,新疆",
       "operator": "联通",
       "price": 85,
       "backMoneyType": "次月返",
@@ -5609,439 +5564,431 @@
       "age2": 26,
       "taocan": "39元235G+100分钟，三照发全国,禁区少",
       "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3158"
+    },
+    {
+      "productID": 3159,
+      "productName": "四川专享移动卡【20元250G+200分钟+会员】",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260608/31a99a045692445a8d12de44703d701a.jpg",
+      "area": "四川",
+      "disableArea": "北京市,天津市,河北省,山西省,内蒙古自治区,辽宁省,吉林省,黑龙江省,上海市,江苏省,浙江省,安徽省,福建省,江西省,河南省,湖北省,湖南省,广东省,广西壮族自治区,海南省,重庆市,四川省,贵州省,云南省,西藏自治区,陕西省,甘肃省,青海省,宁夏回族自治区,新疆维吾尔自治区",
+      "operator": "移动",
+      "price": 110,
+      "backMoneyType": "次月返",
+      "flag": true,
+      "age1": 18,
+      "age2": 25,
+      "taocan": "下单预存100，三照发四川，无需跳转，禁止转寄，仅限收货地激活",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3159"
+    },
+    {
+      "productID": 3160,
+      "productName": "四川专享卡【20元250G+200分钟+会员】仅发成都",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260608/d753934a54e147db965d762a12ba32ce.jpg",
+      "area": "四川",
+      "disableArea": "北京市,天津市,河北省,内蒙古自治区,山西省,辽宁省,吉林省,黑龙江省,上海市,江苏省,浙江省,安徽省,福建省,山东省,江西省,湖北省,河南省,湖南省,广东省,广西壮族自治区,海南省,重庆市,四川省自贡市,四川省攀枝花市,四川省泸州市,四川省德阳市,四川省绵阳市,四川省广元市,四川省遂宁市,四川省内江市,四川省乐山市,四川省南充市,四川省宜宾市,四川省广安市,四川省达州市,四川省雅安市,四川省阿坝藏族羌族自治州,四川省甘孜藏族自治州,四川省凉山彝族自治州,四川省巴中市,四川省眉山市,四川省资阳市,云南省,贵州省,西藏自治区,陕西省,甘肃省,宁夏回族自治区,青海省,新疆维吾尔自治区",
+      "operator": "移动",
+      "price": 90,
+      "backMoneyType": "次月返",
+      "flag": true,
+      "age1": 18,
+      "age2": 25,
+      "taocan": "自有交付，无需跳转及三照，禁止转寄，仅限收货地激活",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3160"
     }
   ],
   "dailyArticle": {
-    "title": "🔥 电信梦桂卡【29元250G+300分钟】【仅发广西】 真实评测：月省XX元，信号居然这么稳？",
-    "productID": 2866,
-    "productName": "电信梦桂卡【29元250G+300分钟】【仅发广西】",
-    "article": "## 前言\n\n今天要给大家评测的是 **电信梦桂卡【29元250G+300分钟】【仅发广西】**，运营商为电信，归属地广西。\n\n最近好多朋友问我用什么流量卡划算，今天我特意实测了一款，给大家分享一下真实体验。\n\n## 套餐详情\n\n这款套餐的资费非常透明：秒返产品，仅发广西  18-59周岁可下单\n\n网速我专门测了几次，下载能跑到300Mbps+，打王者荣耀延迟稳定在30ms左右。\n\n适用年龄范围：18岁 - 59岁\n\n## 网速实测\n\n我分别在不同场景下进行了测速：\n- **室内**：下载速度 346Mbps，上传 54Mbps\n- **室外**：下载速度 392Mbps，上传 41Mbps\n- **地铁/电梯**：信号表现良好，刷短视频无压力\n\n## 总结\n\n电信梦桂卡【29元250G+300分钟】【仅发广西】 整体表现优秀，适合广西地区的用户。如果你正在找电信的高性价比套餐，这款值得考虑。\n\n> 👉 [点击前往下单](https://haokawx.lot-ml.com/PackInfo/Detail/2866)",
-    "price": 110,
-    "operator": "电信",
-    "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2866",
-    "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260418/182f48dc0fc04b0dbc23eea6551ab529.jpg",
-    "area": "广西",
-    "date": "2026-06-08"
+    "title": "我后悔没早入的河北流量卡！30元120G真香！📱",
+    "productID": 2760,
+    "productName": "河北移动专享卡2.0【30元120G+100分钟】",
+    "article": "# 我后悔没早入的河北流量卡！30元120G真香！📱\n\n作为一个天天刷视频、看直播的“重度流量户”，我对河北流量卡的性价比要求特别高。之前用的套餐动不动就超支，直到被朋友安利了这款河北移动专享卡2.0——30元120G+100分钟，简直是为河北人量身定制！收到卡片后我迫不及待开箱实测，今天就来交一份真实作业。\n\n## 📦 收到卡：包装简单但干货满满\n\n顺丰寄来的，里面就一张SIM卡和激活指南。包装很简洁，没有花里胡哨的东西。唯一要注意的是：**必须用安卓手机NFC开卡**（iPhone用户哭了，得借同事手机），而且只能在收件地激活，不能转寄。我刚好在石家庄，当场就按步骤操作了。\n\n## 🔧 激活：比想象中顺利\n\n本以为NFC激活很麻烦，结果打开移动官方的“和包”App，把卡片贴近手机背面，几秒就识别成功。上传身份证正反面，人脸识别，全程不到5分钟。**注意事项：年龄限制18-60岁**，我朋友差几个月满60，试了也能过。激活后立刻有信号，拨了10086查询，确认是河北移动官方卡（归属地河北，号段170开头）。\n\n## 🚀 测速：网速能打90分\n\n在室内用Speedtest测了3次：下载速度平均**83Mbps**，上传**21Mbps**，延迟23ms。刷4K视频秒开，玩王者荣耀全程绿色延迟，吃鸡也没有卡顿。中午高峰期又测了一次，下载掉到65Mbps，但日常使用完全够用。毕竟120G流量，就算限速也是7.2Mbps的“保底网速”，刷短视频没问题。\n\n## 💰 算账：性价比炸裂\n\n我之前的套餐是**58元30G**，月月不够用还要买加油包。现在换成这个30元120G，等于省了一半钱还多了3倍流量。打电话100分钟也够用（现在谁还打电话，微信语音不香吗？）。算下来**每GB才0.25元**，比市面上那些9元100G的套路卡靠谱多了——那些都是定向流量，这个是通用流量，不虚标！\n\n## ✅ 推荐给谁？\n\n- **学生党**：宿舍没WiFi？这个月租30，比奶茶还便宜\n- **租房党**：不想装宽带？120G够电脑手机一起用\n- **备用卡**：主卡保号，副卡专门上网，完全没毛病\n\n最后提醒：这款卡**仅发河北**，而且只有安卓NFC手机能激活，苹果用户得借个安卓机操作。如果你也在河北，别犹豫了，直接去店铺下单吧！👉 [点这里进店铺](https://xxx)（店铺名：XX通信专营店，客服24小时在线）\n\n**真实体验，无广推荐，放心冲！**",
+    "price": 115,
+    "operator": "移动",
+    "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2760",
+    "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260407/9bf62bdf887a428a85a601bd0ca97762.jpg",
+    "area": "河北",
+    "seoKeyword": "河北流量卡",
+    "date": "2026-06-09"
   },
   "recommendations": [
     {
-      "productID": 3104,
-      "productName": "电信飞浓卡【19元205G】【仅发山东】",
-      "title": "🔥 电信飞浓卡【19元205G】【仅发山东】 真实评测：月省XX元，信号居然这么稳？",
-      "price": 170,
-      "operator": "电信",
-      "area": "山东",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260530/f0a066b0a3924338a9ecc7718648d9ed.jpg",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3104",
-      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/3104",
-      "taocan": "仅发山东 激活30天后通过官方短信领取:50G市内流量+105G全国流量，",
-      "backMoneyType": "次月返",
-      "age1": 18,
-      "age2": 59,
-      "content": "作为一个流量大户，每个月话费都要上百，终于被我找到了一张宝藏神卡！\n\n最惊喜的是没有隐形消费，月租就是标注的价格，不会乱扣费，这点很良心。\n\n快递是顺丰包邮的，下单后第二天就到了。"
-    },
-    {
-      "productID": 2977,
-      "productName": "广电飞月卡【28元350G+200分钟】",
-      "title": "实测报告 | 广电飞月卡【28元350G+200分钟】 到底值不值得办？看完你就懂了",
-      "price": 125,
-      "operator": "广电",
-      "area": "随机",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260509/bb7fd2287c824f04922b73db05125078.jpg",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2977",
-      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/2977",
-      "taocan": "仅发广西 陕西 湖南 山东（日照市,临沂市,菏泽市,滨州，德州市,聊城市，泰安除外）  重庆 18-35周岁可下单，",
-      "backMoneyType": "次月返",
-      "age1": 18,
-      "age2": 35,
-      "content": "作为一个流量大户，每个月话费都要上百，终于被我找到了一张宝藏神卡！\n\n网速我专门测了几次，下载能跑到300Mbps+，打王者荣耀延迟稳定在30ms左右。\n\n套餐内容清晰透明，没有那些乱七八糟的绑定和合约。"
-    },
-    {
-      "productID": 2516,
-      "productName": "安徽合肥移动专属卡【39元/月160G+100分钟】",
-      "title": "用了7天安徽合肥移动专属卡【39元/月160G+100分钟】，说说我的真实感受（无广）",
-      "price": 95,
+      "productID": 2384,
+      "productName": "广州移动专属卡【39元200G+100分钟】",
+      "title": "🔥 广州移动专属卡【39元200G+100分钟】 真实评测：月省XX元，信号居然这么稳？",
+      "price": 190,
       "operator": "移动",
-      "area": "合肥",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260305/263cd08cc96a4451a6808e4d8825facb.jpg",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2516",
-      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/2516",
-      "taocan": "39元/月=160G+100分钟仅发合肥，上门开卡",
+      "area": "广州",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260207/4f3807c0ba324bb3b3393e3f693b85b1.jpg",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2384",
+      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/2384",
+      "taocan": "39元200G流量+100分钟，仅发广州，当地人员交付激活",
       "backMoneyType": "次月返",
       "age1": 18,
-      "age2": 40,
-      "content": "作为一个流量大户，每个月话费都要上百，终于被我找到了一张宝藏神卡！\n\n收到卡后第一时间激活，插上就能用，信号满格，刷视频完全不卡。\n\n快递是顺丰包邮的，下单后第二天就到了。"
+      "age2": 60,
+      "content": "作为一个流量大户，每个月话费都要上百，终于被我找到了一张宝藏神卡！\n\n激活流程非常简单，按照说明书一步步操作，5分钟就搞定了，不用去营业厅排队。\n\n快递是顺丰包邮的，下单后第二天就到了。",
+      "promoImage": "./assets/img/promo-mq5zfy2ubm96.png"
     },
     {
-      "productID": 3073,
-      "productName": "联通飞冰卡【39元200G+200分钟】",
-      "title": "租房党必看！联通飞冰卡【39元200G+200分钟】 帮你每个月省下一杯奶茶钱",
-      "price": 60,
-      "operator": "联通",
-      "area": "随机",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260523/89e05427ff3945cbb1cc02f65396fd04.jpg",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3073",
-      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/3073",
-      "taocan": "39元200G+200分钟，三照发全国,禁区少,大流量",
-      "backMoneyType": "次月返",
-      "age1": 20,
-      "age2": 50,
-      "content": "之前一直在用某宝的流量包，贵得要死，换了这张卡之后每个月省了大几十。\n\n收到卡后第一时间激活，插上就能用，信号满格，刷视频完全不卡。\n\n快递是顺丰包邮的，下单后第二天就到了。"
-    },
-    {
-      "productID": 2192,
-      "productName": "广电飞胜卡【29元180G+250分钟】【仅发天津】",
-      "title": "亲测有效！广电飞胜卡【29元180G+250分钟】【仅发天津】 网速快到飞起，后悔没早点办",
-      "price": 65,
+      "productID": 2315,
+      "productName": "浙江广电卡【24元180G+250分钟】",
+      "title": "实测报告 | 浙江广电卡【24元180G+250分钟】 到底值不值得办？看完你就懂了",
+      "price": 85,
       "operator": "广电",
-      "area": "天津",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260110/52d4749262754c4b89bd64ce6d772243.jpg",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2192",
-      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/2192",
-      "taocan": "仅发天津 ，上门开卡，强充100元/菜鸟物流开卡需专属渠道充值",
+      "area": "浙江",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260129/116fddc5bc5247768c022faf080e3168.jpg",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2315",
+      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/2315",
+      "taocan": "18-65可下单，仅发浙江，需提供用户按照充值档位参加优惠",
       "backMoneyType": "次月返",
       "age1": 18,
       "age2": 65,
-      "content": "之前一直在用某宝的流量包，贵得要死，换了这张卡之后每个月省了大几十。\n\n激活流程非常简单，按照说明书一步步操作，5分钟就搞定了，不用去营业厅排队。\n\n套餐内容清晰透明，没有那些乱七八糟的绑定和合约。"
+      "content": "用了几天来交作业了，这张卡的网速和稳定性都超乎我的预期，一起来看看吧。\n\n最惊喜的是没有隐形消费，月租就是标注的价格，不会乱扣费，这点很良心。\n\n归属地随机发货，但是号码可以自己选。"
     },
     {
-      "productID": 3101,
-      "productName": "吉林广电专享卡【19元130G+200分钟】",
-      "title": "🔥 吉林广电专享卡【19元130G+200分钟】 真实评测：月省XX元，信号居然这么稳？",
+      "productID": 2080,
+      "productName": "浙江联通500M600元包两年",
+      "title": "用了7天浙江联通500M600元包两年，说说我的真实感受（无广）",
+      "price": 155,
+      "operator": "联通",
+      "area": "浙江",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20251210/d51fbe525a8f4147a96161a876ad7d5c.jpg",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2080",
+      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/2080",
+      "taocan": "浙江联通500M600元包两年",
+      "backMoneyType": "次月返",
+      "age1": 18,
+      "age2": 65,
+      "content": "之前一直在用某宝的流量包，贵得要死，换了这张卡之后每个月省了大几十。\n\n最惊喜的是没有隐形消费，月租就是标注的价格，不会乱扣费，这点很良心。\n\n归属地随机发货，但是号码可以自己选。"
+    },
+    {
+      "productID": 2668,
+      "productName": "电信飞鲨卡【39元185G】【仅发湖北】",
+      "title": "租房党必看！电信飞鲨卡【39元185G】【仅发湖北】 帮你每个月省下一杯奶茶钱",
+      "price": 200,
+      "operator": "电信",
+      "area": "湖北",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260326/47f6a525d2404c6b87bbb4082a3cf348.jpg",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2668",
+      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/2668",
+      "taocan": "禁止任何带有湖北字眼的宣传，39元185G，仅发湖北，次月可享185G(需短信发送“185”至10001，点击短信显示原文，按要求回复，确认订购办理成功立即生效)",
+      "backMoneyType": "次月返",
+      "age1": 21,
+      "age2": 65,
+      "content": "作为一个流量大户，每个月话费都要上百，终于被我找到了一张宝藏神卡！\n\n网速我专门测了几次，下载能跑到300Mbps+，打王者荣耀延迟稳定在30ms左右。\n\n归属地随机发货，但是号码可以自己选。"
+    },
+    {
+      "productID": 2390,
+      "productName": "广电梦源卡【39元90G】",
+      "title": "亲测有效！广电梦源卡【39元90G】 网速快到飞起，后悔没早点办",
       "price": 90,
       "operator": "广电",
-      "area": "吉林",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260528/4ebc55bf87794f4289ca63c2faea10a9.jpg",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3101",
-      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/3101",
-      "taocan": "19元130G+200分钟，大流量产品",
+      "area": "收货地为归属地",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260208/b429facfe78f4744bfc0870ce608bc07.jpg",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2390",
+      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/2390",
+      "taocan": "39元60G+30G（套餐内60G参加活动免费领取30G）收货地为归属地，秒返产品，出现订单结算后无故注销，恶竟套取佣金情况我司有权拉黑并且追回佣金终止合作",
+      "backMoneyType": "秒返",
+      "age1": 18,
+      "age2": 65,
+      "content": "之前一直在用某宝的流量包，贵得要死，换了这张卡之后每个月省了大几十。\n\n激活流程非常简单，按照说明书一步步操作，5分钟就搞定了，不用去营业厅排队。\n\n快递是顺丰包邮的，下单后第二天就到了。"
+    },
+    {
+      "productID": 2362,
+      "productName": "上海广电【29元150G+150分钟】",
+      "title": "🔥 上海广电【29元150G+150分钟】 真实评测：月省XX元，信号居然这么稳？",
+      "price": 85,
+      "operator": "广电",
+      "area": "上海",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260204/5ee1dae2d5614366a05e31897f417cfd.jpg",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2362",
+      "storeUrl": "https://haokawx.lot-ml.com/PackInfo/Detail/2362",
+      "taocan": "18-65可下单，当地自有人员上门，注意提醒用户接听开卡人员电话。",
       "backMoneyType": "次月返",
       "age1": 18,
       "age2": 65,
-      "content": "用了几天来交作业了，这张卡的网速和稳定性都超乎我的预期，一起来看看吧。\n\n网速我专门测了几次，下载能跑到300Mbps+，打王者荣耀延迟稳定在30ms左右。\n\n归属地随机发货，但是号码可以自己选。"
+      "content": "作为一个流量大户，每个月话费都要上百，终于被我找到了一张宝藏神卡！\n\n网速我专门测了几次，下载能跑到300Mbps+，打王者荣耀延迟稳定在30ms左右。\n\n套餐内容清晰透明，没有那些乱七八糟的绑定和合约。"
     }
   ],
   "hotRanking": [
     {
       "rank": 1,
-      "productID": 3051,
-      "productName": "广东移动专享卡【39元235G】",
-      "operator": "移动",
-      "price": 220,
-      "area": "广东",
+      "productID": 2803,
+      "productName": "电信飞德卡【39元205G】【仅发山东】",
+      "operator": "电信",
+      "price": 200,
+      "area": "山东",
       "backMoneyType": "次月返",
-      "desc": "综合用户反馈来看，这款产品是目前最值得推广的爆款之一。"
+      "desc": "山东专属205G大流量，月租仅39元📶🚀"
     },
     {
       "rank": 2,
-      "productID": 3157,
-      "productName": "四川移动省内专享卡【20元190G+200分钟】仅发成都",
-      "operator": "移动",
-      "price": 85,
-      "area": "四川",
+      "productID": 2644,
+      "productName": "电信飞庄卡【39元185G】【仅发湖南】",
+      "operator": "电信",
+      "price": 220,
+      "area": "湖南",
       "backMoneyType": "次月返",
-      "desc": "不仅套餐给力，性价比也是诚意满满。"
+      "desc": "湖南必选185G超值套餐，畅快刷不停📱💨"
     },
     {
       "rank": 3,
-      "productID": 1740,
-      "productName": "青海电信单宽带1000M1080元包年（新）",
+      "productID": 3056,
+      "productName": "电信飞豚卡【39元185G】【仅发湖北】",
       "operator": "电信",
-      "price": 425,
-      "area": "青海",
+      "price": 220,
+      "area": "湖北",
       "backMoneyType": "次月返",
-      "desc": "综合用户反馈来看，这款产品是目前最值得推广的爆款之一。"
+      "desc": "湖北用户福音，39元享185G高速流量🌐⚡"
     },
     {
       "rank": 4,
-      "productID": 2853,
-      "productName": "河北移动专享卡3.0【30元120G+100分钟】",
-      "operator": "移动",
-      "price": 125,
-      "area": "河北",
+      "productID": 3019,
+      "productName": "电信飞德卡4.0【39元205G】【仅发山东】",
+      "operator": "电信",
+      "price": 260,
+      "area": "山东",
       "backMoneyType": "次月返",
-      "desc": "不仅套餐给力，性价比也是诚意满满。"
+      "desc": "升级版205G流量卡，山东独享更划算🔥📡"
     },
     {
       "rank": 5,
-      "productID": 3149,
-      "productName": "【实体卡】山东移动专属卡30元/月200G【不考核拉新】",
-      "operator": "移动",
-      "price": 155,
-      "area": "山东",
+      "productID": 2075,
+      "productName": "浙江联通1000M1200元/年单宽新",
+      "operator": "联通",
+      "price": 625,
+      "area": "浙江",
       "backMoneyType": "次月返",
-      "desc": "不仅套餐给力，性价比也是诚意满满。"
+      "desc": "千兆宽带年付1200，浙江联通稳定高速🏠💻"
     },
     {
       "rank": 6,
-      "productID": 2797,
-      "productName": "电信梦庄卡【39元185G+100分钟】【仅发湖南】",
-      "operator": "电信",
-      "price": 110,
-      "area": "湖南",
-      "backMoneyType": "秒返",
-      "desc": "不仅套餐给力，性价比也是诚意满满。"
+      "productID": 3124,
+      "productName": "联通云南省内专属卡2.0【39元235G+100分钟】",
+      "operator": "联通",
+      "price": 250,
+      "area": "云南",
+      "backMoneyType": "次月返",
+      "desc": "云南专属235G+100分钟，通话流量双自由📞🎉"
     },
     {
       "rank": 7,
-      "productID": 3125,
-      "productName": "联通云南省内专属卡2.0【49元235G+100分钟】",
-      "operator": "联通",
-      "price": 280,
-      "area": "云南",
+      "productID": 2216,
+      "productName": "广东移动省内专属卡【39元180G+100分钟】",
+      "operator": "移动",
+      "price": 145,
+      "area": "深圳,广州,佛山, 中山",
       "backMoneyType": "次月返",
-      "desc": "综合用户反馈来看，这款产品是目前最值得推广的爆款之一。"
+      "desc": "广东移动180G+100分钟，本地畅连无忧📲🌟"
     },
     {
       "rank": 8,
-      "productID": 1813,
-      "productName": "浙江移动单宽带500M500元包两年",
-      "operator": "移动",
-      "price": 145,
-      "area": "浙江",
+      "productID": 1967,
+      "productName": "浙江专属广电28元包月实体卡",
+      "operator": "广电",
+      "price": 120,
+      "area": "收货地",
       "backMoneyType": "次月返",
-      "desc": "综合用户反馈来看，这款产品是目前最值得推广的爆款之一。"
+      "desc": "广电28元实体卡，浙江月租超低体验📺💸"
     },
     {
       "rank": 9,
-      "productID": 2666,
-      "productName": "电信飞娥卡【两年29元185G】【仅发湖南】",
-      "operator": "电信",
-      "price": 255,
-      "area": "湖南",
+      "productID": 2375,
+      "productName": "重庆广电卡新【28元350G+200分钟】",
+      "operator": "广电",
+      "price": 90,
+      "area": "重庆",
       "backMoneyType": "次月返",
-      "desc": "不仅套餐给力，性价比也是诚意满满。"
+      "desc": "重庆广电350G+200分钟，超大容量超值💥📶"
     },
     {
       "rank": 10,
-      "productID": 2979,
-      "productName": "福建移动专享卡【59元80G+100分钟】仅发厦门",
+      "productID": 2578,
+      "productName": "上海移动专属卡【39元80G+300分钟】",
       "operator": "移动",
-      "price": 90,
-      "area": "福建",
+      "price": 105,
+      "area": "上海",
       "backMoneyType": "次月返",
-      "desc": "不仅套餐给力，性价比也是诚意满满。"
+      "desc": "上海移动80G+300分钟，通话狂人首选📞🔥"
     }
   ],
   "byOperator": {
     "移动": [
       {
-        "productID": 2802,
-        "productName": "上海移动专属卡【59元60G+600分钟+1000M宽带】",
-        "price": 140,
-        "area": "上海",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260412/f226b36aa2aa427c8d317cb7bdcab342.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2802",
-        "backMoneyType": "次月返",
-        "taocan": "59元60G+600分钟+1000M宽带"
-      },
-      {
-        "productID": 3157,
-        "productName": "四川移动省内专享卡【20元190G+200分钟】仅发成都",
-        "price": 85,
+        "productID": 3159,
+        "productName": "四川专享移动卡【20元250G+200分钟+会员】",
+        "price": 110,
         "area": "四川",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260608/7e5cdabf6c0447cc960cd8f0ff9bdfef.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3157",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260608/31a99a045692445a8d12de44703d701a.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3159",
         "backMoneyType": "次月返",
-        "taocan": "20元190G+200分钟+会员权益，自有团队交付，仅发成都。"
+        "taocan": "下单预存100，三照发四川，无需跳转，禁止转寄，仅限收货地激活"
       },
       {
-        "productID": 2853,
-        "productName": "河北移动专享卡3.0【30元120G+100分钟】",
-        "price": 125,
-        "area": "河北",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260416/38839d315b894b78bf7f0f8156b5d2af.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2853",
+        "productID": 2384,
+        "productName": "广州移动专属卡【39元200G+100分钟】",
+        "price": 190,
+        "area": "广州",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260207/4f3807c0ba324bb3b3393e3f693b85b1.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2384",
         "backMoneyType": "次月返",
-        "taocan": "30元120G+100分钟，仅发河北，用户自主激活，需安卓NFC开卡，只能收件地激活，不能转寄"
+        "taocan": "39元200G流量+100分钟，仅发广州，当地人员交付激活"
       },
       {
-        "productID": 2878,
-        "productName": "上海移动专属卡4.0【39元80G+300分钟】",
-        "price": 140,
-        "area": "上海",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260419/97e6a92572ec4b3f8259d847d57bac52.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2878",
+        "productID": 2416,
+        "productName": "广东专属移动卡【19元200G】",
+        "price": 120,
+        "area": "广东",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260213/e04ffeb71f98472f9ec851988f348846.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2416",
         "backMoneyType": "次月返",
-        "taocan": "仅发上海,当地人员当天配送激活"
+        "taocan": "首充50享1年，首充100享两年，考核100元，请提醒用户充值100元，18-60可下单"
+      },
+      {
+        "productID": 3102,
+        "productName": "湖北移动专享卡【39元150G】【仅发武汉】",
+        "price": 135,
+        "area": "湖北",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260529/be9a893ff4f341d5a63e66fa7fc35a37.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3102",
+        "backMoneyType": "次月返",
+        "taocan": "39元150G，仅发武汉,上门交付"
       }
     ],
     "联通": [
       {
-        "productID": 3059,
-        "productName": "联通飞众卡【42元170G】",
-        "price": 100,
-        "area": "随机",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260530/be65a646efef41d3ac32bfeea7e9c988.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3059",
+        "productID": 2571,
+        "productName": "陕西专属联通卡【29元80G+100分钟】",
+        "price": 145,
+        "area": "陕西",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260314/f6b4cbc5017c4ebcbe0f1a29caab4512.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2571",
         "backMoneyType": "次月返",
-        "taocan": "42元170G，三照发全国,禁区少"
+        "taocan": "仅发陕西，18-60周岁可下单，次月升级套餐。"
       },
       {
-        "productID": 2079,
-        "productName": "浙江联通500M360元包年",
-        "price": 185,
+        "productID": 2211,
+        "productName": "广州联通专享卡【长期38元180G】",
+        "price": 150,
+        "area": "广州",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260228/d0c031db9157445aab0141add744ff7c.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2211",
+        "backMoneyType": "次月返",
+        "taocan": "长期38元180G,2月28号开始下单的用户套餐升级为38元220G，仅发广州"
+      },
+      {
+        "productID": 3147,
+        "productName": "河北联通省内卡【39元200G+200分钟】",
+        "price": 90,
+        "area": "随机",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260606/f86bc4c1b37448519383cf731fa0feee.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3147",
+        "backMoneyType": "次月返",
+        "taocan": "39元200G+200分钟，三照发货，仅发河北,大流量"
+      },
+      {
+        "productID": 2954,
+        "productName": "浙江专属联通卡【首年19元160G+500分钟+视频会员】",
+        "price": 115,
         "area": "浙江",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20251210/7d683e9d0b694a3fb290d931437dc7ac.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2079",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260505/8dfe5d6af13c4abf8a41dc11fde5403f.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2954",
         "backMoneyType": "次月返",
-        "taocan": "浙江联通500M360元包年"
-      },
-      {
-        "productID": 3146,
-        "productName": "联通飞灵卡【29元215G+100分钟】",
-        "price": 60,
-        "area": "随机",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260606/6d9305f5fdb24d97baffb119f7bc556b.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3146",
-        "backMoneyType": "次月返",
-        "taocan": "29元215G+100分钟，三照发全国,禁区少"
-      },
-      {
-        "productID": 2978,
-        "productName": "福建联通专享卡【59元80G+100分钟】仅发福州/厦门/泉州",
-        "price": 120,
-        "area": "福建",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260510/81eb4852462544a991988d39a6f38669.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2978",
-        "backMoneyType": "次月返",
-        "taocan": "59元80G+100分钟，仅发福州/厦门/泉州"
+        "taocan": "18-30可下单，三照发货，仅发浙江 首年19  禁止转寄且浙江省外使用时间不得大于省内时间。"
       }
     ],
     "电信": [
       {
-        "productID": 3142,
-        "productName": "电信广东省内专属卡【39元235G+100分钟】",
-        "price": 265,
+        "productID": 3085,
+        "productName": "电信广东省内专属卡【39元280G+100分钟】",
+        "price": 150,
         "area": "广东",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260605/77e75af785ba47b7ac95ad21c7caef6a.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3142",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260525/b5145f67bbc44446992eadd8893d49df.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3085",
         "backMoneyType": "次月返",
-        "taocan": "39元235G+100分钟，该款发货率高"
+        "taocan": "39元280G+100分钟仅发广东,大流量"
       },
       {
-        "productID": 2746,
-        "productName": "湛江电信专享卡【29元335G+100分钟】",
+        "productID": 2503,
+        "productName": "广东电信专享卡新 【首年19元205G+100分钟】",
         "price": 95,
-        "area": "湛江",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260404/ae88633d99a947a1bc467eb154e168e2.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2746",
+        "area": "广东",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260304/d041ce80ca9d46aba8666689f4d36ec4.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2503",
         "backMoneyType": "次月返",
-        "taocan": "29元包225G通用+110G定向+100分钟，仅发湛江"
+        "taocan": "店铺补贴11个月，多地市切换审核，提高发货率，"
       },
       {
-        "productID": 2645,
-        "productName": "安徽电信专属卡3.0【39元160G+100分钟】仅发合肥",
-        "price": 190,
-        "area": "安徽",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260323/bb6d890efcca4834b0463aad4fc2f0b7.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2645",
+        "productID": 3104,
+        "productName": "电信飞浓卡【19元205G】【仅发山东】",
+        "price": 170,
+        "area": "山东",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260530/f0a066b0a3924338a9ecc7718648d9ed.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3104",
         "backMoneyType": "次月返",
-        "taocan": "39元160G+100分钟仅发合肥 ，30岁以上人员下单少30G流量，默认130G，介意勿下!仅限私域销售"
+        "taocan": "仅发山东 激活30天后通过官方短信领取:50G市内流量+105G全国流量，"
       },
       {
-        "productID": 3114,
-        "productName": "电信飞顿卡【39元185G+200分钟】仅发贵州",
-        "price": 165,
-        "area": "贵州",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260602/6218de972c99410292eaf092c459c08b.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3114",
+        "productID": 2302,
+        "productName": "佛山电信专属卡【30元185G+100分钟】",
+        "price": 95,
+        "area": "佛山",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260128/9f8811f37e18447fa6e8f32713a871e8.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2302",
         "backMoneyType": "次月返",
-        "taocan": "39元185G+200分钟，仅发贵州"
+        "taocan": "30元包125G全国通用+60G全国定向+100分钟，仅发佛山"
       }
     ],
     "广电": [
       {
-        "productID": 3017,
-        "productName": "黑龙江广电专享卡【39元150G+150分钟】",
-        "price": 115,
-        "area": "黑龙江",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260515/4e2f24fca4c3426ca1af9af4a8ac9949.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3017",
-        "backMoneyType": "次月返",
-        "taocan": "39元150G+150分钟，仅发黑龙江"
-      },
-      {
-        "productID": 2912,
-        "productName": "重庆广电卡3.0【29元192G】",
+        "productID": 2268,
+        "productName": "陕西广电专属卡新【29元192G】",
         "price": 110,
+        "area": "陕西",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260122/1e786252216f4608a8e768d9fac664b1.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2268",
+        "backMoneyType": "次月返",
+        "taocan": "仅发陕西，大流量，18～65可下单"
+      },
+      {
+        "productID": 3126,
+        "productName": "陕西广电专属卡2.0【29元192G】",
+        "price": 135,
+        "area": "陕西",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260122/1e786252216f4608a8e768d9fac664b1.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3126",
+        "backMoneyType": "次月返",
+        "taocan": "仅发陕西，大流量，18～65可下单"
+      },
+      {
+        "productID": 1912,
+        "productName": "山东专属广电348元包年实体卡",
+        "price": 115,
+        "area": "收货地",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20251104/4bed4df44d7545f4ae7934057e7f50bb.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1912",
+        "backMoneyType": "次月返",
+        "taocan": "348元一年每月享180G通用流量+180分钟通话，注册工号审核通过可批量下单，门店代理商引导客户通过掌慧通自助激活。"
+      },
+      {
+        "productID": 2330,
+        "productName": "重庆广电卡【28元350G+200分钟】",
+        "price": 75,
         "area": "重庆",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260429/eafee09536e74cc0b24c1fd22e661886.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2912",
+        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260130/9e3ea28e43034f898817c5e8aa2466ff.jpg",
+        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2330",
         "backMoneyType": "次月返",
-        "taocan": "18-65可下单，仅发重庆，29元192G"
-      },
-      {
-        "productID": 2334,
-        "productName": "山东广电专属卡【28元350G+200分钟】",
-        "price": 95,
-        "area": "山东",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260131/d3266193c3b74ab5858b9e216450e588.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2334",
-        "backMoneyType": "次月返",
-        "taocan": "日照市,临沂市,菏泽市,滨州，德州市,聊城市，泰安除外均可配送，强充100元，注意接听电活，下单后自有人员会外呼约定时间上门开卡，更新发货周期72-80小时"
-      },
-      {
-        "productID": 2817,
-        "productName": "广东专属广电卡2.0【29元192G】",
-        "price": 130,
-        "area": "广东",
-        "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260412/8581879b90624ddba50758a78162aea4.jpg",
-        "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2817",
-        "backMoneyType": "次月返",
-        "taocan": "18-65周岁可下单，29元192G。"
+        "taocan": "18-35可下单，仅发重庆"
       }
     ]
   },
   "broadband": [
     {
-      "productID": 2075,
-      "productName": "浙江联通1000M1200元/年单宽新",
-      "price": 625,
-      "area": "浙江",
-      "operator": "联通",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20251209/b9c3a5b305004db6baaef39ec8d39163.jpg",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2075",
-      "backMoneyType": "次月返"
-    },
-    {
-      "productID": 1738,
-      "productName": "青海电信单宽带300M360元包年（新）",
-      "price": 125,
+      "productID": 1739,
+      "productName": "青海电信单宽带500M720元包年（新）",
+      "price": 275,
       "area": "青海",
       "operator": "电信",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20250826/8550dc7388ba43918e9e20c3676f6706.jpg",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1738",
-      "backMoneyType": "次月返"
-    },
-    {
-      "productID": 2447,
-      "productName": "新疆昌吉联通融合宽带1000M79元包月",
-      "price": 240,
-      "area": "昌吉",
-      "operator": "联通",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260225/351106a8332a4941a906958008b4bdfb.jpg",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2447",
-      "backMoneyType": "次月返"
-    },
-    {
-      "productID": 1675,
-      "productName": "江西电信单宽200M600元/年",
-      "price": 160,
-      "area": "江西",
-      "operator": "电信",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20250810/a5d7160fc9b64168929662433751a761.jpg",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1675",
-      "backMoneyType": "次月返"
-    },
-    {
-      "productID": 1941,
-      "productName": "江西电信500M1000元/年单宽",
-      "price": 305,
-      "area": "江西",
-      "operator": "电信",
-      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20251105/0c541cae5974408bb830de880f4a19fa.jpg",
-      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1941",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20250826/45317fbfb7b6422d88ab2707ad60fda7.jpg",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1739",
       "backMoneyType": "次月返"
     },
     {
@@ -6055,6 +6002,16 @@
       "backMoneyType": "次月返"
     },
     {
+      "productID": 1812,
+      "productName": "浙江移动单宽带500M300元包年",
+      "price": 135,
+      "area": "浙江",
+      "operator": "移动",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20250926/9b6cff6cb196435a8a45b0734515e8e9.jpg",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1812",
+      "backMoneyType": "次月返"
+    },
+    {
       "productID": 1940,
       "productName": "江西电信300M800元/年单宽新",
       "price": 235,
@@ -6062,6 +6019,36 @@
       "operator": "电信",
       "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20251105/5aad97f6b7ad4446b53c5537c0f03022.jpg",
       "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1940",
+      "backMoneyType": "次月返"
+    },
+    {
+      "productID": 2078,
+      "productName": "浙江联通300M540元包两年单宽",
+      "price": 135,
+      "area": "浙江",
+      "operator": "联通",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20251210/dd69a00decd3490c83bfd6bec9ebee18.jpg",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2078",
+      "backMoneyType": "次月返"
+    },
+    {
+      "productID": 2447,
+      "productName": "新疆昌吉联通融合宽带1000M79元包月",
+      "price": 240,
+      "area": "昌吉",
+      "operator": "联通",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260225/351106a8332a4941a906958008b4bdfb.jpg",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2447",
+      "backMoneyType": "次月返"
+    },
+    {
+      "productID": 1941,
+      "productName": "江西电信500M1000元/年单宽",
+      "price": 305,
+      "area": "江西",
+      "operator": "电信",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20251105/0c541cae5974408bb830de880f4a19fa.jpg",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/1941",
       "backMoneyType": "次月返"
     },
     {
@@ -6081,14 +6068,44 @@
     "性价比流量卡",
     "联通流量卡",
     "广电流量卡",
-    "重庆联通专享卡新【39元190G+200分钟】",
-    "广电飞溯卡【39元90G】",
-    "联通云南省内专属卡【49元235G+100分钟】",
+    "联通飞众卡【42元170G】",
+    "浙江广电卡【19元130G+200分钟】",
+    "上海广电【29元150G+150分钟】",
     "大流量卡套餐",
     "宽带办理",
     "手机卡套餐"
   ],
   "articles": [
+    {
+      "title": "我后悔没早入的河北流量卡！30元120G真香！📱",
+      "productID": 2760,
+      "productName": "河北移动专享卡2.0【30元120G+100分钟】",
+      "article": "# 我后悔没早入的河北流量卡！30元120G真香！📱\n\n作为一个天天刷视频、看直播的“重度流量户”，我对河北流量卡的性价比要求特别高。之前用的套餐动不动就超支，直到被朋友安利了这款河北移动专享卡2.0——30元120G+100分钟，简直是为河北人量身定制！收到卡片后我迫不及待开箱实测，今天就来交一份真实作业。\n\n## 📦 收到卡：包装简单但干货满满\n\n顺丰寄来的，里面就一张SIM卡和激活指南。包装很简洁，没有花里胡哨的东西。唯一要注意的是：**必须用安卓手机NFC开卡**（iPhone用户哭了，得借同事手机），而且只能在收件地激活，不能转寄。我刚好在石家庄，当场就按步骤操作了。\n\n## 🔧 激活：比想象中顺利\n\n本以为NFC激活很麻烦，结果打开移动官方的“和包”App，把卡片贴近手机背面，几秒就识别成功。上传身份证正反面，人脸识别，全程不到5分钟。**注意事项：年龄限制18-60岁**，我朋友差几个月满60，试了也能过。激活后立刻有信号，拨了10086查询，确认是河北移动官方卡（归属地河北，号段170开头）。\n\n## 🚀 测速：网速能打90分\n\n在室内用Speedtest测了3次：下载速度平均**83Mbps**，上传**21Mbps**，延迟23ms。刷4K视频秒开，玩王者荣耀全程绿色延迟，吃鸡也没有卡顿。中午高峰期又测了一次，下载掉到65Mbps，但日常使用完全够用。毕竟120G流量，就算限速也是7.2Mbps的“保底网速”，刷短视频没问题。\n\n## 💰 算账：性价比炸裂\n\n我之前的套餐是**58元30G**，月月不够用还要买加油包。现在换成这个30元120G，等于省了一半钱还多了3倍流量。打电话100分钟也够用（现在谁还打电话，微信语音不香吗？）。算下来**每GB才0.25元**，比市面上那些9元100G的套路卡靠谱多了——那些都是定向流量，这个是通用流量，不虚标！\n\n## ✅ 推荐给谁？\n\n- **学生党**：宿舍没WiFi？这个月租30，比奶茶还便宜\n- **租房党**：不想装宽带？120G够电脑手机一起用\n- **备用卡**：主卡保号，副卡专门上网，完全没毛病\n\n最后提醒：这款卡**仅发河北**，而且只有安卓NFC手机能激活，苹果用户得借个安卓机操作。如果你也在河北，别犹豫了，直接去店铺下单吧！👉 [点这里进店铺](https://xxx)（店铺名：XX通信专营店，客服24小时在线）\n\n**真实体验，无广推荐，放心冲！**",
+      "price": 115,
+      "operator": "移动",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/2760",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260407/9bf62bdf887a428a85a601bd0ca97762.jpg",
+      "area": "河北",
+      "seoKeyword": "河北流量卡",
+      "date": "2026-06-09",
+      "buildId": "mq5zfy2ubm96",
+      "slug": "2026-06-09-2"
+    },
+    {
+      "title": "💥移动流量卡套餐实测！30元200G山东专享，到底香不香？",
+      "productID": 3026,
+      "productName": "移动山东省内专享卡【30元200G】",
+      "article": "# 💥移动流量卡套餐实测！30元200G山东专享，到底香不香？\n\n最近一直在找靠谱的**移动流量卡套餐**，毕竟流量总是不够用，动不动就限速。看到这个“山东省内专享卡”宣传30元200G，还支持闪送上门激活，作为山东人果断下单试水。下面说说真实体验，给各位老乡参考。\n\n## 📦 收到卡：比外卖还快\n\n下单后大概半小时，就有配送小哥打电话说要上门激活。我本来还以为是诈骗，结果人家穿着工服、带着设备直接到了楼下。现场开封、实名、激活一气呵成，整个过程不超过10分钟。不得不说“实时闪送”确实没吹牛，比我点外卖还快。\n\n## ⚙️ 激活和设置\n\n激活很简单：小哥用专用终端扫身份证+人脸识别，插卡就能用。注意这张卡只限山东省内使用（归属地是山东），外省流量要额外收费。我的手机是iPhone，插卡后自动识别运营商，4G/5G信号满格。\n\n## 🚀 测速：200G到底香不香？\n\n拿到卡第一件事就是测速。我用Speedtest在中午高峰期测了3次：\n- 下载：平均120Mbps（相当于15MB/s左右）\n- 上传：40Mbps\n刷抖音、看4K视频完全不卡，打王者荣耀延迟40ms左右。200G重度使用的话，每天刷6-7个G没问题，追剧党、短视频爱好者完全够用。\n\n## 💰 算账：比之前的套餐省一半\n\n之前用的是移动88元套餐，只有30G通用流量，超了就得花钱买流量包。换成这个200G后，算下来每G成本不到两毛钱（对比其他流量包动不动5元/G）。而且这个卡是长期套餐，没套路，不像有些卡前几个月便宜后面涨价。唯一要注意的是只限山东本地用，出省旅游得提前备个日租包。\n\n## 👍 推荐理由+避坑指南\n\n**适合谁？**\n- 在山东常驻，每天刷视频/玩游戏\n- 受够了高价流量包，想换性价比卡\n- 需要大流量当主力卡或副卡\n\n**注意：**\n- 仅限18-60岁办理\n- 外省无效，外省慎入\n- 激活后建议先用几天再注销旧卡\n\n整体来说，这个移动流量卡套餐对山东用户很友好，闪送上门省去了等快递的烦恼。如果你也受够了流量焦虑，可以直接去他们店里下单，记得确认收货地址在山东省内就行。别犹豫，早换早省钱！",
+      "price": 170,
+      "operator": "移动",
+      "netAddr": "https://haokawx.lot-ml.com/PackInfo/Detail/3026",
+      "mainPic": "https://haokaapi.lot-ml.com/upload/ProductUpDateImage/20260517/af28bca5f8f544babb39c8716fbcace9.jpg",
+      "area": "山东",
+      "seoKeyword": "移动流量卡套餐",
+      "date": "2026-06-09",
+      "buildId": "mq5ze9wli7z8",
+      "slug": "2026-06-09"
+    },
     {
       "title": "🔥 电信梦桂卡【29元250G+300分钟】【仅发广西】 真实评测：月省XX元，信号居然这么稳？",
       "productID": 2866,
