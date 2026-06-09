@@ -115,17 +115,16 @@ function wrapPage(body, title, desc, keywords, currentPage, canonical) {
 // ===== 社交分享（各平台生成合规文案） =====
 function shareHtml(url, title, articleText, operator) {
   const encodedUrl = encodeURIComponent(url);
-  const encodedTitle = encodeURIComponent(title);
-  // 去除文章中的 markdown 符号，提取纯文本
   const cleanBody = (articleText || '').replace(/[#*\[\]>]/g, '').replace(/\n+/g, '\n').slice(0, 600);
-  // base64 编码文章内容供前端使用（避免引号冲突）
-  const bodyB64 = Buffer.from(cleanBody).toString('base64');
+  // 用 encodeURIComponent 处理中文（浏览器端用 decodeURIComponent 解）
+  const bodyEncoded = encodeURIComponent(cleanBody);
+  const titleEncoded = encodeURIComponent(title);
   return `<div class="share-bar">
     <span class="share-label">📤 分享到</span>
-    <button class="share-btn" onclick="copyForPlatform('zhihu', '${escapeHtml(title)}', '${bodyB64}', '${operator || ''}')" title="复制知乎格式">知乎</button>
-    <button class="share-btn" onclick="copyForPlatform('xiaohongshu', '${escapeHtml(title)}', '${bodyB64}', '${operator || ''}')" title="复制小红书格式">小红书</button>
-    <button class="share-btn" onclick="copyForPlatform('tieba', '${escapeHtml(title)}', '${bodyB64}', '${operator || ''}')" title="复制贴吧格式">贴吧</button>
-    <button class="share-btn" onclick="copyForPlatform('copy', '${escapeHtml(title)}', '${bodyB64}', '${operator || ''}')" title="复制纯文本">📋 复制</button>
+    <button class="share-btn" onclick="copyForPlatform('zhihu','${titleEncoded}','${bodyEncoded}','${operator || ''}')">知乎</button>
+    <button class="share-btn" onclick="copyForPlatform('xiaohongshu','${titleEncoded}','${bodyEncoded}','${operator || ''}')">小红书</button>
+    <button class="share-btn" onclick="copyForPlatform('tieba','${titleEncoded}','${bodyEncoded}','${operator || ''}')">贴吧</button>
+    <button class="share-btn" onclick="copyForPlatform('copy','${titleEncoded}','${bodyEncoded}','${operator || ''}')">📋 复制</button>
   </div>`;
 }
 
