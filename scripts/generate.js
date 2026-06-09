@@ -434,6 +434,15 @@ async function build(forceRefresh = false) {
 
     console.log(`   ✓ sitemap.xml`);
     console.log(`   ✓ robots.txt`);
+
+    // 百度站长验证文件
+    const bdSrc = path.join(__dirname, '..', 'baidu_verify_codeva-oGFISGSCpA.html');
+    const bdDst = path.join(DIST_DIR, 'baidu_verify_codeva-oGFISGSCpA.html');
+    if (fs.existsSync(bdSrc)) {
+      fs.copyFileSync(bdSrc, bdDst);
+      console.log(`   ✓ 百度验证文件`);
+    }
+
     console.log(`\n✅ 站点生成完成`);
     return true;
   } catch (err) {
