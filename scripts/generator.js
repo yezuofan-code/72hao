@@ -150,8 +150,8 @@ function generateDailyRecommendations(products, seed) {
   const shuffled = shuffle(onSale, rand);
   const picks = [];
   const seenOps = new Set();
-  for (const p of shuffled) { if (picks.length >= 6) break; if (!seenOps.has(p.operator)) { picks.push(p); seenOps.add(p.operator); } }
-  for (const p of shuffled) { if (picks.length >= 6) break; if (!picks.find(x => x.productID === p.productID)) picks.push(p); }
+  for (const p of shuffled) { if (picks.length >= 8) break; if (!seenOps.has(p.operator)) { picks.push(p); seenOps.add(p.operator); } }
+  for (const p of shuffled) { if (picks.length >= 8) break; if (!picks.find(x => x.productID === p.productID)) picks.push(p); }
   return picks.map((p, i) => {
     const template = RECOMMEND_TITLES[i % RECOMMEND_TITLES.length];
     const title = template.replace('%s', p.productName);
@@ -246,7 +246,9 @@ async function generateBlog(products, seed) {
 
   let blogArticle = null;
   if (ai && ai.generateBlogArticle) {
-    blogArticle = await ai.generateBlogArticle(topic, relatedProducts);
+    // 让 AI 模块能调用配图功能
+    globalThis.generateImage = ai.generateImage;
+    blogArticle = await ai.generateBlogArticle(topic, relatedProducts, seed);
   }
 
   // AI不可用时，生成简化版
