@@ -225,7 +225,7 @@ async function build(forceRefresh=false) {
     if(content.blogArticle&&!sids.has(bid)){
       const base=content.date,cnt=arts.filter(a=>a.date===content.date).length;
       const slug=cnt>0?base+'-'+(cnt+1):base;
-      arts.unshift({...content.blogArticle,date:content.date,buildId:bid,slug,type:'blog'});
+      content.blogArticle.slug=slug; arts.unshift({...content.blogArticle,date:content.date,buildId:bid,slug,type:'blog'});
     }
     const stats=analyzeProducts(prods);
     const output={buildTime:content.generatedAt,date:content.date,storeUrl:STORE,stats,
