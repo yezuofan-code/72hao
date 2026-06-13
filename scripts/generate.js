@@ -74,9 +74,10 @@ function genIndex(prods,content,arts) {
   let hero='';
   if(blog) {
     const ex=(blog.article||'').replace(/[#*\[\]]/g,'').slice(0,200);
+    const blogImg = blog.imgPath || '';
     hero=`<section class="section"><h2 class="section-title"><span>今日精选</span></h2>
     <a href="/articles/article-${blog.slug||ds}.html" class="featured" style="text-decoration:none;color:inherit;">
-      <div class="featured-img"><div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:48px;color:#8a857f;">📰</div></div>
+      ${blogImg ? `<img class="featured-img" src="${blogImg}" alt="${es(blog.title||'')}" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">` : `<div class="featured-img"><div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:48px;color:#8a857f;">📰</div></div>`}
       <div class="featured-body"><span class="featured-cat">${blog.category||'文章'}</span>
       <h2>${es(blog.title||'')}</h2>
       <p>${es(ex)}</p>
@@ -86,8 +87,10 @@ function genIndex(prods,content,arts) {
   let list=`<section class="section"><h2 class="section-title" style="margin-top:0;"><span>最新文章</span></h2><div class="article-grid">`;
   recents.forEach(a=>{
     const sl=a.slug||a.date,cl=a.category||'文章',ex=(a.article||'').replace(/[#*\[\]]/g,'').slice(0,100);
+    const aImg = a.imgPath || '';
+    const emojis = {'科普':'📖','避坑':'⚠️','技巧':'💡','内幕':'🔍','生活':'🏠'};
     list+=`<a href="/articles/article-${sl}.html" class="article-card" style="text-decoration:none;color:inherit;" data-c="${a.category||'其他'}">
-      <div class="article-card-img"><div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:36px;">📄</div></div>
+      ${aImg ? `<img class="article-card-img" src="${aImg}" alt="${es(a.title||'')}" loading="lazy" style="width:100%;aspect-ratio:16/9;object-fit:cover;" onerror="this.style.display='none'">` : `<div class="article-card-img"><div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:36px;">${emojis[cl]||'📄'}</div></div>`}
       <div class="article-card-body"><span class="article-card-cat">${cl}</span>
       <h3>${es(a.title||'')}</h3>
       <p>${es(ex)}</p><div class="date">${a.date}</div></div>
