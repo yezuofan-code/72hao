@@ -46,6 +46,49 @@ async function callDeepSeek(systemPrompt, userPrompt, opts = {}) {
   }
 }
 
+/**
+ * 用 DeepSeek 写干货博客文章（教育型内容，自然植入推荐）
+ * @param {Object} topic - { category, keyword, title, desc, insertType }
+ * @param {Array} relatedProducts - 推荐商品列表
+ */
+async function generateBlogArticle(topic, relatedProducts) {
+  const { keyword, title, desc, category } = topic;
+  const prodInsert = relatedProducts.slice(0, 2).map((p, i) => {
+    const tag = i === 0 ? '推荐一款' : '另外';
+    return `${tag} **${p.productName}**（${p.operator}·${p.area || '全国'}），性价比不错，有兴趣可以了解一下。`;
+  }).join('\n');
+
+  const sys = `你是一个通信行业的老司机，写过很多科普文章。你的风格是：专业但不装逼，说实话不忽悠，读者看完觉得"这人靠谱"。你写文章不是为了卖东西，而是真心想帮人避坑。`;
+  const usr = `写一篇关于"${keyword}"的干货文章，800-1200字。标题：${title}
+
+要求：
+1. 标题直接包含"${keyword}"，自然不刻意
+2. 开头用一个小故事或真实现象引出话题，别上来就讲道理
+3. 内容要实在，有具体例子、有数据、有对比
+4. 要有"我之前也遇到过"、"我一个朋友"这种真实感
+5. 不要写成广告，读者能感觉到你是真心在分享
+6. 结构：引入→展开→分点说明→总结
+7. 在文章合适位置（别太刻意）自然地插入以下推荐，控制在1-2条：
+   ${prodInsert}
+8. 结尾留个互动："你遇到过什么坑？评论区说说"
+9. 不要提"佣金"这个词`;
+
+  const raw = await callDeepSeek(sys, usr, { maxTokens: 3072 });
+  if (!raw) return null;
+
+  const lines = raw.trim().split('\n');
+  let finalTitle = lines[0].replace(/^#+\s*/, '').trim();
+  if (finalTitle.length < 4 || finalTitle.length > 80) finalTitle = title;
+
+  return {
+    title: finalTitle,
+    article: raw,
+    category,
+    seoKeyword: keyword,
+    relatedProducts,
+  };
+}
+
 /** 用 DeepSeek 写每日评测文章（SEO 关键词优化 + 真实优缺点分析） */
 async function generateDailyArticle(product, dateStr, keyword) {
   const kw = keyword || `${product.area || ''}${product.operator || ''}流量卡`;
@@ -149,4 +192,4 @@ async function generateImage(prompt, filename) {
   }
 }
 
-module.exports = { callDeepSeek, generateDailyArticle, generateHotDescs, generateImage };
+module.exports = { callDeepSeek, generateDailyArticle, generateBlogArticle, generateHotDescs, generateImage };

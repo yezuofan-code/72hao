@@ -5,6 +5,7 @@
  */
 const crypto = require('crypto');
 const path = require('path');
+const { pickTopic, pickRelatedProducts } = require('./content-planner');
 
 let ai = null;
 
@@ -236,10 +237,37 @@ function generateSEOKeywords(products, seed) {
 }
 
 /**
- * 生成所有推广内容（每次构建选不同商品）
+ * 生成博客文章（干货内容 + 自然植入推荐）
+ */
+async function generateBlog(products, seed) {
+  const topic = pickTopic(seed);
+  const relatedProducts = pickRelatedProducts(topic, products, seed);
+  console.log(`[Generator] 博客选题: "${topic.keyword}" (${topic.category})`);
+
+  let blogArticle = null;
+  if (ai && ai.generateBlogArticle) {
+    blogArticle = await ai.generateBlogArticle(topic, relatedProducts);
+  }
+
+  // AI不可用时，生成简化版
+  if (!blogArticle) {
+    blogArticle = {
+      title: topic.title,
+      article: `${topic.desc}\n\n更多信息可以关注海洋号卡。`,
+      category: topic.category,
+      seoKeyword: topic.keyword,
+      relatedProducts,
+    };
+  }
+
+  return blogArticle;
+}
+
+/**
+ * 生成所有内容（博客优先 + 商品数据补充）
  * @param {Array} products - 商品列表
  * @param {Object} [aiModule] - AI 模块
- * @param {string} [buildId] - 构建唯一标识（用于种子），保证每次构建选不同商品
+ * @param {string} [buildId] - 构建唯一标识
  */
 async function generateAll(products, aiModule, buildId) {
   const dateStr = new Date().toISOString().slice(0, 10);
@@ -248,52 +276,31 @@ async function generateAll(products, aiModule, buildId) {
 
   console.log(`\n[Generator] 开始生成 (seed: ${seed.slice(0, 12)}...)`);
 
-  // 每次构建选不同的商品（seed 不同）
+  // 1. 博客文章（每天一篇干货，文中带商品推荐）
+  const blogArticle = await generateBlog(products, seed);
+
+  // 2. 商品推荐条（继续保留）
   const recommendations = generateDailyRecommendations(products, seed);
   const operatorRecs = generateOperatorRecommendations(products, seed);
   const seoKeywords = generateSEOKeywords(products, seed);
 
-  // 热销榜 - AI 或模板
+  // 3. 热销榜
   let hotRanking = generateHotRanking(products, seed);
   if (ai && ai.generateHotDescs) {
     const aiDescs = await ai.generateHotDescs(hotRanking, seed);
     if (aiDescs) hotRanking = hotRanking.map((item, i) => ({ ...item, desc: aiDescs[i] || item.desc }));
   }
 
-  // 评测文章 - 按 SEO 关键词选商品
-  const { product: baseProduct, keyword: seoKeyword } = pickProductByKeyword(products, seed);
-  console.log(`[Generator] 选题: "${seoKeyword}" → ${baseProduct?.productName}`);
-  let dailyArticle, usedKeyword;
-  if (ai && ai.generateDailyArticle) {
-    const result = await ai.generateDailyArticle(baseProduct, seed, seoKeyword);
-    if (result) {
-      dailyArticle = result;
-      usedKeyword = seoKeyword;
-    }
-  }
-  if (!dailyArticle) {
-    dailyArticle = generateDailyArticle(products, seed);
-    usedKeyword = seoKeyword;
-  }
-  if (dailyArticle) dailyArticle.seoKeyword = usedKeyword;
-
-  // 宽带
+  // 4. 宽带
   const broadband = generateBroadbandRecommendations(products, seed);
-
-  // 配图（每日推荐第一张）
-  if (ai && ai.generateImage && recommendations.length > 0) {
-    const first = recommendations[0];
-    const imgPath = await ai.generateImage(`中国${first.operator}流量卡产品展示图，${first.productName}，简约风格，蓝白配色，干净清爽，无文字`, `promo-${seed}`);
-    if (imgPath) recommendations[0].promoImage = imgPath;
-  }
 
   return {
     generatedAt: new Date().toISOString(),
     date: dateStr,
     buildId: seed,
-    dailyArticle,
-    recommendations,
-    hotRanking,
+    blogArticle,          // 博客文章（主内容）
+    recommendations,      // 推荐商品条
+    hotRanking,           // 热销榜
     byOperator: operatorRecs,
     broadband,
     seoKeywords,

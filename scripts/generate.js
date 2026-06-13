@@ -138,43 +138,46 @@ function articleTags(operator, area) {
   </div>`;
 }
 
-// ===== 首页（文章为主角） =====
+// ===== 首页（博客为主） =====
 function generateIndex(products, content, archiveArticles) {
   const dateStr = content.date;
-  const today = content.dailyArticle;
-  // 显示最新文章（包含今天），最多 8 篇
+  const blog = content.blogArticle;
   const recentArticles = archiveArticles.slice(0, 8);
   const recProducts = content.recommendations || [];
 
-  // Hero: 今日评测
+  // Hero: 今日博客文章
   let heroHtml = '';
-  if (today) {
-    const excerpt = (today.article || '').replace(/[#*\[\]]/g, '').slice(0, 120);
-    heroHtml = `<a href="/articles/article-${today.slug || dateStr}.html" class="hero-article">
+  if (blog) {
+    const excerpt = (blog.article || '').replace(/[#*\[\]]/g, '').slice(0, 150);
+    const catLabel = blog.category || '干货';
+    heroHtml = `<a href="/articles/article-${blog.slug || dateStr}.html" class="hero-article">
       <div class="hero-article-body">
-        <div class="hero-label">今日评测</div>
-        <h2 class="hero-title">${escapeHtml(today.title || '')}</h2>
-        <div class="hero-meta">${dateStr} · ${today.operator || ''}</div>
+        <div class="hero-label">${catLabel}</div>
+        <h2 class="hero-title">${escapeHtml(blog.title || '')}</h2>
+        <div class="hero-meta">${dateStr} · ${escapeHtml(blog.seoKeyword || '')}</div>
         <p class="hero-excerpt">${escapeHtml(excerpt)}</p>
         <span class="hero-read">阅读全文 →</span>
       </div>
     </a>`;
   }
 
-  // 最近文章网格
+  // 文章列表（博客卡片形式）
   let recentHtml = '';
   if (recentArticles.length) {
-    recentHtml = `<section class="section-head"><h2>最近文章</h2><a href="/archive.html" class="more-link">查看全部 →</a></section>
+    recentHtml = `<section class="section-head"><h2>最新文章</h2><a href="/archive.html" class="more-link">查看全部 →</a></section>
     <div class="article-grid">`;
     recentArticles.forEach(a => {
       const slug = a.slug || a.date;
-      const tags = articleTags(a.operator, '');
+      const catLabel = a.category || (a.type === 'blog' ? '干货' : '评测');
+      const excerpt = (a.article || '').replace(/[#*\[\]]/g, '').slice(0, 100);
       recentHtml += `<a href="/articles/article-${slug}.html" class="article-card">
         <div class="article-card-body">
-          <div class="article-card-date">${a.date}</div>
-          ${tags}
-          <h3 class="article-card-title">${escapeHtml(a.title || a.productName || '')}</h3>
-          <p class="article-card-excerpt">${escapeHtml((a.article || '').replace(/[#*\[\]]/g, '').slice(0, 80))}</p>
+          <div style="display:flex;justify-content:space-between;font-size:.72rem;color:#a1a1aa;margin-bottom:6px;">
+            <span>${a.date}</span>
+            <span>${catLabel}</span>
+          </div>
+          <h3 class="article-card-title">${escapeHtml(a.title || '')}</h3>
+          <p class="article-card-excerpt">${escapeHtml(excerpt)}</p>
         </div>
       </a>`;
     });
@@ -219,7 +222,7 @@ function generateIndex(products, content, archiveArticles) {
   return wrapPage(body, '海洋号卡 - 流量卡·宽带·正规运营商', '海洋号卡提供正规运营商流量卡、电话卡、宽带服务，低月租大流量，全国包邮。', '流量卡推荐,正规流量卡,大流量套餐,宽带办理,电话卡套餐', 'index', '/');
 }
 
-// ===== 文章页（带标签+分享） =====
+// ===== 文章页（支持博客格式+旧评测格式） =====
 function generateArticlePage(a) {
   const title = a.title || a.productName || '文章';
   const content = mdToHtml(a.article || '');
@@ -227,9 +230,40 @@ function generateArticlePage(a) {
   const slug = a.slug || date;
   const cleanDesc = (a.article || '').replace(/[#*\[\]]/g, '').slice(0, 150).replace(/\n/g, ' ');
   const canonicalPath = `/articles/article-${slug}.html`;
-  const keywords = '流量卡评测,' + (a.operator || '') + '流量卡,' + (a.productName || '');
   const articleUrl = `${SITE_URL}${canonicalPath}`;
-  const tags = articleTags(a.operator, a.area);
+
+  // 判断是博客文章还是旧评测文章
+  const isBlog = a.type === 'blog' || a.category;
+  const catLabel = a.category || '评测';
+  const keywords = isBlog
+    ? (a.seoKeyword || '') + ',流量卡,宽带'
+    : '流量卡评测,' + (a.operator || '') + '流量卡,' + (a.productName || '');
+
+  // 博文底部推荐商品
+  let recHtml = '';
+  if (isBlog && a.relatedProducts && a.relatedProducts.length > 0) {
+    recHtml = `<div class="blog-rec">
+      <div class="blog-rec-title">📌 相关推荐</div>
+      <div class="blog-rec-grid">`;
+    a.relatedProducts.forEach(p => {
+      const taocan = (p.taocan || '').replace(/佣金[^。]*。?/g, '').slice(0, 60);
+      recHtml += `<div class="blog-rec-card" onclick="openModal(${attrJson(p)})">
+        <img src="${p.mainPic || ''}" alt="" loading="lazy" onerror="this.style.display='none'">
+        <div class="blog-rec-body">
+          <div class="blog-rec-name">${escapeHtml(p.productName)}</div>
+          <div class="blog-rec-meta">${escapeHtml(p.operator)} · ${escapeHtml(p.area || '全国')}</div>
+          ${taocan ? `<div class="blog-rec-taocan">${escapeHtml(taocan)}</div>` : ''}
+        </div>
+      </div>`;
+    });
+    recHtml += `</div></div>`;
+  }
+
+  // 旧评测文章的单商品引导（兼容）
+  const oldCta = !isBlog ? `<div class="store-cta">
+    <p>感兴趣的话，可以看看这个套餐的详情</p>
+    <a href="${a.netAddr || STORE_URL}" target="_blank" class="btn">查看套餐详情 →</a>
+  </div>` : '';
 
   const schema = JSON.stringify({
     "@context": "https://schema.org", "@type": "Article",
@@ -242,16 +276,13 @@ function generateArticlePage(a) {
     <a href="/archive.html" class="back-link">← 返回归档</a>
     <h1>${escapeHtml(title)}</h1>
     <div class="article-meta-line">
-      <span class="meta-date">${date}</span>
-      ${tags}
+      <span class="meta-date">${date} · ${catLabel}</span>
+      ${isBlog ? `<span style="font-size:.72rem;color:#b91c1c;">#${escapeHtml(a.seoKeyword || catLabel)}</span>` : ''}
     </div>
-    ${a.mainPic ? `<img src="${a.mainPic}" alt="${escapeHtml(title)}" style="width:100%;max-width:600px;height:auto;display:block;margin:0 auto 20px;border-radius:4px;" onerror="this.style.display='none'">` : ''}
     <div class="content">${content}</div>
+    ${recHtml}
     ${shareHtml(articleUrl, title, a.article, a.operator)}
-    <div class="store-cta">
-      <p>感兴趣的话，可以看看这个套餐的详情</p>
-      <a href="${a.netAddr || STORE_URL}" target="_blank" class="btn">查看套餐详情 →</a>
-    </div>
+    ${oldCta}
   </article>
   <script type="application/ld+json">${schema}</script>`;
 
@@ -390,11 +421,18 @@ async function build(forceRefresh = false) {
     console.log('✍️ 生成内容...');
     const content = await generateAll(products, ai, buildId);
 
-    if (content.dailyArticle && !seenBuildIds.has(buildId)) {
+    // 博客文章归档
+    if (content.blogArticle && !seenBuildIds.has(buildId)) {
       const slugBase = content.date;
       const sameDayCount = archiveArticles.filter(a => a.date === content.date).length;
       const slug = sameDayCount > 0 ? `${slugBase}-${sameDayCount + 1}` : slugBase;
-      archiveArticles.unshift({ ...content.dailyArticle, date: content.date, buildId, slug });
+      archiveArticles.unshift({
+        ...content.blogArticle,
+        date: content.date,
+        buildId,
+        slug,
+        type: 'blog',
+      });
     }
 
     const stats = analyzeProducts(products);
@@ -406,7 +444,7 @@ async function build(forceRefresh = false) {
         price: p.price, backMoneyType: p.backMoneyType, flag: p.flag,
         age1: p.age1, age2: p.age2, taocan: p.taocan || p.productName, netAddr: p.netAddr,
       })),
-      dailyArticle: content.dailyArticle ? { ...content.dailyArticle, date: content.date } : null,
+      blogArticle: content.blogArticle ? { ...content.blogArticle, date: content.date } : null,
       recommendations: content.recommendations, hotRanking: content.hotRanking,
       byOperator: content.byOperator, broadband: content.broadband, seoKeywords: content.seoKeywords,
       articles: archiveArticles,
