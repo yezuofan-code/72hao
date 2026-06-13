@@ -204,7 +204,7 @@ async function generateImage(prompt, filename) {
     const buf = Buffer.from(await imgRes.arrayBuffer());
     fs.writeFileSync(filePath, buf);
     console.log(`[AI] 图片已保存: ${filePath} (${(buf.length / 1024).toFixed(1)}KB)`);
-    return `./assets/img/${filename}.png`;
+    return `/assets/img/${filename}.png`;
   } catch (e) {
     console.warn(`[AI] Image error: ${e.message}`);
     return null;

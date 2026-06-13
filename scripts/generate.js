@@ -122,6 +122,16 @@ function genArticle(a) {
   const isB=a.type==='blog'||a.category,cl=a.category||'文章';
   const kw=isB?(a.seoKeyword||'')+',流量卡,宽带':'流量卡评测';
 
+  // 文章配图
+  let imgHtml = '';
+  if (a.imgPath) {
+    imgHtml = `<img src="${a.imgPath}" alt="${es(t)}" style="width:100%;max-width:600px;height:auto;display:block;margin:0 auto 24px;border-radius:8px;" onerror="this.style.display='none'">`;
+  } else if (isB) {
+    // 用 emoji 占位
+    const emojis = {'科普':'📖','避坑':'⚠️','技巧':'💡','内幕':'🔍','生活':'🏠'};
+    imgHtml = `<div style="width:100%;max-width:600px;height:200px;margin:0 auto 24px;background:var(--blue-light);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:48px;">${emojis[cl]||'📰'}</div>`;
+  }
+
   let recHtml='';
   if(isB&&a.relatedProducts&&a.relatedProducts.length){
     recHtml=`<div class="section-title" style="margin-top:36px;"><span>推荐套餐</span></div><div class="product-grid" style="margin-bottom:24px;">`;
@@ -139,6 +149,7 @@ function genArticle(a) {
     <a href="/archive.html" class="back">← 返回文章</a>
     <h1>${es(t)}</h1>
     <div class="meta">${d}<span class="tag">${cl}</span></div>
+    ${imgHtml}
     <div class="body">${b}</div>
     ${recHtml}
     ${oldCta}
