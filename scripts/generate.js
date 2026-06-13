@@ -478,11 +478,6 @@ async function build(forceRefresh = false) {
     console.log(`   ✓ sitemap.xml`);
     console.log(`   ✓ robots.txt`);
 
-    // _redirects (Cloudflare pages.dev -> 自定义域名)
-    const redirectsPath = path.join(DIST_DIR, '_redirects');
-    fs.writeFileSync(redirectsPath, `/*  https://72hao.huanghaiwan.com/:splat  301\n`, 'utf8');
-    console.log(`   ✓ _redirects`);
-
     // 百度站长验证文件
     const bdSrc = path.join(__dirname, '..', 'baidu_verify_codeva-oGFISGSCpA.html');
     const bdDst = path.join(DIST_DIR, 'baidu_verify_codeva-oGFISGSCpA.html');
