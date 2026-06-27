@@ -241,8 +241,8 @@ async function build(forceRefresh=false) {
     fs.writeFileSync(path.join(DIST,'archive.html'),genArchive(arts),'utf8');
     fs.writeFileSync(path.join(DIST,'sitemap.xml'),genSitemap(arts),'utf8');
     fs.writeFileSync(path.join(DIST,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${SITE}/sitemap.xml\n`,'utf8');
-    const bd=path.join(__dirname,'..','baidu_verify_codeva-oGFISGSCpA.html');
-    if(fs.existsSync(bd))fs.copyFileSync(bd,path.join(DIST,'baidu_verify_codeva-oGFISGSCpA.html'));
+    const bd=path.join(__dirname,'..','baidu_verify_codeva-EruPQtJpeT.html');
+    if(fs.existsSync(bd))fs.copyFileSync(bd,path.join(DIST,'baidu_verify_codeva-EruPQtJpeT.html'));
     console.log(`✅ 完成: ${ac} 篇文章`);
     return true;
   }catch(e){console.error('❌ 失败:',e.message);return false;}
